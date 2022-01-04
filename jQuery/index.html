@@ -12,7 +12,7 @@
     <meta property="og:type" content="https://www.hexschool.com/" />
     <meta property="og:url" content="https://www.facebook.com/hexschool" />
     <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/all.css">
 </head>
 
@@ -49,7 +49,10 @@
                     <h2 class=".swiper title">六角學院<br>讓您奠定良好的前端基礎</h2>
                     <img src="./images/banner.png" alt="帶你學到會的線上課程">
                 </div>
-                <div class="swiper-slide"><img src="./images/banner-02.jpg" alt="心靈判官超級好看"></div>
+                <div class="swiper-slide">
+                    <h2 class=".swiper title">波巴·費特之書<br>The Book of Boba Fett</h2>
+                    <img src="./images/banner-02.jpg" alt="星際大戰">
+                </div>
                 ...
             </div>
             <!-- If we need pagination -->
@@ -60,8 +63,38 @@
             <div class="swiper-button-next"></div>
         </div>
         <div class="themes">
-            <div class="lightbox"></div>
-            <div class="class"></div>
+            <ul class="module">
+                <li class="item">
+                    <a href="#">
+                        <img src="./images/html.png" alt="">
+                        <h3>HTML 5 基礎教學</h3>
+                        <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，暸解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="./images/rwd.png" alt="">
+                        <h3>響應式網站設計</h3>
+                        <p>響應式網站設計(Responsive web degsign)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的，六角學院將會提供業界響應式開發方法，讓學生暸解行動版開發技巧。</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="./images/jQuery.png" alt="">
+                        <h3>JQuery 實戰教學</h3>
+                        <h4>本課程有以下特色</h4>
+                        <ul>
+                            <li>瞭解變數的使用方法</li>
+                            <li>學習並操作DOM</li>
+                            <li>學習基本數學運算方法</li>
+                            <li>套件的操作及應用</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <div class="class">
+
+            </div>
         </div>
         <div class="footer">
             <h1><a href="#" class="footer logo">hexschool</a></h1>

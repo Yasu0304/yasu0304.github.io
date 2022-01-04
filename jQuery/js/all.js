@@ -9,7 +9,7 @@ $(document).ready(function() {
         direction: 'horizontal',
         loop: true,
         effect: 'flip',
-        allowSlideNext: true,
+
 
         // If we need pagination
         pagination: {
