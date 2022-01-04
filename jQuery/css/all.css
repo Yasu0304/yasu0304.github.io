@@ -261,12 +261,26 @@ a {
 
 .module .item {
     text-align: center;
-    width: 290px;
+    width: 250px;
     box-shadow: 3px 3px 5px rgba(177, 177, 177, 0.288);
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
 }
 
-.module img {
-    height: 100px;
+.module .item-h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #555555;
+    line-height: 3;
+}
+
+.module .item-h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.module .item img {
+    height: 90px;
 }
