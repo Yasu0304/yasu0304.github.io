@@ -3,90 +3,190 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /*本頁*/
+
 body {
     font-family: "Lato", "Noto Sans TC", sans-serif;
     box-sizing: border-box;
-  }
+    cursor: pointer;
+    cursor: auto;
+}
 
-a{
+a {
     text-decoration: none;
 }
-.wrap{
+
+.wrap {
     width: 1002px;
     margin: 0 auto;
 }
 
-.socialbar{
+.socialbar {
     display: flex;
     justify-content: flex-end;
     background-color: rgb(248, 248, 248);
-    padding: 5px 0;
+    padding: 5px;
 }
 
-.socialbar a{
+.socialbar a {
     display: block;
-    color:rgb(15, 164, 233);
-    margin:0 5px;
+    color: rgb(15, 164, 233);
+    margin: 0 5px;
 }
 
-.socialbar .border-right a{
+.socialbar img {
+    align-items: center;
+    margin-right: 5px;
+}
+
+.socialbar .socialbar-divider a {
     color: rgb(33, 51, 131);
 }
-.socialbar .border-right {
+
+.socialbar .socialbar-divider {
     border-right: 2px solid rgb(33, 51, 131);
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     background: url(https://i.imgur.com/ZocErvr.png) no-repeat;
     display: block;
     width: 224px;
@@ -96,14 +196,48 @@ a{
     white-space: nowrap;
 }
 
-.footer .logo{
+.footer .logo {
     background: url(https://i.imgur.com/UReNrJJ.png);
     width: 171px;
     height: 36px;
 }
 
-.swiper{
+.navbar-btn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-btn>li {
+    width: 100px;
+}
+
+.navbar-btn a {
+    font-weight: bold;
+    color: #00cc99;
+    padding: 5px;
+    line-height: 50px;
+}
+
+.navbar-btn a:hover,
+.navbar-btn a.active {
+    box-shadow: 0 2px;
+    padding-bottom: 5px;
+    color: #075541;
+}
+
+.navbar-dropdown-open {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: #ffffff75;
+    width: 100px;
+    text-align: center;
+}
+
+.swiper {
     width: 1002px;
     height: 346px;
-  }
- 
+    overflow: hidden;
+    --swiper-theme-color: #ffffff9c;
+}
