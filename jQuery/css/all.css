@@ -209,22 +209,20 @@ a {
 }
 
 .navbar-btn>li {
-    width: 100px;
+    width: 120px;
 }
 
 .navbar-btn a {
     font-size: 14pt;
     font-weight: bold;
     color: #00cc99;
-    padding: 5px;
-    line-height: 50px;
     display: block;
 }
 
 .navbar-btn a:hover,
 .navbar-btn a.active {
-    box-shadow: 0 2px;
-    padding-bottom: 5px;
+    box-shadow: 0 3px;
+    padding-bottom: 2px;
     color: #075541;
 }
 
@@ -233,8 +231,12 @@ a {
     position: absolute;
     z-index: 99;
     background-color: #ffffff75;
-    width: 100px;
     text-align: center;
+    width: 120px;
+}
+
+.navbar-dropdown-open a {
+    margin: 10px;
 }
 
 .swiper {
@@ -245,11 +247,8 @@ a {
 }
 
 .title {
-    display: flex;
     font-size: 30pt;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgba(17, 17, 17, 0.144);
+    color: rgb(139, 139, 139);
     position: absolute;
     top: 30%;
     padding: 10px 0 10px 60px;
@@ -257,4 +256,17 @@ a {
 
 .module {
     display: flex;
+    justify-content: space-around;
+}
+
+.module .item {
+    text-align: center;
+    width: 290px;
+    box-shadow: 3px 3px 5px rgba(177, 177, 177, 0.288);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.module img {
+    height: 100px;
 }
