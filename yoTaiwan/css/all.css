@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*以下本網頁*/
+
+body {
+    font-family: "Lato", "Noto Sans TC", sans-serif;
+    cursor: pointer;
+    cursor: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p-24 {
+    font-size: 24px;
+    color: #9C9C9C;
+    line-height: 1.5;
+}
+
+.p-24 a {
+    font-size: 24px;
+    color: #9C9C9C;
+    line-height: 1.5;
+}
+
+.logo {
+    background: url(/images/logo.jpg) no-repeat;
+    display: block;
+    width: 227px;
+    height: 34px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 40px;
+}
+
+.title_h2 {
+    font-size: 48px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.wrap {
+    display: flex;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+.navbar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-bnt {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+.navbar-bnt li {
+    display: block;
+    width: 257px;
+}
+
+
+/*banner*/
+
+.swiper {
+    width: 1920px;
+    height: 1000px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*banner end*/
