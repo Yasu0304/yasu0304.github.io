@@ -153,19 +153,19 @@ a {
 .p-16 {
     font-size: 16px;
     color: #585858;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .p-24 {
     font-size: 24px;
     color: #000000;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .p-24 a {
     font-size: 24px;
     color: #9C9C9C;
-    line-height: 1.5;
+    line-height: 36px;
 }
 
 .logo {
@@ -260,6 +260,15 @@ a {
     margin: 20px 0;
 }
 
+.togo .content>ul {
+    display: flex;
+}
+
+.togo .content a {
+    display: block;
+    margin-right: 20px;
+}
+
 .location {
     display: flex;
     justify-content: flex-end;
@@ -268,8 +277,8 @@ a {
 
 .location>li {
     display: block;
-    width: 417px;
-    height: 448px;
+    width: 415px;
+    height: 446px;
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: #9C9C9C 3px 3px 5px;
@@ -303,5 +312,5 @@ a {
     display: block;
     width: 20px;
     height: 20px;
-    margin-right: 8px;
+    margin: auto 8px auto 0;
 }
