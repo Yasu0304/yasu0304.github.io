@@ -139,8 +139,9 @@ table {
 
 /*以下本網頁*/
 
-body {
-    font-family: "Lato", "Noto Sans TC", sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
     cursor: pointer;
     cursor: auto;
 }
@@ -149,9 +150,15 @@ a {
     text-decoration: none;
 }
 
+.p-16 {
+    font-size: 16px;
+    color: #585858;
+    line-height: 1.5;
+}
+
 .p-24 {
     font-size: 24px;
-    color: #9C9C9C;
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -178,8 +185,13 @@ a {
     line-height: 1.5;
 }
 
+.title_h3 {
+    font-size: 32px;
+    color: #000000;
+    line-height: 1.5;
+}
+
 .wrap {
-    display: flex;
     width: 1920px;
     margin: 0 auto;
 }
@@ -241,3 +253,55 @@ a {
 
 
 /*banner end*/
+
+.togo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-end;
+    width: 1208px;
+}
+
+.location>li {
+    display: block;
+    width: 417px;
+    height: 448px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: #9C9C9C 3px 3px 5px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 56px;
+}
+
+.card_img {
+    position: absolute;
+    bottom: 140px;
+    width: 100%;
+}
+
+.card_content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.card_text li {
+    display: flex;
+}
+
+.card_text .p-16 {
+    display: flex;
+    align-items: center;
+}
+
+.card_text img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
