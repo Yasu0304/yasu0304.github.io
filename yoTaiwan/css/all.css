@@ -139,9 +139,9 @@ table {
 
 /*以下本網頁*/
 
-* {
+body {
     box-sizing: border-box;
-    font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    font-family: arial, "Microsoft JhengHei", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
     cursor: pointer;
     cursor: auto;
 }
@@ -163,9 +163,8 @@ a {
 }
 
 .p-24 a {
-    font-size: 24px;
-    color: #9C9C9C;
-    line-height: 36px;
+    color: #7e7e7e;
+    display: block;
 }
 
 .logo {
@@ -192,7 +191,7 @@ a {
 }
 
 .wrap {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -209,19 +208,22 @@ a {
 .navbar-bnt {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
     margin-left: 30px;
 }
 
-.navbar-bnt li {
-    display: block;
-    width: 257px;
+.navbar-bnt a:hover {
+    box-shadow: 0 3px;
+    padding-bottom: 1px;
+    color: #252525;
 }
 
 
 /*banner*/
 
 .swiper {
-    width: 1920px;
+    width: 100%;
     height: 1000px;
 }
 
@@ -254,28 +256,31 @@ a {
 
 /*banner end*/
 
+
+/*不知道要去哪裡嗎?*/
+
 .togo {
+    width: 99%;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: space-around;
+    margin: 40px 20px;
 }
 
-.togo .content>ul {
+.togo .togo_title>ul {
     display: flex;
 }
 
-.togo .content a {
+.togo .togo_title a {
     display: block;
     margin-right: 20px;
 }
 
-.location {
+.togo_location {
     display: flex;
     justify-content: flex-end;
-    width: 1208px;
 }
 
-.location>li {
+.togo_location>li {
     display: block;
     width: 415px;
     height: 446px;
@@ -287,25 +292,70 @@ a {
     margin-right: 56px;
 }
 
-.card_img {
+.card_mark {
+    width: 45px;
+    height: 45px;
     position: absolute;
-    bottom: 140px;
-    width: 100%;
+    z-index: 99;
+    top: 16px;
+    right: 16px;
 }
 
-.card_content {
+.card_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    z-index: 98;
+    bottom: 160px;
+    left: 0px;
+    background-color: #fff;
+    width: 119px;
+    height: 36px;
+    border-radius: 0 36px 36px 0;
+}
+
+.card_name img {
+    width: 23px;
+    height: 23px;
+}
+
+.card_name .p-16 {
+    color: #000;
+    margin-left: 5px;
+    line-height: 23px;
+}
+
+.card_info {
+    display: flex;
+    position: absolute;
+    z-index: 97;
+    bottom: 160px;
+    right: 0px;
+}
+
+.card_info li {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.card_info p {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.card_info img {
+    width: 11px;
+    height: 10px;
+}
+
+.card_text {
+    width: 100%;
 }
 
 .card_text li {
     display: flex;
-}
-
-.card_text .p-16 {
-    display: flex;
-    align-items: center;
 }
 
 .card_text img {
@@ -313,4 +363,82 @@ a {
     width: 20px;
     height: 20px;
     margin: auto 8px auto 0;
+}
+
+.card_content {
+    position: absolute;
+    z-index: 97;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+/*不知道要去哪裡嗎?結束*/
+
+.hottop {
+    width: 99%;
+    height: 861px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.hottop_title,
+.hottop_location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.hottop .title_h2 {
+    font-weight: bold;
+    margin: 55px;
+}
+
+.hottop .bg_y {
+    width: 100px;
+    height: 10px;
+    background-color: yellow;
+}
+
+.hottop_location>li {
+    display: block;
+    width: 352px;
+    height: 347px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: #9C9C9C 3px 3px 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 20px;
+}
+
+.hottop_location .card_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 98;
+    bottom: 100px;
+    left: 20px;
+    background-color: yellow;
+    width: 80px;
+    height: 32px;
+    border-radius: 20px;
+}
+
+.hottop_location .card_name .p-16 {
+    font-weight: bold;
+}
+
+.hottop_location .card_content .card_text .p-24 {
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+}
+
+.hottop_location .card_content .card_text .p-16 {
+    color: white;
 }
