@@ -397,12 +397,6 @@ a {
     margin: 55px;
 }
 
-.hottop .bg_y {
-    width: 100px;
-    height: 10px;
-    background-color: yellow;
-}
-
 .hottop_location>li {
     display: block;
     width: 352px;
