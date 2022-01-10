@@ -371,8 +371,20 @@ a {
 .footer {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 #red {
     color: rgb(255, 0, 0);
+}
+
+.top a {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.top img {
+    width: 30px;
 }
