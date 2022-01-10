@@ -144,10 +144,39 @@ body {
     box-sizing: border-box;
     cursor: pointer;
     cursor: auto;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: none;
+    display: block;
+    color: #555555;
+}
+
+.l_h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #555555;
+    line-height: 3;
+}
+
+.l_h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.l_title {
+    font-size: 30pt;
+    color: rgb(139, 139, 139);
+    position: absolute;
+    top: 30%;
+    padding: 10px 0 10px 60px;
+}
+
+.l_p {
+    text-align: left;
 }
 
 .wrap {
@@ -163,7 +192,6 @@ a {
 }
 
 .socialbar a {
-    display: block;
     color: rgb(15, 164, 233);
     margin: 0 5px;
 }
@@ -187,7 +215,7 @@ a {
 }
 
 .logo {
-    background: url(https://i.imgur.com/ZocErvr.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     display: block;
     width: 224px;
     height: 50px;
@@ -197,7 +225,7 @@ a {
 }
 
 .footer .logo {
-    background: url(https://i.imgur.com/UReNrJJ.png);
+    background: url(../images/footerLogo.png);
     width: 171px;
     height: 36px;
 }
@@ -216,7 +244,6 @@ a {
     font-size: 14pt;
     font-weight: bold;
     color: #00cc99;
-    display: block;
 }
 
 .navbar-btn a:hover,
@@ -246,20 +273,12 @@ a {
     --swiper-theme-color: #ffffff9c;
 }
 
-.title {
-    font-size: 30pt;
-    color: rgb(139, 139, 139);
-    position: absolute;
-    top: 30%;
-    padding: 10px 0 10px 60px;
-}
-
-.module {
+.crad {
     display: flex;
     justify-content: space-around;
 }
 
-.module .item {
+.crad-module {
     text-align: center;
     width: 250px;
     box-shadow: 3px 3px 5px rgba(177, 177, 177, 0.288);
@@ -267,20 +286,16 @@ a {
     border-radius: 5px;
 }
 
-.module .item-h3 {
-    font-size: 14pt;
-    font-weight: bold;
-    color: #555555;
-    line-height: 3;
-}
-
-.module .item-h4 {
-    font-size: 12pt;
-    font-weight: bold;
-    color: #555555;
-    line-height: 1.5;
-}
-
-.module .item img {
+.crad-module img {
     height: 90px;
+}
+
+.crad-module .l_h4 {
+    text-align: left;
+}
+
+.crad-list {
+    text-align: left;
+    list-style-position: inside;
+    list-style-type: circle;
 }
