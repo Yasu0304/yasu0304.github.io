@@ -27,4 +27,9 @@ $(document).ready(function() {
             el: '.swiper-scrollbar',
         },
     });
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'positionFromTop': 400,
+    })
 });

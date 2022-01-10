@@ -150,7 +150,7 @@ body {
 a {
     text-decoration: none;
     display: block;
-    color: #555555;
+    color: #757575;
 }
 
 .l_h3 {
@@ -225,7 +225,7 @@ a {
 }
 
 .footer .logo {
-    background: url(../images/footerLogo.png);
+    background: url(../images/footerLogo.png) no-repeat;
     width: 171px;
     height: 36px;
 }
@@ -275,7 +275,8 @@ a {
 
 .crad {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .crad-module {
@@ -298,4 +299,80 @@ a {
     text-align: left;
     list-style-position: inside;
     list-style-type: circle;
+}
+
+.table-list,
+.table-list table {
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.table-list table th,
+.table-list table td {
+    font-size: 13pt;
+    color: #555555;
+    line-height: 2;
+    text-align: left;
+    padding: 0 20px;
+    border-top: #adadad 1px solid;
+}
+
+.table-list table th {
+    background-color: rgb(224, 224, 224);
+    font-weight: bold;
+    border-top: #adadad 3px solid;
+    border-bottom: #adadad 3px solid;
+}
+
+.table-list tr:hover {
+    background-color: #00cc9921;
+}
+
+.table-list .focus {
+    color: #00cc99;
+}
+
+.qa {
+    background: -webkit-linear-gradien(#00644b, #009771);
+    background: -o-linear-gradient(#00644b, #009771);
+    background: -moz-linear-gradien(#00644b, #009771);
+    background: linear-gradient(#00644b, #009771);
+    padding: 20px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.qa .l_h3 {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.qa-form {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.qa-form textarea {
+    margin-right: 10px;
+}
+
+.qa-form input {
+    width: 350px;
+}
+
+.qa-form button {
+    display: flex;
+    margin: 5px 0 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#red {
+    color: rgb(255, 0, 0);
 }
