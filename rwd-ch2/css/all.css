@@ -1,0 +1,347 @@
+                /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+                
+                html,
+                body,
+                div,
+                span,
+                applet,
+                object,
+                iframe,
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p,
+                blockquote,
+                pre,
+                a,
+                abbr,
+                acronym,
+                address,
+                big,
+                cite,
+                code,
+                del,
+                dfn,
+                em,
+                img,
+                ins,
+                kbd,
+                q,
+                s,
+                samp,
+                small,
+                strike,
+                strong,
+                sub,
+                sup,
+                tt,
+                var,
+                b,
+                u,
+                i,
+                center,
+                dl,
+                dt,
+                dd,
+                ol,
+                ul,
+                li,
+                fieldset,
+                form,
+                label,
+                legend,
+                table,
+                caption,
+                tbody,
+                tfoot,
+                thead,
+                tr,
+                th,
+                td,
+                article,
+                aside,
+                canvas,
+                details,
+                embed,
+                figure,
+                figcaption,
+                footer,
+                header,
+                hgroup,
+                menu,
+                nav,
+                output,
+                ruby,
+                section,
+                summary,
+                time,
+                mark,
+                audio,
+                video {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-size: 100%;
+                    font: inherit;
+                    vertical-align: baseline;
+                }
+                /* HTML5 display-role reset for older browsers */
+                
+                article,
+                aside,
+                details,
+                figcaption,
+                figure,
+                footer,
+                header,
+                hgroup,
+                menu,
+                nav,
+                section {
+                    display: block;
+                }
+                
+                body {
+                    line-height: 1;
+                }
+                
+                ol,
+                ul {
+                    list-style: none;
+                }
+                
+                blockquote,
+                q {
+                    quotes: none;
+                }
+                
+                blockquote:before,
+                blockquote:after,
+                q:before,
+                q:after {
+                    content: '';
+                    content: none;
+                }
+                
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+                /*以上reset*/
+                
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    line-height: 2;
+                }
+                
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                
+                *,
+                *::before,
+                *::after {
+                    box-sizing: border-box;
+                }
+                
+                a {
+                    display: block;
+                    text-decoration: none;
+                }
+                
+                .l-f {
+                    display: flex;
+                }
+                
+                .l-Pad {
+                    padding: 0 0.5%;
+                }
+                
+                .l-title1 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: rgb(56, 56, 56);
+                }
+                
+                .l-title2 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: rgb(109, 109, 109);
+                }
+                
+                .l-text {
+                    color: gray;
+                    text-align: left;
+                }
+                
+                .wrap {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    position: relative;
+                }
+                
+                .mediabra-base {
+                    width: 100%;
+                    justify-content: flex-end;
+                    background-color: rgb(240, 240, 240);
+                }
+                
+                .mediabra li,
+                .mainbra-nav li {
+                    margin-left: 10px;
+                    text-align: center;
+                }
+                
+                .mediabra-fb a,
+                .mediabra-twitter a {
+                    color: rgb(18, 44, 92);
+                    transition: 0.5s;
+                }
+                
+                .mediabra-twitter a {
+                    color: rgb(66, 148, 180);
+                }
+                
+                .mediabra-fb a:hover,
+                .mediabra-twitter a:hover {
+                    box-shadow: 0 2px;
+                }
+                
+                .mainbra {
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-top: 0.5%;
+                }
+                
+                .logo a {
+                    background-image: url(../images/logo.png);
+                    width: 170px;
+                    height: 36px;
+                    text-indent: 105%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    padding: 3%;
+                }
+                
+                .mainbra {
+                    box-shadow: 0 1px 5px rgba(206, 206, 206, 0.116);
+                    margin-bottom: 1%;
+                    padding: 5px 10px;
+                }
+                
+                @media(max-width: 767px) {
+                    .mainbra {
+                        width: 50%;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        margin: 0 auto 2% auto;
+                    }
+                    .logo a {
+                        margin: 0 auto;
+                    }
+                }
+                
+                .mainbra-nav a {
+                    font-size: 14pt;
+                    font-weight: bold;
+                    color: rgb(29, 219, 210);
+                    /*border-bottom: 2px rgba(29, 219, 210, 0);*/
+                    transition: 1s;
+                    text-align: center;
+                    padding: 2px;
+                }
+                
+                @media(max-width: 767px) {
+                    .mainbra-nav {
+                        margin: 0 auto;
+                        width: 50%;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                    }
+                }
+                
+                @media(max-width: 375px) {
+                    .mainbra-nav {
+                        width: 99%;
+                    }
+                }
+                
+                .mainbra-dropdown-open {
+                    position: absolute;
+                    z-index: 99;
+                }
+                
+                .mainbra-dropdown-open a {
+                    font-size: 12pt;
+                    font-weight: normal;
+                    background-color: rgba(255, 255, 255, 0.692);
+                    padding: 0 10px;
+                }
+                
+                .mainbra-nav a:hover,
+                .mainbra-dropdown .active {
+                    /*border-bottom: 2px solid rgba(29, 219, 210, 0.637);*/
+                    box-shadow: 0 2px;
+                }
+                
+                .mainbra-nav .mainbra-dropdown-open {
+                    display: none;
+                }
+                
+                .main-content {
+                    justify-content: space-around;
+                }
+                
+                @media(max-width: 767px) {
+                    .main-content {
+                        width: 70%;
+                        flex-wrap: wrap;
+                        margin: 0 auto;
+                    }
+                }
+                
+                @media(max-width: 375px) {
+                    .main-content {
+                        width: 99%;
+                    }
+                }
+                
+                .main-content>li {
+                    text-align: center;
+                    width: 30%;
+                    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.288);
+                    border-radius: 10px;
+                    padding: 2%;
+                }
+                
+                @media(max-width: 767px) {
+                    .main-content>li {
+                        width: 99%;
+                        margin-bottom: 2%;
+                        padding: 5%;
+                    }
+                }
+                
+                .main-content-ilst .l-title2 {
+                    text-align: left;
+                }
+                
+                @media(max-width: 767px) {
+                    .main-content-ilst .l-title2 {
+                        text-align: center;
+                    }
+                }
+                
+                .main-content-ilst ul {
+                    color: gray;
+                    list-style-type: square;
+                    text-align: left;
+                    padding-left: 10%;
+                }
