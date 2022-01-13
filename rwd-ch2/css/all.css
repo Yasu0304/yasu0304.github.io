@@ -187,30 +187,30 @@
                     position: relative;
                 }
                 
-                .mediabra-base {
+                .snsbra-base {
                     width: 100%;
                     justify-content: flex-end;
                     background-color: rgb(240, 240, 240);
                 }
                 
-                .mediabra li,
+                .snsbra li,
                 .mainbra-nav li {
                     margin-left: 10px;
                     text-align: center;
                 }
                 
-                .mediabra-fb a,
-                .mediabra-twitter a {
+                .snsbra-fb a,
+                .snsbra-twitter a {
                     color: rgb(18, 44, 92);
                     transition: 0.5s;
                 }
                 
-                .mediabra-twitter a {
+                .snsbra-twitter a {
                     color: rgb(66, 148, 180);
                 }
                 
-                .mediabra-fb a:hover,
-                .mediabra-twitter a:hover {
+                .snsbra-fb a:hover,
+                .snsbra-twitter a:hover {
                     box-shadow: 0 2px;
                 }
                 
@@ -218,58 +218,37 @@
                     width: 100%;
                     justify-content: space-between;
                     box-shadow: 0 1px 5px rgba(206, 206, 206, 0.116);
-                    margin-bottom: 1%;
                     padding: 1% 0;
+                    margin-bottom: 2%;
                 }
                 
                 .logo a {
-                    background-image: url(../images/logo.png);
+                    background: url(../images/logo.png) no-repeat;
                     width: 170px;
                     height: 36px;
-                    text-indent: 999%;
+                    text-indent: 101%;
                     overflow: hidden;
                     white-space: nowrap;
-                    padding: 3%;
                 }
                 
-                @media(max-width: 767px) {
-                    .mainbra {
-                        width: 50%;
-                        flex-wrap: wrap;
-                        flex-direction: column;
-                        margin: 0 auto 2% auto;
-                    }
-                    .logo a {
-                        margin: 0 auto;
-                    }
+                .mainbra-nav {
+                    width: 45%;
+                    justify-content: flex-end;
                 }
                 
-                .mainbra-nav li {
-                    width: 100px;
+                .mainbra-nav-item,
+                .mainbra-dropdown,
+                .mainbra-dropdown-open {
+                    width: 20%;
                 }
                 
-                .mainbra-nav li a {
+                .mainbra-nav-item a,
+                .mainbra-dropdown a {
                     font-size: 14pt;
                     font-weight: bold;
                     color: rgb(29, 219, 210);
-                    /*border-bottom: 2px rgba(29, 219, 210, 0);*/
                     transition: 1s;
                     text-align: center;
-                }
-                
-                @media(max-width: 767px) {
-                    .mainbra-nav {
-                        margin: 0 auto;
-                        width: 80%;
-                        flex-wrap: wrap;
-                        justify-content: space-around;
-                    }
-                }
-                
-                @media(max-width: 375px) {
-                    .mainbra-nav {
-                        width: 99%;
-                    }
                 }
                 
                 .mainbra-dropdown-open {
@@ -281,12 +260,10 @@
                     font-size: 12pt;
                     font-weight: normal;
                     background-color: rgba(255, 255, 255, 0.692);
-                    padding: 0 10px;
                 }
                 
                 .mainbra-nav a:hover,
                 .mainbra-dropdown .active {
-                    /*border-bottom: 2px solid rgba(29, 219, 210, 0.637);*/
                     box-shadow: 0 2px;
                 }
                 
@@ -298,20 +275,6 @@
                     justify-content: space-around;
                 }
                 
-                @media(max-width: 767px) {
-                    .main-content {
-                        width: 70%;
-                        flex-wrap: wrap;
-                        margin: 0 auto;
-                    }
-                }
-                
-                @media(max-width: 375px) {
-                    .main-content {
-                        width: 99%;
-                    }
-                }
-                
                 .main-content>li {
                     text-align: center;
                     width: 30%;
@@ -320,22 +283,8 @@
                     padding: 2%;
                 }
                 
-                @media(max-width: 767px) {
-                    .main-content>li {
-                        width: 99%;
-                        margin-bottom: 2%;
-                        padding: 5%;
-                    }
-                }
-                
                 .main-content-ilst .l-title2 {
                     text-align: left;
-                }
-                
-                @media(max-width: 767px) {
-                    .main-content-ilst .l-title2 {
-                        text-align: center;
-                    }
                 }
                 
                 .main-content-ilst ul {
@@ -343,4 +292,43 @@
                     list-style-type: square;
                     text-align: left;
                     padding-left: 10%;
+                }
+                
+                @media(max-width: 767px) {
+                    .l-title1 {
+                        font-size: 20px;
+                    }
+                    .l-title2 {
+                        font-size: 18px;
+                    }
+                    .mainbra {
+                        flex-direction: column;
+                        margin-bottom: 2%;
+                    }
+                    .logo a {
+                        margin: 0 auto;
+                        padding: 5% 0;
+                    }
+                    .mainbra-nav {
+                        width: 100%;
+                        flex-wrap: wrap;
+                    }
+                    .mainbra-nav-item,
+                    .mainbra-dropdown,
+                    .mainbra-dropdown-open {
+                        width: 45%;
+                    }
+                    .main-content {
+                        width: 80%;
+                        flex-wrap: wrap;
+                        margin: 0 auto;
+                    }
+                    .main-content>li {
+                        width: 99%;
+                        margin-bottom: 2%;
+                        padding: 5%;
+                    }
+                    .main-content-ilst .l-title2 {
+                        text-align: center;
+                    }
                 }
