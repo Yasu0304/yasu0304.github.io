@@ -191,6 +191,7 @@
                     width: 100%;
                     justify-content: flex-end;
                     background-color: rgb(240, 240, 240);
+                    margin-bottom: .5%;
                 }
                 
                 .snsbra li,
@@ -304,6 +305,9 @@
                     }
                     .l-title2 {
                         font-size: 18px;
+                    }
+                    .snsbra-base {
+                        margin-bottom: 2%;
                     }
                     .mainbra {
                         flex-direction: column;
