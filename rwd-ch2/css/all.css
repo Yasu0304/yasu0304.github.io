@@ -242,6 +242,10 @@
                     width: 20%;
                 }
                 
+                .mainbra-dropdown-open a {
+                    width: 40%;
+                }
+                
                 .mainbra-nav-item a,
                 .mainbra-dropdown a {
                     font-size: 14pt;
@@ -317,6 +321,10 @@
                     .mainbra-dropdown,
                     .mainbra-dropdown-open {
                         width: 45%;
+                    }
+                    .mainbra-dropdown-open a {
+                        width: 90%;
+                        text-align: center;
                     }
                     .main-content {
                         width: 80%;
