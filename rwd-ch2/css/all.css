@@ -236,7 +236,7 @@
                 
                 .mainbra-nav {
                     width: 45%;
-                    justify-content: flex-end;
+                    justify-content: center;
                 }
                 
                 .mainbra-nav-item,
@@ -266,7 +266,7 @@
                 .mainbra-dropdown-open li a {
                     font-size: 12pt;
                     font-weight: normal;
-                    background-color: rgba(255, 255, 255, 0.692);
+                    background-color: rgba(255, 255, 255, 0.74);
                 }
                 
                 .mainbra-nav a:hover,
@@ -326,7 +326,7 @@
                     .mainbra-nav-item,
                     .mainbra-dropdown,
                     .mainbra-dropdown-open {
-                        width: 45%;
+                        width: 47%;
                     }
                     .mainbra-dropdown-open a {
                         width: 90%;
