@@ -138,6 +138,8 @@
                 body {
                     font-family: Arial, Helvetica, sans-serif;
                     line-height: 2;
+                    cursor: pointer;
+                    cursor: auto;
                 }
                 
                 img {
@@ -156,27 +158,27 @@
                     text-decoration: none;
                 }
                 
-                .l-f {
+                .l_f {
                     display: flex;
                 }
                 
-                .l-Pad {
+                .l_Pad {
                     padding: 0 0.5%;
                 }
                 
-                .l-title1 {
+                .l_title1 {
                     font-size: 18px;
                     font-weight: bold;
                     color: rgb(56, 56, 56);
                 }
                 
-                .l-title2 {
+                .l_title2 {
                     font-size: 16px;
                     font-weight: bold;
                     color: rgb(109, 109, 109);
                 }
                 
-                .l-text {
+                .l_text {
                     color: gray;
                     text-align: left;
                 }
