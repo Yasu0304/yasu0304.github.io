@@ -1,0 +1,51 @@
+@mixin wrap_pc_center {
+    max-width: 1920px;
+    margin: 0 auto;
+    @content
+}
+@mixin pc {
+    max-width: 1920px;
+    @content
+}
+@mixin flex {
+    display: flex;
+    @content
+}
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    @content
+}
+
+@mixin flex_between {
+    display: flex;
+    justify-content: space-between;
+    @content
+}
+
+@mixin flex_around {
+    display: flex;
+    justify-content: space-around;
+    @content
+}
+@mixin flex_start {
+    display: flex;
+    justify-content: flex-start;
+    @content
+}
+@mixin flex_end {
+    display: flex;
+    justify-content: flex-end;
+    @content
+}
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+    @content
+}
+@mixin body_module {
+    font-family: arial, "Microsoft JhengHei", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+    cursor: pointer;
+    cursor: auto;
+    @content
+}

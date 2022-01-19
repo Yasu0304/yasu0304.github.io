@@ -1,0 +1,507 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.body {
+  font-family: arial, "Microsoft JhengHei", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  cursor: pointer;
+  cursor: auto;
+  line-height: 2;
+}
+
+/*header*/
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}
+
+.logo {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  background: url(../images/logo.jpg) no-repeat;
+  width: 227px;
+  height: 34px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  padding: 0 2em;
+}
+
+.navbar .navbar-bnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.navbar .navbar-bnt a {
+  color: #585858;
+}
+
+.navbar .navbar-bnt a:hover {
+  -webkit-box-shadow: 0 3px;
+          box-shadow: 0 3px;
+  padding-bottom: 1px;
+  color: #252525;
+}
+
+/*banner*/
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*banner end*/
+/*togo*/
+.togo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 4% 0;
+}
+
+.togo_title {
+  width: 30%;
+  margin: 3% 2%;
+}
+
+.togo_title h2 {
+  font-size: 48px;
+  color: #000000;
+}
+
+.togo_title h3 {
+  font-size: 32px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.togo_title ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.togo_title ul li {
+  margin-right: 5%;
+}
+
+.togo_location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 70%;
+  overflow: hidden;
+}
+
+.togo_location_item {
+  width: 33.333%;
+  height: auto;
+  -webkit-box-shadow: #9C9C9C 3px 3px 5px;
+          box-shadow: #9C9C9C 3px 3px 5px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  margin: 3% 2%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.togo_location_item h2 {
+  font-size: 48px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.togo_location_item h3 {
+  font-size: 32px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.crad_pic {
+  width: 100%;
+  height: 70%;
+  background-image: url(../images/togo-item/location-01.jpg);
+  background-position: center;
+  position: absolute;
+  z-index: 70;
+  background-repeat: no-repeat;
+}
+
+.card_mark {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.crad_pic_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.card_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  width: 35%;
+  height: auto;
+  padding: .8%;
+  border-radius: 0 36px 36px 0;
+  font-size: 16px;
+  color: #000000;
+  margin-left: 5px;
+  line-height: 23px;
+}
+
+.card_name p {
+  font-size: text_m;
+  color: #585858;
+}
+
+.card_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 97;
+  width: 65%;
+  margin-right: 1%;
+}
+
+.card_info_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3%;
+}
+
+.card_info_item p {
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.card_info_item img {
+  width: 10px;
+  height: 11px;
+}
+
+.card_text {
+  width: 100%;
+}
+
+.card_text li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card_text li img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto 8px auto 0;
+}
+
+.card_text li img p {
+  font-size: text_m;
+  color: #585858;
+}
+
+.card_content {
+  margin: 1% auto 3% 5%;
+}
+
+.card_content p {
+  font-size: text_l;
+  color: #000000;
+}
+
+/*togo end*/
+.hottop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+.hottop h2 {
+  font-size: 48px;
+  color: #000000;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 55px;
+}
+
+.hottop .hottop_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+}
+
+.hottop_location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+}
+
+.hottop_location > li {
+  display: block;
+  width: 352px;
+  height: 347px;
+  border-radius: 20px;
+  -webkit-box-shadow: #9C9C9C 3px 3px 5px;
+          box-shadow: #9C9C9C 3px 3px 5px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 20px;
+}
+
+.hottop_location .card_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 98;
+  bottom: 100px;
+  left: 20px;
+  background-color: #ffff00;
+  width: 80px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+.hottop_location .card_name p {
+  font-size: text_m;
+  color: #585858;
+  font-weight: bold;
+}
+
+.hottop_location .card_content .card_text p {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=all.css.map */

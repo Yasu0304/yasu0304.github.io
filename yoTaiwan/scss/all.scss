@@ -1,0 +1,319 @@
+@import 'header';
+@import 'layout';
+@import 'media';
+@import 'reset';
+$text_l          :24px;
+$text_m          :16px;
+$title_h2        :48px;
+$title_h3        :32px;
+$main_color      :#000000;
+$main_a_color    :#7e7e7e;
+$main_hover_color:#252525;
+$basic_color     :#ffffff;
+$sec_color       :#585858;
+$thr_color       :#ffff00;
+$shadow_color    :#9C9C9C;
+
+.body {
+    @include body_module;
+    line-height: 2;
+}
+
+/*header*/
+.wrap {
+    @include wrap_pc_center;
+}
+
+.header {
+    width: 100%;
+}
+
+.logo {
+    @include hide-text;
+    background: url(../images/logo.jpg) no-repeat;
+    width     : 227px;
+    height    : 34px;
+}
+
+.navbar {
+    @include flex_between;
+    align-items: center;
+    height     : 100px;
+    padding: 0 2em;
+    .navbar-bnt {
+        @include flex_between;
+        align-items: center;
+        width      : 60%;
+    a{
+        color: $sec_color;
+    }
+        a:hover {
+            box-shadow    : 0 3px;
+            padding-bottom: 1px;
+            color         : $main_hover_color;
+        }
+    }
+}
+
+
+/*banner*/
+.swiper {
+    width : 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align             : center;
+    font-size              : 18px;
+    background             : #fff;
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
+
+    img {
+        display   : block;
+        width     : 100%;
+        height    : 100%;
+        object-fit: cover;
+    }
+}
+
+/*banner end*/
+/*togo*/
+.togo {
+    @include flex_between;
+    @include pc;
+    overflow   : hidden;
+    flex-shrink: 0;
+    margin     : 4% 0;
+}
+
+.togo_title {
+    width : 30%;
+    margin: 3% 2%;
+
+    h2 {
+        font-size  : $title_h2;
+        color: $main_color;
+    }
+
+    h3 {
+        font-size  : $title_h3;
+        color      : $main_color;
+        line-height: 1.5;
+    }
+
+    ul {
+        @include flex;
+
+        li {
+            margin-right: 5%;
+        }
+    }
+}
+
+.togo_location {
+    @include flex_start;
+    width   : 70%;
+    overflow: hidden;
+}
+
+.togo_location_item {
+    width        : 33.333%;
+    height       : auto;
+    box-shadow   : $shadow_color 3px 3px 5px;
+    overflow     : hidden;
+    position     : relative;
+    border-radius: 20px;
+    margin       : 3% 2%;
+    flex-shrink  : 0;
+
+    h2 {
+        font-size  : $title_h2;
+        color      : $main_color;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size  : $title_h3;
+        color      : $main_color;
+        line-height: 1.5;
+    }
+}
+
+.crad_pic {
+    width              : 100%;
+    height             : 70%;
+    background-image   : url(../images/togo-item/location-01.jpg);
+    background-position: center;
+    position           : absolute;
+    z-index            : 70;
+    background-repeat  : no-repeat;
+}
+
+.card_mark {
+    position: absolute;
+    top     : 2%;
+    right   : 2%;
+}
+
+.crad_pic_info {
+    @include flex_around;
+    width   : 100%;
+    position: absolute;
+    top     : 50%;
+}
+
+.card_name {
+    @include flex_center;
+    align-items     : center;
+    background-color: $basic_color;
+    width           : 35%;
+    height          : auto;
+    padding         : .8%;
+    border-radius   : 0 36px 36px 0;
+    font-size       : $text_m;
+    color           : $main_color;
+    margin-left     : 5px;
+    line-height     : 23px;
+
+    p {
+        font-size: text_m;
+        color    : $sec_color;
+    }
+}
+
+.card_info {
+    @include flex_end;
+    z-index     : 97;
+    width       : 65%;
+    margin-right: 1%;
+}
+
+.card_info_item {
+    @include flex;
+    align-items: center;
+    margin-left: 3%;
+
+    p {
+        color      : $basic_color;
+        margin-left: 5px;
+    }
+
+    img {
+        width : 10px;
+        height: 11px;
+    }
+}
+
+.card_text {
+    width: 100%;
+
+    li {
+        @include flex;
+
+        img {
+            display: block;
+            width  : 20px;
+            height : 20px;
+            margin : auto 8px auto 0;
+
+            p {
+                font-size: text_m;
+                color    : $sec_color;
+            }
+        }
+
+    }
+
+}
+
+.card_content {
+    margin: 1% auto 3% 5%;
+
+    p {
+        font-size: text_l;
+        color    : $main_color;
+    }
+}
+
+/*togo end*/
+.hottop {
+    @include flex_column;
+    width           : 100%;
+    height          : auto;
+    align-items     : center;
+    background-color: $basic_color;
+
+    h2 {
+        font-size  : $title_h2;
+        color      : $main_color;
+        line-height: 1.5;
+        font-weight: bold;
+        margin     : 55px;
+    }
+
+    .hottop_title {
+        @include flex_between;
+        align-items: center;
+        margin     : 0 20px;
+    }
+}
+
+.hottop_location {
+    @include flex_between;
+    align-items: center;
+    margin     : 0 20px;
+
+    >li {
+        display      : block;
+        width        : 352px;
+        height       : 347px;
+        border-radius: 20px;
+        box-shadow   : $shadow_color 3px 3px 5px;
+        overflow     : hidden;
+        position     : relative;
+        margin       : 0 20px;
+    }
+
+    .card_name {
+        @include flex_center;
+        align-items     : center;
+        position        : absolute;
+        z-index         : 98;
+        bottom          : 100px;
+        left            : 20px;
+        background-color: $thr_color;
+        width           : 80px;
+        height          : 32px;
+        border-radius   : 20px;
+
+        p {
+            font-size  : text_m;
+            color      : $sec_color;
+            font-weight: bold;
+        }
+    }
+
+    .card_content {
+        .card_text {
+            p {
+                font-size  : $text_l;
+                color      : $basic_color;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+
+    }
+}
