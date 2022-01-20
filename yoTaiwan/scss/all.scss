@@ -30,9 +30,9 @@ $shadow_color    :#9C9C9C;
 
 .logo {
     @include hide-text;
-    background-image: url(../images/logo.jpg) no-repeat;
-    width           : 227px;
-    height          : 34px;
+    background: url(../images/logo.jpg) no-repeat;
+    width     : 227px;
+    height    : 34px;
 }
 
 .navbar {
@@ -93,40 +93,149 @@ $shadow_color    :#9C9C9C;
 
 /*banner end*/
 /*togo*/
+.main {
+    width: 100%;
+}
+
 .togo {
     @include flex_between;
     @include pc;
-    margin: 3% 0;
-}
-
-.togo_title {
-    width : 30%;
-    margin: 3% 2%;
-
-    h2 {
-        font-size: $title_h2;
-        color    : $main_color;
-    }
-
-    h3 {
-        font-size  : $title_h3;
-        color      : $main_color;
-        line-height: 1.5;
-    }
-
-    ul {
-        @include flex;
-
-        li {
-            margin-right: 5%;
+    overflow: hidden;
+    .togo_title {
+        width: 30%;
+        margin       : 5% ;
+    
+        h2 {
+            font-size: $title_h2;
+            color    : $main_color;
+        }
+    
+        h3 {
+            font-size  : $title_h3;
+            color      : $main_color;
+            line-height: 1.5;
+        }
+    
+        ul {
+            @include flex;
+    
+            li {
+                margin-right: 5%;
+            }
         }
     }
+    .togo_area {
+        @include flex_start;
+        width: 70%;
+    
+        .togo_item {
+            width        : 30%;
+            border-radius: 20px;
+            margin       : 5% 3%;
+            box-shadow   : $shadow_color 3px 3px 5px;
+            overflow     : hidden;
+            flex-shrink  : 0;
+            position     : relative;
+    
+            .togo_img {
+                display    : block;
+                max-width  : 100%;
+                height     : auto;
+                align-items: center;
+            }
+    
+            .togo_img_mark {
+                position: absolute;
+                top     : 5%;
+                right   : 5%;
+                width   : 10%;
+                height  : auto;
+            }
+    
+            .togo_img_info {
+                @include flex_between;
+                width   : 100%;
+                position: absolute;
+                top     : 50%;
+    
+                .togo_img_info_name {
+                    @include flex_start;
+                    align-items     : center;
+                    width           : 40%;
+                    background-color: $basic_color;
+                    border-radius   : 0 2em 2em 0;
+                    padding         : 1% 0 1% 5%;
+    
+                    p {
+                        font-size  : $text_m;
+                        margin-left: 2%;
+                    }
+                }
+    
+                .togo_img_info_detial {
+                    @include flex;
+    
+                    .togo_img_info_item {
+                        @include flex;
+                        align-items : center;
+                        margin-right: 1em;
+    
+                        img {
+                            display: block;
+                            width  : 10px;
+                            height : 11px;
+                            margin : 0 3%;
+                        }
+    
+                        p {
+                            color: $basic_color;
+                        }
+                    }
+                }
+            }
+    
+            .togo_detail {
+                padding: 4%;
+    
+                >p {
+                    font-size: $text_l;
+                    color    : $sec_color;
+                    margin   : 3% 0;
+                }
+    
+                .card_text {
+    
+                    li {
+                        @include flex;
+                        margin-bottom: 2%;
+                        margin-left  : 3%;
+    
+                        img {
+                            display: block;
+                            width  : 20px;
+                            height : 20px;
+                            margin : auto 8px auto 0;
+    
+                            >p {
+                                font-size: $text_m;
+                                color    : $sec_color;
+                            }
+                        }
+    
+                    }
+    
+                }
+            }
+        }
+    
+    }
 }
 
-.togo_location {
+
+/*
+ .togo_location {
     @include flex_start;
     width   : 70%;
-    height  : auto;
     overflow: hidden;
 
     .togo_location_item {
@@ -142,6 +251,7 @@ $shadow_color    :#9C9C9C;
         .crad_pic {
             display : block;
             width   : 100%;
+            margin-bottom: 40%;
             position: absolute;
             top     : 0;
             bottom  : 0;
@@ -209,7 +319,7 @@ $shadow_color    :#9C9C9C;
 
         .card_content {
             position        : absolute;
-            top             : 90%;
+            top             : 60%;
             left            : 0;
             right           : 0;
             bottom          : 0;
@@ -250,7 +360,9 @@ $shadow_color    :#9C9C9C;
     }
 }
 
-/*togo end*/
+togo end
+
+ hottop
 .hottop {
     @include flex_column;
     width           : 100%;
@@ -342,3 +454,4 @@ $shadow_color    :#9C9C9C;
 
     }
 }
+*/

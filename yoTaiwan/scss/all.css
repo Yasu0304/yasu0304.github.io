@@ -143,7 +143,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   display: block;
-  background-image: url(../images/logo.jpg) no-repeat;
+  background: url(../images/logo.jpg) no-repeat;
   width: 227px;
   height: 34px;
 }
@@ -218,6 +218,10 @@ a {
 
 /*banner end*/
 /*togo*/
+.main {
+  width: 100%;
+}
+
 .togo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,36 +230,36 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1920px;
-  margin: 3% 0;
+  overflow: hidden;
 }
 
-.togo_title {
+.togo .togo_title {
   width: 30%;
-  margin: 3% 2%;
+  margin: 5%;
 }
 
-.togo_title h2 {
+.togo .togo_title h2 {
   font-size: 48px;
   color: #000000;
 }
 
-.togo_title h3 {
+.togo .togo_title h3 {
   font-size: 32px;
   color: #000000;
   line-height: 1.5;
 }
 
-.togo_title ul {
+.togo .togo_title ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.togo_title ul li {
+.togo .togo_title ul li {
   margin-right: 5%;
 }
 
-.togo_location {
+.togo .togo_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,41 +267,38 @@ a {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 70%;
-  height: auto;
-  overflow: hidden;
 }
 
-.togo_location .togo_location_item {
-  width: 33.333%;
-  height: auto;
+.togo .togo_area .togo_item {
+  width: 30%;
+  border-radius: 20px;
+  margin: 5% 3%;
   -webkit-box-shadow: #9C9C9C 3px 3px 5px;
           box-shadow: #9C9C9C 3px 3px 5px;
   overflow: hidden;
-  position: relative;
-  border-radius: 20px;
-  margin: 3% 2%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
 }
 
-.togo_location .togo_location_item .crad_pic {
+.togo .togo_area .togo_item .togo_img {
   display: block;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
+  max-width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.togo_location .togo_location_item .card_mark {
+.togo .togo_area .togo_item .togo_img_mark {
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 5%;
+  right: 5%;
+  width: 10%;
+  height: auto;
 }
 
-.togo_location .togo_location_item .crad_pic_info {
+.togo .togo_area .togo_item .togo_img_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,10 +308,9 @@ a {
   width: 100%;
   position: absolute;
   top: 50%;
-  z-index: 80;
 }
 
-.togo_location .togo_location_item .crad_pic_info .card_name {
+.togo .togo_area .togo_item .togo_img_info .togo_img_info_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,219 +320,295 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40%;
   background-color: #ffffff;
-  width: 35%;
-  height: auto;
-  padding: .8%;
-  border-radius: 0 36px 36px 0;
+  border-radius: 0 2em 2em 0;
+  padding: 1% 0 1% 5%;
+}
+
+.togo .togo_area .togo_item .togo_img_info .togo_img_info_name p {
   font-size: 16px;
-  color: #000000;
-  line-height: 23px;
+  margin-left: 2%;
 }
 
-.togo_location .togo_location_item .crad_pic_info .card_name p {
-  font-size: text_m;
-  color: #585858;
-}
-
-.togo_location .togo_location_item .crad_pic_info .card_info {
+.togo .togo_area .togo_item .togo_img_info .togo_img_info_detial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  z-index: 97;
-  width: 65%;
-  margin-right: 1%;
 }
 
-.togo_location .togo_location_item .crad_pic_info .card_info .card_info_item {
+.togo .togo_area .togo_item .togo_img_info .togo_img_info_detial .togo_img_info_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 3%;
+  margin-right: 1em;
 }
 
-.togo_location .togo_location_item .crad_pic_info .card_info .card_info_item p {
-  color: #ffffff;
-  margin-left: 5px;
-}
-
-.togo_location .togo_location_item .crad_pic_info .card_info .card_info_item img {
+.togo .togo_area .togo_item .togo_img_info .togo_img_info_detial .togo_img_info_item img {
+  display: block;
   width: 10px;
   height: 11px;
+  margin: 0 3%;
 }
 
-.togo_location .togo_location_item .card_content {
-  position: absolute;
-  top: 90%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background-color: #ffffff;
+.togo .togo_area .togo_item .togo_img_info .togo_img_info_detial .togo_img_info_item p {
+  color: #ffffff;
 }
 
-.togo_location .togo_location_item .card_content > p {
+.togo .togo_area .togo_item .togo_detail {
+  padding: 4%;
+}
+
+.togo .togo_area .togo_item .togo_detail > p {
   font-size: 24px;
-  color: #000000;
-  margin-top: 5%;
-  margin-left: 3%;
+  color: #585858;
+  margin: 3% 0;
 }
 
-.togo_location .togo_location_item .card_content .card_text {
-  margin-left: 3%;
-  margin-bottom: 5%;
-}
-
-.togo_location .togo_location_item .card_content .card_text li {
+.togo .togo_area .togo_item .togo_detail .card_text li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2%;
+  margin-left: 3%;
 }
 
-.togo_location .togo_location_item .card_content .card_text li img {
+.togo .togo_area .togo_item .togo_detail .card_text li img {
   display: block;
   width: 20px;
   height: 20px;
   margin: auto 8px auto 0;
 }
 
-.togo_location .togo_location_item .card_content .card_text li img > p {
+.togo .togo_area .togo_item .togo_detail .card_text li img > p {
   font-size: 16px;
   color: #585858;
 }
 
-/*togo end*/
+/*
+ .togo_location {
+    @include flex_start;
+    width   : 70%;
+    overflow: hidden;
+
+    .togo_location_item {
+        width        : 33.333%;
+        height       : auto;
+        box-shadow   : $shadow_color 3px 3px 5px;
+        overflow     : hidden;
+        position     : relative;
+        border-radius: 20px;
+        margin       : 3% 2%;
+        flex-shrink  : 0;
+
+        .crad_pic {
+            display : block;
+            width   : 100%;
+            margin-bottom: 40%;
+            position: absolute;
+            top     : 0;
+            bottom  : 0;
+            right   : 0;
+            left    : 0;
+            z-index : 1;
+
+        }
+
+        .card_mark {
+            position: absolute;
+            top     : 2%;
+            right   : 2%;
+        }
+
+        .crad_pic_info {
+            @include flex_between;
+            width   : 100%;
+            position: absolute;
+            top     : 50%;
+            z-index : 80;
+
+            .card_name {
+                @include flex_start;
+                align-items     : center;
+                background-color: $basic_color;
+                width           : 35%;
+                height          : auto;
+                padding         : .8%;
+                border-radius   : 0 36px 36px 0;
+                font-size       : $text_m;
+                color           : $main_color;
+                line-height     : 23px;
+
+                p {
+                    font-size: text_m;
+                    color    : $sec_color;
+                }
+            }
+
+            .card_info {
+                @include flex_end;
+                z-index     : 97;
+                width       : 65%;
+                margin-right: 1%;
+
+                .card_info_item {
+                    @include flex;
+                    align-items: center;
+                    margin-left: 3%;
+
+                    p {
+                        color      : $basic_color;
+                        margin-left: 5px;
+                    }
+
+                    img {
+                        width : 10px;
+                        height: 11px;
+                    }
+                }
+            }
+
+        }
+
+        .card_content {
+            position        : absolute;
+            top             : 60%;
+            left            : 0;
+            right           : 0;
+            bottom          : 0;
+            z-index         : 99;
+            background-color: $basic_color;
+
+            >p {
+                font-size  : $text_l;
+                color      : $main_color;
+                margin-top : 5%;
+                margin-left: 3%;
+            }
+
+            .card_text {
+                margin-left  : 3%;
+                margin-bottom: 5%;
+
+                li {
+                    @include flex;
+
+                    img {
+                        display: block;
+                        width  : 20px;
+                        height : 20px;
+                        margin : auto 8px auto 0;
+
+                        >p {
+                            font-size: $text_m;
+                            color    : $sec_color;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+togo end
+
+ hottop
 .hottop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  height: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff;
-}
+    @include flex_column;
+    width           : 100%;
+    height          : auto;
+    align-items     : center;
+    background-color: $basic_color;
 
-.hottop h2 {
-  font-size: 48px;
-  color: #000000;
-  line-height: 1.5;
-  margin: 55px;
-}
+    h2 {
+        font-size  : $title_h2;
+        color      : $main_color;
+        line-height: 1.5;
+        margin     : 55px;
+    }
 
-.hottop .hottop_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 20px;
+    .hottop_title {
+        @include flex_between;
+        align-items: center;
+        margin     : 0 20px;
+    }
 }
 
 .hottop_location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 20px;
-}
+    @include flex_between;
+    align-items: center;
+    margin     : 0 20px;
 
-@media (max-width: 768px) {
-  .hottop_location {
-    -ms-flex-wrap: wrap;
+    @include tablet() {
         flex-wrap: wrap;
-  }
-}
+    }
 
-.hottop_location > li {
-  display: block;
-  width: 352px;
-  height: 347px;
-  border-radius: 20px;
-  -webkit-box-shadow: #9C9C9C 3px 3px 5px;
-          box-shadow: #9C9C9C 3px 3px 5px;
-  overflow: hidden;
-  position: relative;
-  margin: 0 20px;
-}
+    >li {
+        display      : block;
+        width        : 352px;
+        height       : 347px;
+        border-radius: 20px;
+        box-shadow   : $shadow_color 3px 3px 5px;
+        overflow     : hidden;
+        position     : relative;
+        margin       : 0 20px;
 
-@media (max-width: 768px) {
-  .hottop_location > li {
-    margin-bottom: 4%;
-  }
-}
+        @include tablet() {
+            margin-bottom: 4%;
+        }
+    }
 
-.hottop_location .card_name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  z-index: 98;
-  bottom: 100px;
-  left: 20px;
-  background-color: #ffff00;
-  width: 80px;
-  height: 32px;
-  border-radius: 20px;
-}
+    .card_name {
+        @include flex_center;
+        align-items     : center;
+        position        : absolute;
+        z-index         : 98;
+        bottom          : 100px;
+        left            : 20px;
+        background-color: $thr_color;
+        width           : 80px;
+        height          : 32px;
+        border-radius   : 20px;
 
-.hottop_location .card_name p {
-  font-size: text_m;
-  color: #585858;
-  font-weight: bold;
-}
+        p {
+            font-size  : text_m;
+            color      : $sec_color;
+            font-weight: bold;
+        }
+    }
 
-.hottop_location .card_content {
-  margin: 1% auto 3% 5%;
-}
+    .card_content {
+        margin: 1% auto 3% 5%;
 
-.hottop_location .card_content p {
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 1.5;
-}
+        p {
+            font-size  : $text_l;
+            color      : $basic_color;
+            font-weight: bold;
+            line-height: 1.5;
+        }
 
-.hottop_location .card_content .card_text {
-  width: 100%;
-}
+        .card_text {
+            width: 100%;
 
-.hottop_location .card_content .card_text li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+            li {
+                @include flex;
+            }
 
-.hottop_location .card_content .card_text p {
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 1.5;
+            p {
+                font-size  : $text_m;
+                color      : $basic_color;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+
+    }
 }
+*/
 /*# sourceMappingURL=all.css.map */
