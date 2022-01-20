@@ -3,10 +3,7 @@
     margin: 0 auto;
     @content
 }
-@mixin pc {
-    max-width: 1920px;
-    @content
-}
+
 @mixin flex {
     display: flex;
     @content

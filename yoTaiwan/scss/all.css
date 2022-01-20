@@ -225,6 +225,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1920px;
   margin: 3% 0;
 }
 

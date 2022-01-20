@@ -3,6 +3,10 @@
         @content
     }
 }
+@mixin pc {
+    max-width: 1920px;
+    @content
+}
 
 @mixin tablet {
     @media (max-width: 768px) {
