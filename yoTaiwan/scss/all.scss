@@ -101,49 +101,51 @@ $shadow_color    :#9C9C9C;
     @include flex_between;
     @include pc;
     overflow: hidden;
+
     .togo_title {
-        width: 30%;
-        margin       : 5% ;
-    
+        width : 30%;
+        margin: 5%;
+
         h2 {
             font-size: $title_h2;
             color    : $main_color;
         }
-    
+
         h3 {
             font-size  : $title_h3;
             color      : $main_color;
             line-height: 1.5;
         }
-    
+
         ul {
             @include flex;
-    
+
             li {
                 margin-right: 5%;
             }
         }
     }
+
     .togo_area {
         @include flex_start;
         width: 70%;
-    
+
         .togo_item {
-            width        : 30%;
+            max-width    : 30%;
             border-radius: 20px;
             margin       : 5% 3%;
             box-shadow   : $shadow_color 3px 3px 5px;
             overflow     : hidden;
-            flex-shrink  : 0;
             position     : relative;
-    
+            flex-shrink: 1;
+
             .togo_img {
                 display    : block;
-                max-width  : 100%;
+                width  : 100%;
                 height     : auto;
                 align-items: center;
             }
-    
+
             .togo_img_mark {
                 position: absolute;
                 top     : 5%;
@@ -151,13 +153,13 @@ $shadow_color    :#9C9C9C;
                 width   : 10%;
                 height  : auto;
             }
-    
+
             .togo_img_info {
                 @include flex_between;
                 width   : 100%;
                 position: absolute;
                 top     : 50%;
-    
+
                 .togo_img_info_name {
                     @include flex_start;
                     align-items     : center;
@@ -165,69 +167,67 @@ $shadow_color    :#9C9C9C;
                     background-color: $basic_color;
                     border-radius   : 0 2em 2em 0;
                     padding         : 1% 0 1% 5%;
-    
+
                     p {
                         font-size  : $text_m;
                         margin-left: 2%;
                     }
                 }
-    
+
                 .togo_img_info_detial {
                     @include flex;
-    
+
                     .togo_img_info_item {
                         @include flex;
                         align-items : center;
                         margin-right: 1em;
-    
+
                         img {
                             display: block;
                             width  : 10px;
                             height : 11px;
                             margin : 0 3%;
                         }
-    
+
                         p {
                             color: $basic_color;
                         }
                     }
                 }
             }
-    
+
             .togo_detail {
-                padding: 4%;
-    
+                padding: 1%;
+
                 >p {
                     font-size: $text_l;
                     color    : $sec_color;
-                    margin   : 3% 0;
                 }
-    
+
                 .card_text {
-    
+
                     li {
                         @include flex;
-                        margin-bottom: 2%;
                         margin-left  : 3%;
-    
+
                         img {
                             display: block;
                             width  : 20px;
                             height : 20px;
-                            margin : auto 8px auto 0;
-    
+                            margin-right: 1%;
                             >p {
                                 font-size: $text_m;
                                 color    : $sec_color;
+                                align-items: center;
                             }
                         }
-    
+
                     }
-    
+
                 }
             }
         }
-    
+
     }
 }
 
