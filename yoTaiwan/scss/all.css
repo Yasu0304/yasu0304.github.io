@@ -281,6 +281,7 @@ a {
 }
 
 .togo_location .togo_location_item .crad_pic {
+  display: block;
   width: 100%;
   position: absolute;
   top: 0;
