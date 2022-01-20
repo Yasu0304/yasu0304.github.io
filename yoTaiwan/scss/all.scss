@@ -260,7 +260,6 @@ $shadow_color    :#9C9C9C;
         font-size  : $title_h2;
         color      : $main_color;
         line-height: 1.5;
-        font-weight: bold;
         margin     : 55px;
     }
 
@@ -275,6 +274,9 @@ $shadow_color    :#9C9C9C;
     @include flex_between;
     align-items: center;
     margin     : 0 20px;
+    @include tablet(){
+        flex-wrap: wrap;
+    }
 
     >li {
         display      : block;
@@ -285,6 +287,9 @@ $shadow_color    :#9C9C9C;
         overflow     : hidden;
         position     : relative;
         margin       : 0 20px;
+        @include tablet(){
+            margin-bottom: 4%;
+        }
     }
 
     .card_name {

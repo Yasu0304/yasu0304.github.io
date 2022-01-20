@@ -426,7 +426,6 @@ a {
   font-size: 48px;
   color: #000000;
   line-height: 1.5;
-  font-weight: bold;
   margin: 55px;
 }
 
@@ -456,6 +455,13 @@ a {
   margin: 0 20px;
 }
 
+@media (max-width: 768px) {
+  .hottop_location {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .hottop_location > li {
   display: block;
   width: 352px;
@@ -466,6 +472,12 @@ a {
   overflow: hidden;
   position: relative;
   margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .hottop_location > li {
+    margin-bottom: 4%;
+  }
 }
 
 .hottop_location .card_name {
