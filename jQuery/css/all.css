@@ -142,8 +142,6 @@ table {
 body {
     font-family: "Lato", "Noto Sans TC", sans-serif;
     box-sizing: border-box;
-    cursor: pointer;
-    cursor: auto;
     line-height: 1.5;
 }
 
@@ -357,17 +355,27 @@ a {
 
 .qa-form textarea {
     margin-right: 10px;
+    width: 300px;
+    resize: none;
 }
+/*3. textarea 建議可以改以 width 來設定寬度，因為 cols 在不同瀏覽器會有不同的寬度，容易有跑板問題。
 
+4. textarea 可加上 resize: none; ，讓使用者不能改變輸入區塊大小，影響網頁美觀。*/
+.qa-form{
+    display: block;
+}
 .qa-form input {
     width: 350px;
+    display: block;
 }
-
+/*5. 可直接在 input 和 label 上加上 display: block; ，這樣就不需使用到 <br> 換行。*/
 .qa-form button {
     display: flex;
     margin: 5px 0 0 auto;
+    cursor: pointer;
+    cursor: auto;
 }
-
+/*6. .button 請設計 hover 樣式，提升使用者回饋，可以加上 cursor: pointer，讓滑鼠滑過去時會有手出現。*/
 .footer {
     display: flex;
     justify-content: space-between;
