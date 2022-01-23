@@ -126,11 +126,6 @@ a {
 }
 
 /*header*/
-.wrap {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .header {
   width: 100%;
 }
@@ -176,12 +171,15 @@ a {
 
 .navbar .navbar-bnt a {
   color: #585858;
+  padding-bottom: 3px;
 }
 
 .navbar .navbar-bnt a:hover {
   -webkit-box-shadow: 0 3px;
           box-shadow: 0 3px;
-  padding-bottom: 1px;
+  padding-bottom: 3px;
+  -webkit-transition: 1s;
+  transition: 1s;
   color: #252525;
 }
 
@@ -210,13 +208,18 @@ a {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 /*banner end*/
 /*togo*/
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .togo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,6 +231,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 1% 0;
+}
+
+.togo_title {
+  width: 30%;
 }
 
 .togo_title h2 {
@@ -247,8 +254,8 @@ a {
 }
 
 .togo_title ul li {
-  margin-right: 5%;
-  width: 10%;
+  margin-right: 2%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -263,33 +270,38 @@ a {
   overflow: hidden;
 }
 
-.togo_area .togo_item {
-  min-width: 30%;
-  border-radius: 20px;
-  margin: 2%;
-  -webkit-box-shadow: #9C9C9C 3px 3px 5px;
-          box-shadow: #9C9C9C 3px 3px 5px;
-  overflow: hidden;
-  position: relative;
+.togo_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
   cursor: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 30%;
+  border-radius: 20px;
+  margin: 1%;
+  -webkit-box-shadow: #9c9c9c 3px 3px 5px;
+          box-shadow: #9c9c9c 3px 3px 5px;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.togo_img {
+.togo_img_mark img {
   display: block;
-  width: 100%;
-  height: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.togo_img_mark {
-  position: absolute;
-  top: 5%;
-  right: 5%;
   width: 10%;
   height: auto;
+  margin: 5% 5% auto auto;
 }
 
 .togo_img_info {
@@ -299,9 +311,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  top: 55%;
+  margin-bottom: 5%;
+  margin-top: 50%;
 }
 
 .togo_img_info_name {
@@ -314,15 +325,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+  width: 35%;
   background-color: #ffffff;
   border-radius: 0 2em 2em 0;
   padding: 1% 0 1% 5%;
-}
-
-.togo_img_info_name p {
-  font-size: 1em;
-  margin-left: 2%;
 }
 
 .togo_img_info_detial {
@@ -331,7 +337,7 @@ a {
   display: flex;
 }
 
-.togo_img_info_detial .togo_img_info_item {
+.togo_img_info_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,29 +347,28 @@ a {
   margin-right: 1em;
 }
 
-.togo_img_info_detial .togo_img_info_item img {
+.togo_img_info_item img {
   display: block;
   width: 10px;
   height: 11px;
   margin: 0 3%;
 }
 
-.togo_img_info_detial .togo_img_info_item p {
+.togo_img_info_item p {
   color: #ffffff;
 }
 
 .togo_detail {
-  margin-left: 2%;
-  margin-top: 5%;
+  background-color: #ffffff;
+  padding: 3%;
 }
 
 .togo_detail p {
   font-size: 1.5em;
   color: #7e7e7e;
-  margin: 1% 0;
 }
 
-.togo_detail .togo_detail_text {
+.togo_detail_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,10 +377,10 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.togo_detail .togo_detail_text li {
+.togo_detail_text li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,36 +388,59 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0.5%;
 }
 
-.togo_detail .togo_detail_text li img {
+.togo_detail_text img {
   display: block;
   width: 20px;
   height: 20px;
   margin-right: 1%;
 }
 
-.togo_detail .togo_detail_text li > p {
+.togo_detail_text p {
   font-size: 1em;
-  color: #000000;
+  color: #252525;
 }
 
 /*togoend*/
 /*hottop*/
-.hottop {
+.hottop,
+.latestact {
   background: url(../images/bg-01.png);
   margin: 1% 0;
   padding: 2%;
 }
 
-.hottop h2 {
+.hottop h2,
+.latestact h2 {
   font-size: 2.5em;
   color: #000000;
-  text-align: center;
   margin-bottom: 1%;
+  text-align: center;
 }
 
-.hottop .hottop_area {
+.hottop_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hottop_bnt img {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.hottop_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,32 +450,27 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.hottop .hottop_area .hottop_bnt img {
-  display: block;
-  width: 60%;
-  height: auto;
-}
-
-.hottop .hottop_area .hottop_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 70%;
-}
-
-.hottop .hottop_area .hottop_list .hottop_item {
+.hottop_item {
   position: relative;
   width: 30%;
   height: auto;
-  margin: 0 1%;
+  margin: 1%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.hottop .hottop_area .hottop_list .hottop_item .hottop_mark {
+.hottop_item img {
+  display: block;
+  width: 100%;
+}
+
+.hottop_mark {
   position: absolute;
   z-index: 99;
   top: 5%;
@@ -463,27 +486,37 @@ a {
   left: 5%;
 }
 
-.hottop_detail p {
-  color: #ffffff;
-  font-size: 1.5em;
-  margin-bottom: 1%;
+.hottop_detail > p {
+  display: inline;
+  background-color: #ffff00;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 0.7em;
+  padding: 1% 5%;
 }
 
-.hottop_detail .hottop_text li {
+.hottop_text li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 3%;
 }
 
-.hottop_detail .hottop_text li img {
+.hottop_text li img {
   display: block;
   width: 10px;
   height: 11px;
   margin: 0 3%;
 }
 
-.hottop_detail .hottop_text li p {
-  font-size: 1em;
+.hottop_text li h4 {
+  font-size: 1.7em;
+  color: #ffffff;
+  margin-top: 6%;
+}
+
+.hottop_text li p {
+  font-size: 0.7em;
   color: #ffffff;
 }
 
@@ -496,12 +529,12 @@ a {
   text-align: center;
 }
 
-.food .food_map {
+.food_map {
   position: relative;
   text-align: center;
 }
 
-.food .food_map .food_map_text {
+.food_map_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,36 +550,38 @@ a {
   padding: .5%;
 }
 
-.food .food_map .food_map_text p {
+.food_map_text p {
   color: #585858;
   font-size: 1em;
 }
 
-.food .food_map .food_map_text img {
+.food_map_text img {
   width: 5%;
   height: auto;
 }
 
-.food .food_area {
+.food_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 87%;
+  width: 90%;
   margin: 2% auto;
 }
 
-.food .food_area .food_area_item {
+.food_area_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 25%;
   height: auto;
   position: relative;
+  margin: 0 1%;
 }
 
-.food .food_area .food_area_item .food_area_text {
+.food_area_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,28 +598,27 @@ a {
           align-items: center;
 }
 
-.food .food_area .food_area_item .food_area_text img {
-  display: block;
-  width: 70%;
+.food_area_text img {
+  width: 60%;
   height: auto;
   margin-bottom: 2%;
 }
 
-.food .food_area .food_area_item .food_area_text p {
+.food_area_text p {
   color: #ffffff;
   font-size: 1em;
 }
 
-.food .food_area .food_area_bn {
+.food_area_bn {
   border-radius: 20px;
   overflow: hidden;
 }
 
-.food .food_area .food_area_bn img {
+.food_area_bn img {
   width: 100%;
 }
 
-.food .food_area .food_area_bn a {
+.food_area_bn a {
   cursor: pointer;
   cursor: auto;
 }
