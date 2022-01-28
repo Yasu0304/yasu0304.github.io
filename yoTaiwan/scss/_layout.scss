@@ -1,6 +1,6 @@
 @mixin wrap_pc_center {
     max-width: 1920px;
-    margin   : 0 auto;
+    margin: 0 auto;
     @content
 }
 
@@ -10,38 +10,43 @@
 }
 
 @mixin flex_center {
-    display        : flex;
+    display: flex;
     justify-content: center;
     @content
 }
 
 @mixin flex_between {
-    display        : flex;
+    display: flex;
     justify-content: space-between;
     @content
 }
 
 @mixin flex_around {
-    display        : flex;
+    display: flex;
     justify-content: space-around;
     @content
 }
 
 @mixin flex_start {
-    display        : flex;
+    display: flex;
     justify-content: flex-start;
     @content
 }
 
 @mixin flex_end {
-    display        : flex;
+    display: flex;
     justify-content: flex-end;
     @content
 }
 
 @mixin flex_column {
-    display       : flex;
+    display: flex;
     flex-direction: column;
+    @content
+}
+
+@mixin none {
+    display: none;
     @content
 }
 
