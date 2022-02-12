@@ -3,19 +3,15 @@
         @content
     }
 }
-@mixin pc {
-    max-width: 1920px;
-    @content
-}
 
 @mixin tablet {
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         @content
     }
 }
 
 @mixin mobile {
-    @media (max-width: 360px) {
+    @media (max-width: 361px) {
         @content
     }
 }

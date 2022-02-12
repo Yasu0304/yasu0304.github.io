@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -14,5 +14,19 @@ $(document).ready(function() {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+    });
+
+    $('.phone-navbar').on('click', function (e) {
+        e.preventDefault();
+        $('.navbar').toggleClass('show');
+    });
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 400,
+        itemMargin: 6,
+        minItems: 2,
+        maxItems: 4
     });
 });

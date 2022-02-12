@@ -156,12 +156,6 @@ $box_shadow      :#58585859;
     margin     : 1% 0;
 }
 
-@include tablet {
-    .togo {
-        @include flex_column;
-    }
-}
-
 .togo_title {
     width: 30%;
 
@@ -186,29 +180,10 @@ $box_shadow      :#58585859;
     }
 }
 
-@include tablet {
-
-    .togo_title {
-        width     : 100%;
-        text-align: center;
-
-        ul {
-            @include none;
-        }
-    }
-}
-
-
 .togo_area {
     /*@include flex_start;*/
     width   : 70%;
     overflow: hidden;
-}
-
-@include tablet {
-    .togo_area {
-        width: 100%;
-    }
 }
 
 .togo_item {
@@ -218,7 +193,7 @@ $box_shadow      :#58585859;
     object-fit         : contain;
     background-position: center top;
     background-repeat  : no-repeat;
-    max-width          : 400px;
+    width              : 30%;
     border-radius      : 20px;
     margin             : 1%;
     box-shadow         : $shadow_color 3px 3px 5px;

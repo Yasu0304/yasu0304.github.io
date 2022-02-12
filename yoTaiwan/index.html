@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
@@ -8,38 +8,37 @@
     <title>YO ! Taiwan</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/flexslider.css">
     <link rel="stylesheet" href="./scss/all.css">
 </head>
 
 <body>
     <div class="header">
-        <div class="navbar">
-            <h1><a href="#" class="logo">YO ! Taiwan</a></h1>
-            <ul class="navbar-bnt">
-                <li><a href="#">找景點</a></li>
-                <li><a href="#">找美食</a></li>
-                <li><a href="#">找活動</a></li>
-                <li><a href="#">找旅宿</a></li>
-                <li><a href="#">找交通</a></li>
-                <li><a href="#">我的行程</a></li>
-            </ul>
-            <a href="#" class="drop-navbar">Menu</a>
-        </div>
-        <!-- banner -->
-        <!-- Slider main container -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/banner-01.png" alt="出發吧"></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#"><img src="./images/banner-02.png" alt="出發吧"></a>
-                </div>
+        <h1><a href="#" class="logo">YO ! Taiwan</a></h1>
+        <ul class="navbar">
+            <li><a href="#">找景點</a></li>
+            <li><a href="#">找美食</a></li>
+            <li><a href="#">找活動</a></li>
+            <li><a href="#">找旅宿</a></li>
+            <li><a href="#">找交通</a></li>
+            <li><a href="#">我的行程</a></li>
+        </ul>
+        <a href="#" class="phone-navbar">Menu</a>
+    </div>
+    <!-- banner -->
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/banner-01.png" alt="出發吧"></a>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/banner-02.png" alt="出發吧"></a>
+            </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
     <!-- banner end -->
     <div class="wrap">
@@ -49,178 +48,352 @@
                     <h2>不知道要去哪裡嗎？</h2>
                     <h3>看看大家都去哪裡吧！</h3>
                     <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./images/left.png" alt="上一張">
+                        <li class="flex-nav-prev">
+                            <a class="flex-prev" href="#" tabindex="-1">
+                                <img src="./images/left.png" alt="上一張" class="flex-active">
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="flex-nav-next">
+                            <a class="flex-next flex-disabled" href="#" tabindex="-1">
                                 <img src="./images/right.png" alt="下一張">
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="togo_area">
-                    <div class="togo_item" style="background-image:
-                            url('./images/togo-item/location-01.jpg');">
-                        <div class="togo_img_mark">
-                            <a href="#">
-                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
-                            </a>
-                        </div>
-                        <div>
-                            <div class="togo_img_info">
-                                <div class="togo_img_info_name">
-                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
-                                    <p>Hebe</p>
+                    <div class="flexslider carousel">
+                        <ul class="slides">
+                            <li>
+                                <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                    <div class="togo_img_mark">
+                                        <a href="#">
+                                            <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <div class="togo_img_info">
+                                            <div class="togo_img_info_name">
+                                                <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                                <p>Hebe</p>
+                                            </div>
+                                            <ul class="togo_img_info_detial">
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="togo_detail">
+                                            <p>小琉球自潛之旅</p>
+                                            <ul class="togo_detail_text">
+                                                <li>
+                                                    <img src="./images/togo-item/icon-time.png"
+                                                        alt="2021年12月03日-2021年12月06日">
+                                                    <p>2021年12月03日-2021年12月06日</p>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                    <p>屏東縣</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="togo_img_info_detial">
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
-                                        <p>52,700</p>
-                                    </li>
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
-                                        <p>52,700</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="togo_detail">
-                                <p>小琉球自潛之旅</p>
-                                <ul class="togo_detail_text">
-                                    <li>
-                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
-                                        <p>2021年12月03日-2021年12月06日</p>
-                                    </li>
-                                    <li>
-                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
-                                        <p>屏東縣</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="togo_item" style="background-image:
-                            url('./images/togo-item/location-02.png');">
-                        <div class="togo_img_mark">
-                            <a href="#">
-                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
-                            </a>
-                        </div>
-                        <div>
-                            <div class="togo_img_info">
-                                <div class="togo_img_info_name">
-                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
-                                    <p>Hebe</p>
+                            </li>
+                            <li>
+                                <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                    <div class="togo_img_mark">
+                                        <a href="#">
+                                            <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <div class="togo_img_info">
+                                            <div class="togo_img_info_name">
+                                                <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                                <p>Hebe</p>
+                                            </div>
+                                            <ul class="togo_img_info_detial">
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="togo_detail">
+                                            <p>小琉球自潛之旅</p>
+                                            <ul class="togo_detail_text">
+                                                <li>
+                                                    <img src="./images/togo-item/icon-time.png"
+                                                        alt="2021年12月03日-2021年12月06日">
+                                                    <p>2021年12月03日-2021年12月06日</p>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                    <p>屏東縣</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="togo_img_info_detial">
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
-                                        <p>52,700</p>
-                                    </li>
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
-                                        <p>52,700</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="togo_detail">
-                                <p>小琉球自潛之旅</p>
-                                <ul class="togo_detail_text">
-                                    <li>
-                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
-                                        <p>2021年12月03日-2021年12月06日</p>
-                                    </li>
-                                    <li>
-                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
-                                        <p>屏東縣</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="togo_item" style="background-image:
-                            url('./images/togo-item/location-01.jpg');">
-                        <div class="togo_img_mark">
-                            <a href="#">
-                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
-                            </a>
-                        </div>
-                        <div>
-                            <div class="togo_img_info">
-                                <div class="togo_img_info_name">
-                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
-                                    <p>Hebe</p>
+                            </li>
+                            <li>
+                                <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                    <div class="togo_img_mark">
+                                        <a href="#">
+                                            <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <div class="togo_img_info">
+                                            <div class="togo_img_info_name">
+                                                <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                                <p>Hebe</p>
+                                            </div>
+                                            <ul class="togo_img_info_detial">
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="togo_detail">
+                                            <p>小琉球自潛之旅</p>
+                                            <ul class="togo_detail_text">
+                                                <li>
+                                                    <img src="./images/togo-item/icon-time.png"
+                                                        alt="2021年12月03日-2021年12月06日">
+                                                    <p>2021年12月03日-2021年12月06日</p>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                    <p>屏東縣</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="togo_img_info_detial">
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
-                                        <p>52,700</p>
-                                    </li>
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
-                                        <p>52,700</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="togo_detail">
-                                <p>小琉球自潛之旅</p>
-                                <ul class="togo_detail_text">
-                                    <li>
-                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
-                                        <p>2021年12月03日-2021年12月06日</p>
-                                    </li>
-                                    <li>
-                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
-                                        <p>屏東縣</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="togo_item" style="background-image:
-                            url('./images/togo-item/location-02.png');">
-                        <div class="togo_img_mark">
-                            <a href="#">
-                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
-                            </a>
-                        </div>
-                        <div>
-                            <div class="togo_img_info">
-                                <div class="togo_img_info_name">
-                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
-                                    <p>Hebe</p>
+                            </li>
+                            <li>
+                                <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                    <div class="togo_img_mark">
+                                        <a href="#">
+                                            <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <div class="togo_img_info">
+                                            <div class="togo_img_info_name">
+                                                <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                                <p>Hebe</p>
+                                            </div>
+                                            <ul class="togo_img_info_detial">
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                                <li class="togo_img_info_item">
+                                                    <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                    <p>52,700</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="togo_detail">
+                                            <p>小琉球自潛之旅</p>
+                                            <ul class="togo_detail_text">
+                                                <li>
+                                                    <img src="./images/togo-item/icon-time.png"
+                                                        alt="2021年12月03日-2021年12月06日">
+                                                    <p>2021年12月03日-2021年12月06日</p>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                    <p>屏東縣</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="togo_img_info_detial">
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
-                                        <p>52,700</p>
-                                    </li>
-                                    <li class="togo_img_info_item">
-                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
-                                        <p>52,700</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="togo_detail">
-                                <p>小琉球自潛之旅</p>
-                                <ul class="togo_detail_text">
-                                    <li>
-                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
-                                        <p>2021年12月03日-2021年12月06日</p>
-                                    </li>
-                                    <li>
-                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
-                                        <p>屏東縣</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!--<div class="togo_area">
+                    <div class="togo_item" style="background-image:
+                            url('./images/togo-item/location-01.jpg');">
+                        <div class="togo_img_mark">
+                            <a href="#">
+                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="togo_img_info">
+                                <div class="togo_img_info_name">
+                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                    <p>Hebe</p>
+                                </div>
+                                <ul class="togo_img_info_detial">
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                        <p>52,700</p>
+                                    </li>
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                        <p>52,700</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="togo_detail">
+                                <p>小琉球自潛之旅</p>
+                                <ul class="togo_detail_text">
+                                    <li>
+                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
+                                        <p>2021年12月03日-2021年12月06日</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                        <p>屏東縣</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="togo_item" style="background-image:
+                            url('./images/togo-item/location-02.png');">
+                        <div class="togo_img_mark">
+                            <a href="#">
+                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="togo_img_info">
+                                <div class="togo_img_info_name">
+                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                    <p>Hebe</p>
+                                </div>
+                                <ul class="togo_img_info_detial">
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                        <p>52,700</p>
+                                    </li>
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                        <p>52,700</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="togo_detail">
+                                <p>小琉球自潛之旅</p>
+                                <ul class="togo_detail_text">
+                                    <li>
+                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
+                                        <p>2021年12月03日-2021年12月06日</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                        <p>屏東縣</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="togo_item" style="background-image:
+                            url('./images/togo-item/location-01.jpg');">
+                        <div class="togo_img_mark">
+                            <a href="#">
+                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="togo_img_info">
+                                <div class="togo_img_info_name">
+                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                    <p>Hebe</p>
+                                </div>
+                                <ul class="togo_img_info_detial">
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                        <p>52,700</p>
+                                    </li>
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                        <p>52,700</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="togo_detail">
+                                <p>小琉球自潛之旅</p>
+                                <ul class="togo_detail_text">
+                                    <li>
+                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
+                                        <p>2021年12月03日-2021年12月06日</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                        <p>屏東縣</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="togo_item" style="background-image:
+                            url('./images/togo-item/location-02.png');">
+                        <div class="togo_img_mark">
+                            <a href="#">
+                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="togo_img_info">
+                                <div class="togo_img_info_name">
+                                    <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                    <p>Hebe</p>
+                                </div>
+                                <ul class="togo_img_info_detial">
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                        <p>52,700</p>
+                                    </li>
+                                    <li class="togo_img_info_item">
+                                        <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                        <p>52,700</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="togo_detail">
+                                <p>小琉球自潛之旅</p>
+                                <ul class="togo_detail_text">
+                                    <li>
+                                        <img src="./images/togo-item/icon-time.png" alt="2021年12月03日-2021年12月06日">
+                                        <p>2021年12月03日-2021年12月06日</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                        <p>屏東縣</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
             <div class="hottop">
                 <h2>推薦景點TOP10</h2>
@@ -447,7 +620,8 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！</p>
+                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                            </p>
                                         </li>
                                         <li>
                                             <img src="./images/latestact-item/icon-location.png" alt="">
@@ -478,7 +652,8 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！</p>
+                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                            </p>
                                         </li>
                                         <li>
                                             <img src="./images/latestact-item/icon-location.png" alt="">
@@ -508,7 +683,8 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！</p>
+                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                            </p>
                                         </li>
                                         <li>
                                             <img src="./images/latestact-item/icon-location.png" alt="">
@@ -538,7 +714,8 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！</p>
+                                            <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                            </p>
                                         </li>
                                         <li>
                                             <img src="./images/latestact-item/icon-location.png" alt="">
@@ -773,6 +950,7 @@
         </ul>
     </div>
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/all.js"></script>
