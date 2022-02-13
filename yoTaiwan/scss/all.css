@@ -194,6 +194,9 @@ a {
     right: 0;
     z-index: 999;
   }
+  .swiper {
+    margin-top: 41px;
+  }
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -861,6 +864,46 @@ a {
   color: #000000;
 }
 
+@media (max-width: 769px) {
+  .latestact_item {
+    width: 90%;
+    padding: 2% 4%;
+    margin: 2% auto;
+  }
+  .latestact_item_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .latestact_item_pic {
+    width: 80%;
+    text-align: center;
+    margin: 3% 0;
+  }
+  .latestact_item_text {
+    margin: 0;
+  }
+  .latestact_item_text ul ul li:nth-child(1) p {
+    font-size: 1.5rem;
+  }
+  .latestact_item_text ul ul li:nth-child(2) p {
+    font-size: 1rem;
+  }
+  .latestact_item_text ul li:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 /*latestact end*/
 /*lodging*/
 .lodging {
@@ -919,7 +962,7 @@ a {
   -webkit-box-shadow: #9c9c9c 3px 3px 5px;
           box-shadow: #9c9c9c 3px 3px 5px;
   overflow: hidden;
-  width: 20%;
+  max-width: 350px;
   height: auto;
   margin: 1%;
   -ms-flex-negative: 0;
@@ -1068,6 +1111,51 @@ a {
 .footer_detial li:nth-child(2) ul li:nth-child(2) a {
   color: #9c9c9c;
   font-size: 1rem;
+}
+
+@media (max-width: 769px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_detial {
+    width: 90%;
+    margin: 5% auto;
+  }
+  .footer_detial li:nth-child(2) ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 5% auto;
+  }
+  .footer_detial li:nth-child(2) ul li:nth-child(2) a {
+    color: #9c9c9c;
+    font-size: 1rem;
+  }
 }
 
 /*footer end*/

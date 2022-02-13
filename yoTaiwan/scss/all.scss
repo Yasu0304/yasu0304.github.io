@@ -80,6 +80,10 @@ $box_shadow      :#58585859;
         z-index : 999;
     }
 
+    .swiper {
+        margin-top: 41px;
+    }
+
     .navbar {
         @include flex_column;
         position        : absolute;
@@ -685,6 +689,54 @@ $box_shadow      :#58585859;
     }
 }
 
+@include tablet {
+
+    .latestact_item {
+        width  : 90%;
+        padding: 2% 4%;
+        margin : 2% auto;
+    }
+
+    .latestact_item_content {
+        @include flex_column;
+        margin: 0 auto;
+    }
+
+    .latestact_item_pic {
+        width     : 80%;
+        text-align: center;
+        margin    : 3% 0;
+    }
+
+    .latestact_item_text {
+        margin: 0;
+
+        ul {
+            ul {
+
+                li:nth-child(1) {
+                    p {
+                        font-size: $text_m;
+                    }
+                }
+
+                li:nth-child(2) {
+                    p {
+                        font-size: $text_s;
+                    }
+                }
+            }
+
+            li:nth-child(3) {
+                @include flex;
+                justify-content: flex-end;
+
+            }
+
+        }
+
+    }
+}
 
 /*latestact end*/
 
@@ -733,7 +785,7 @@ $box_shadow      :#58585859;
     border-radius      : 20px;
     box-shadow         : $shadow_color 3px 3px 5px;
     overflow           : hidden;
-    width              : 20%;
+    max-width          : 350px;
     height             : auto;
     margin             : 1%;
     flex-shrink        : 0;
@@ -856,6 +908,38 @@ $box_shadow      :#58585859;
                 a {
                     color    : $shadow_color;
                     font-size: $text_s;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .footer {
+        @include flex_column;
+    }
+
+    .footer_logo {
+        width: 100%;
+        @include flex_between;
+        align-items: center;
+    }
+
+    .footer_detial {
+        width : 90%;
+        margin: 5% auto;
+
+        li:nth-child(2) {
+            ul {
+                @include flex_column;
+                align-items: flex-end;
+                margin     : 5% auto;
+
+                li:nth-child(2) {
+                    a {
+                        color    : $shadow_color;
+                        font-size: $text_s;
+                    }
                 }
             }
         }
