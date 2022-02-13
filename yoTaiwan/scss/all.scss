@@ -28,10 +28,16 @@ $box_shadow      :#58585859;
 
 .header {
     width   : 100%;
-    position: relative;
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    z-index : 999;
     @include flex_between;
-    height     : 40px;
-    align-items: center;
+    height          : 40px;
+    align-items     : center;
+    background-color: $basic-color;
+    box-shadow      : 0 2px 5px $shadow_color;
 }
 
 .logo {
@@ -65,6 +71,14 @@ $box_shadow      :#58585859;
 }
 
 @include tablet {
+    .header {
+        position: relative;
+        position: fixed;
+        top     : 0;
+        left    : 0;
+        right   : 0;
+        z-index : 999;
+    }
 
     .navbar {
         @include flex_column;
@@ -349,11 +363,14 @@ $box_shadow      :#58585859;
     flex-shrink: 1;
 }
 
+.hottop_js {
+    padding: 2rem;
+}
+
 .hottop_item {
     position   : relative;
-    width      : 20%;
+    max-width  : 400px;
     height     : auto;
-    margin     : 1%;
     flex-shrink: 0;
 
     img {
@@ -362,22 +379,22 @@ $box_shadow      :#58585859;
     }
 
     .hottop_rank {
-        img {
-            position: absolute;
-            z-index : 70;
-            top     : -6%;
-            left    : -5%;
-            width   : 20%;
-            height  : auto;
+        .rank {
+            img {
+                position : absolute;
+                z-index  : 80;
+                width    : 7%;
+                height   : auto;
+                transform: translate(10%, 5%);
+            }
         }
 
-        p {
-            position   : absolute;
-            z-index    : 75;
-            top        : 0.5%;
-            left       : 3%;
-            font-size  : $text_l;
-            font-weight: bolder;
+        img {
+            position : absolute;
+            z-index  : 70;
+            width    : 15%;
+            height   : auto;
+            transform: translate(-20%, -20%);
         }
     }
 }
@@ -414,8 +431,8 @@ $box_shadow      :#58585859;
 
         img {
             display: block;
-            width  : 10px;
-            height : 11px;
+            width  : 10%;
+            height : auto;
             margin : 0 3%;
         }
 
@@ -428,6 +445,36 @@ $box_shadow      :#58585859;
         p {
             font-size: $text_s;
             color    : $basic_color;
+        }
+    }
+}
+
+@include tablet {
+    .hottop_js {
+        padding: 1%;
+    }
+
+    .hottop_bnt {
+        img {
+            display: none;
+        }
+    }
+
+    .hottop_list {
+        width: 100%;
+    }
+
+    .hottop_rank {
+        .rank {
+            img {
+
+                width: 20%;
+            }
+        }
+
+        img {
+
+            width: 30%;
         }
     }
 }
@@ -457,11 +504,10 @@ $box_shadow      :#58585859;
 
 .food_map_text {
     @include flex;
-    align-items     : center;
-    text-align      : center;
     position        : absolute;
+    z-index         : 90;
     left            : 10%;
-    bottom          : 5%;
+    bottom          : 10%;
     background-color: $basic_color;
     border-radius   : 30px;
     padding         : 0.5%;
@@ -485,18 +531,17 @@ $box_shadow      :#58585859;
 }
 
 .food_area_item {
-    @include flex;
-    width   : 25%;
-    height  : auto;
-    position: relative;
-    margin  : 0 1%;
+    @include flex_center;
+    width      : 25%;
+    height     : auto;
+    position   : relative;
+    margin     : 0 0.5%;
+    align-items: center;
 }
 
 .food_area_text {
     @include flex_column;
     position   : absolute;
-    top        : 50%;
-    left       : 50%;
     z-index    : 99;
     align-items: center;
 
@@ -525,6 +570,42 @@ $box_shadow      :#58585859;
     }
 }
 
+@include tablet {
+    .food_area {
+        flex-wrap: wrap;
+        margin   : 0.5% auto;
+    }
+
+    .food_area_item {
+        width : 48%;
+        margin: 1% 0;
+    }
+
+    .food_map_text {
+        transform    : translate(50% 50%);
+        padding      : 0.5%;
+        border-radius: 5px;
+
+        p {
+
+            font-size: $text_s;
+        }
+
+    }
+
+    .food_area_text {
+
+        img {
+            width : 60%;
+            height: auto;
+        }
+
+        p {
+            font-size: $text_s;
+        }
+    }
+
+}
 
 /*food_map end*/
 
