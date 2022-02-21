@@ -917,13 +917,125 @@ a {
   }
 }
 
+.latestact_wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px auto 40px auto;
+}
+
+.latestact_row {
+  width: 1708px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px;
+}
+
+.latestact_col {
+  padding: -15px;
+}
+
+.latestact_crad {
+  position: relative;
+  width: 397px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: #9c9c9c 3px 3px 5px;
+          box-shadow: #9c9c9c 3px 3px 5px;
+  margin: 15px;
+}
+
+.latestact_crad img {
+  display: block;
+}
+
+.latestact_icon {
+  max-width: 45px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 700;
+}
+
+.latestact_text {
+  position: absolute;
+  z-index: 701;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.latestact_text {
+  padding: 20px;
+}
+
+.latestact_text p {
+  display: inline;
+  background-color: #ffff00;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1% 5%;
+}
+
+.latestact_text h4 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.latestact_text .latestact_cradfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #ffffff;
+}
+
+@media (max-width: 769px) {
+  .latestact_row {
+    margin: 5px;
+  }
+  .latestact_col {
+    padding: -5px;
+  }
+  .latestact_crad {
+    max-width: 200px;
+    margin: 5px;
+  }
+  .latestact_icon {
+    max-width: 30px;
+  }
+  .latestact_text {
+    padding: 10px;
+  }
+  .latestact_text h4 {
+    font-size: 1.5rem;
+  }
+}
+
 /*latestact end*/
 /*lodging*/
-.lodging {
+.lodging mobile {
   margin: 3% 0;
 }
 
-.lodging h2 {
+.lodging mobile h2 {
   font-size: 2rem;
   color: #000000;
   margin-bottom: 1%;
@@ -1099,10 +1211,6 @@ a {
 .footer_logo li:nth-child(2) a {
   display: block;
   margin: 5% 4% auto 0;
-}
-
-.footer_detial {
-  width: 30%;
 }
 
 .footer_detial a {
