@@ -56,7 +56,7 @@
 }
 
 @mixin body_module {
-    font-family: "Noto Sans CJK TC", "Microsoft JhengHei", "sans-serif", "Noto Sans CJK TC";
+    font-family: "Noto Sans CJK TC", "Microsoft JhengHei", 微軟正黑體, "sans-serif", "Noto Sans CJK TC";
     @content
 }
 
@@ -70,4 +70,9 @@
     background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
     padding   : 2px 1px;
     @content
+}
+
+@mixin bg-cover {
+    background-position: center center;
+    background-size    : cover;
 }

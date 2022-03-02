@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -117,7 +118,7 @@ a {
 }
 
 .body {
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", "sans-serif", "Noto Sans CJK TC";
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", 微軟正黑體, "sans-serif", "Noto Sans CJK TC";
 }
 
 /*header*/
@@ -918,15 +919,13 @@ a {
 }
 
 .latestact_wrap {
-  max-width: 1920px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 80px auto 40px auto;
+  margin: 80px 0 40px 0;
 }
 
 .latestact_row {
@@ -944,11 +943,14 @@ a {
 
 .latestact_col {
   padding: -15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .latestact_crad {
   position: relative;
-  width: 397px;
+  max-width: 397px;
   border-radius: 20px;
   overflow: hidden;
   -webkit-box-shadow: #9c9c9c 3px 3px 5px;

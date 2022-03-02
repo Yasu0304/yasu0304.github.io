@@ -707,9 +707,8 @@ $box_shadow      :#58585859;
 }
 
 .latestact_wrap {
-    @include wrap_pc_center;
     @include flex_center;
-    margin: 80px auto 40px auto;
+    margin: 80px 0 40px 0;
 }
 
 .latestact_row {
@@ -720,12 +719,13 @@ $box_shadow      :#58585859;
 }
 
 .latestact_col {
-    padding: -15px;
+    padding    : -15px;
+    align-items: flex-start;
 }
 
 .latestact_crad {
     position     : relative;
-    width        : 397px;
+    max-width    : 397px;
     border-radius: 20px;
     overflow     : hidden;
     box-shadow   : $shadow_color 3px 3px 5px;
