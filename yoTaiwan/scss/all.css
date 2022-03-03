@@ -918,9 +918,11 @@ a {
   }
 }
 
+/*page-latestact.html */
 .latestact_wrap {
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  margin-bottom: auto;
 }
 
 .container {
@@ -1026,6 +1028,7 @@ a {
   }
 }
 
+/*page-latestact.html end*/
 /*latestact end*/
 /*lodging*/
 .lodging mobile {
