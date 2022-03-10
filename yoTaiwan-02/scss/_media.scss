@@ -1,0 +1,29 @@
+@mixin xxl {
+    @media (max-width: 1400px){
+        @content
+    }
+    
+}
+
+@mixin xl {
+    @media (max-width: 1200px) {
+        @content
+    }
+}
+
+@mixin md {
+    @media (max-width: 720px) {
+        @content
+    }
+}
+@mixin togoSwiper{
+    @media only screen and (min-width: 720px){
+        @content
+    }
+}
+
+@mixin sm {
+    @media (max-width: 540px) {
+        @content
+    }
+}

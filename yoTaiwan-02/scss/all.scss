@@ -1,0 +1,579 @@
+@import "header";
+@import "layout";
+@import "media";
+@import "reset";
+$text_s   : 1rem;
+$text_m   : 1.5rem;
+$text_l   : 2rem;
+$text_xl  : 3rem;
+$title_h4 : 1.5rem;
+$y200     : #FFEC3D;
+$white    : #ffffff;
+$g300     : #9C9C9C;
+$g400     : #616161;
+$g500     :#58585859;
+$footer   : #434343;
+$b100     :#000000;
+
+
+
+
+
+/*header*/
+.l-h2 {
+    font-size  : $text_xl;
+    font-weight: bold;
+}
+
+.l-h3 {
+    font-size: $text_l;
+}
+
+.l-h4 {
+    font-size  : $text_m;
+    font-weight: bold;
+}
+
+a {
+    color: $g300;
+    @include block;
+}
+
+a:hover {
+    color: $g500;
+}
+
+.p-s {
+    font-size: $text_s;
+}
+
+.p-m {
+    font-size: $text_m;
+}
+
+.p-l {
+    font-size: $text_l;
+}
+
+.bi-clock-fill,
+.bi-geo-alt-fill {
+    color: $y200;
+}
+
+.bi-clock-fill,
+.bi-eye,
+.bi-heart,
+.bi-geo-alt-fill {
+    margin: 0 5px;
+}
+
+.y200 {
+    background-color: $y200;
+}
+
+.header {
+    width   : 100%;
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    z-index : 999;
+    @include flex_between;
+    height          : 40px;
+    align-items     : center;
+    background-color: $white;
+    box-shadow      : 0 2px 5px $g500;
+}
+
+.logo {
+    @include hide-text;
+    background : url(../images/logo.jpg) no-repeat;
+    width      : 227px;
+    height     : 34px;
+    margin-left: 20px;
+}
+
+.navbar {
+    @include flex_between;
+    @include mouse;
+    min-width: 70%;
+
+    a {
+        @include block;
+        padding-bottom: 4px;
+        flex-wrap     : nowrap;
+        font-size     : $text_m;
+        transition    : 1s;
+    }
+
+    a:hover {
+        box-shadow: 0 3px $g400;
+    }
+}
+
+.phone-navbar {
+    @include none;
+}
+
+@include md {
+    .header {
+        position: relative;
+        position: fixed;
+        top     : 0;
+        left    : 0;
+        right   : 0;
+        z-index : 999;
+    }
+
+    .navbar {
+        @include flex_column;
+        position        : absolute;
+        top             : 40px;
+        right           : 0;
+        left            : 0;
+        max-height      : 0;
+        text-align      : center;
+        overflow        : hidden;
+        z-index         : 999;
+        transition      : max-height 1s;
+        background-color: $white;
+    }
+
+    .phone-navbar {
+        @include block;
+        align-self: center;
+        font-size : $text_m;
+
+        a:hover {
+            color: $g400;
+        }
+    }
+
+    .show {
+        max-height: 1200px;
+        padding   : 0.5rem 0;
+    }
+
+    .show a {
+        padding   : 0.5rem 0;
+        transition: 1s;
+    }
+
+    .show a:hover {
+        box-shadow: 0 0.7px $g500;
+    }
+}
+
+/*banner*/
+.banner-lg {
+    margin-top: 41px;
+}
+
+.swiper {
+    max-width: 100%;
+    height   : auto;
+}
+
+.swiper-slide {
+    text-align             : center;
+    font-size              : 18px;
+    background             : #fff;
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
+
+    img {
+        display   : block;
+        height    : auto;
+        object-fit: cover;
+        max-width : 100%;
+    }
+}
+
+
+/*banner end*/
+
+.container {
+    @include xxl;
+    margin-right: 20px;
+    margin-left : 20px;
+    margin-top  : 41px;
+}
+
+.togowrap {
+    @include flex_between;
+    align-items: center;
+
+    @include md {
+        @include flex_column;
+    }
+
+    .togowrap-swiper {
+        width: 70%;
+
+        @include md {
+            width: 100%;
+        }
+    }
+
+    .swiper {
+        width : 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: flex-end;
+        padding        : 1rem;
+        flex           : 0 0 auto;
+    }
+
+    @include togoSwiper {
+        .swiper-slide:first-child {
+            transition: transform 100ms;
+        }
+
+        .swiper-slide:first-child img {
+            transition: box-shadow 500ms;
+        }
+
+        .swiper-slide.swiper-slide-active:first-child {
+            transform: translateX(50%);
+            z-index  : 2;
+        }
+
+        .swiper-slide.swiper-slide-active:first-child img {
+            box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+        }
+
+        .swiper-slide:nth-child(2) {
+            transition: transform 100ms;
+        }
+
+        .swiper-slide.swiper-slide-next:nth-child(2) {
+            transform: translateX(55%);
+            z-index  : 1;
+        }
+
+        .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
+            transform: translateX(-50%);
+        }
+
+        .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
+            transform: translateX(-55%);
+        }
+    }
+}
+
+.swiper-card,
+.top-tenwrap-card {
+    @include l-card;
+    @include center-cover;
+    border-radius: 20px;
+    width        : 100%;
+    padding-top  : 100%;
+    position     : relative;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+
+    @include md {
+        width      : 100%;
+        padding-top: 100%;
+    }
+
+    .bi-bookmark-fill {
+        position : absolute;
+        font-size: $text_m;
+        color    : $white;
+        top      : 5%;
+        right    : 5%;
+        translate: 50%;
+    }
+}
+
+.swiper-position,
+.top-tenwrap-position {
+    position: absolute;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+}
+
+.swiper-user {
+    @include flex_between;
+    margin     : 10px 0;
+    align-items: center;
+}
+
+.swiper-titleradius {
+    @include flex_around;
+    background-color: $white;
+    border-radius   : 0 50px 50px 0;
+    padding         : 2% 6%;
+    align-items     : center;
+
+    .p-s {
+        padding-bottom: 0;
+        color         : $b100;
+    }
+
+    img {
+        margin-right: 10%;
+    }
+}
+
+.swiper-data {
+    @include flex_around;
+    color  : $white;
+    padding: 2% 6%;
+
+    p {
+        padding-bottom: 0;
+    }
+}
+
+.swiper-text {
+    background-color: $white;
+    padding         : 2%;
+    text-align      : left;
+
+    .l-h3 {
+        color      : $b100;
+        font-weight: bold;
+    }
+
+    p {
+        color      : $g400;
+        margin     : 10px 0;
+        font-weight: bold;
+    }
+}
+
+.togowrap-text {
+    width: 30%;
+    @include flex;
+
+
+    @include md {
+        width     : 100%;
+        text-align: center;
+    }
+
+    img {
+        width       : 80px;
+        height      : auto;
+        margin-right: 20px;
+
+        @include md {
+            display: none;
+        }
+    }
+}
+
+.l-h2,
+    .p-l {
+        margin-bottom: 30px;
+
+        @include md {
+            margin-bottom: 15px;
+        }
+    }
+
+.top-tenwrap {
+    margin-top: 41px;
+    overflow  : hidden;
+    @include flex_column;
+    padding: 10px;
+}
+
+.top-tenwrap-title {
+    @include flex_between;
+    align-items: center;
+    @include md{
+        @include flex_column;
+    }
+}
+
+.top-tenwrap-wrapper {
+    @include flex;
+    flex-wrap: wrap;
+    width    : 100%;
+    @include md{
+        @include flex-start;
+    }
+    
+}
+
+.top-tenwrap-slide {
+    width  : 20%;
+    padding: 10px;
+
+    @include md {
+        width: 50%;
+    }
+}
+
+.top-tenwrap-text {
+    padding   : 2%;
+    text-align: left;
+
+    .p-s {
+        color        : $b100;
+        display      : inline;
+        padding      : 0 10px;
+        border-radius: 10px;
+    }
+
+    .l-h4 {
+        color: $white;
+    }
+
+    .bi-geo-alt-fill {
+        margin: 0;
+    }
+}
+
+
+
+
+
+// .wrap {
+//     margin-top  : 41px;
+//     padding : 10px 5px;
+//     overflow: hidden;
+
+//     img {
+//         max-width: 100%;
+//         height   : auto;
+//     }
+
+//     @include sm {
+//         margin-right: 10px;
+//         margin-left : 10px;
+//     }
+// }
+
+// .card-100pa {
+//     @include l-card;
+//     @include center-cover;
+//     overflow     : hidden;
+//     border-radius: 20px;
+//     padding-top  : 100%;
+//     flex         : 0 0 auto;
+// }
+
+// .row {
+//     @include flex;
+//     flex-wrap: wrap;
+//     margin   : -5px;
+// }
+
+// .col {
+//     width  : 25%;
+//     padding: 5px;
+//     flex   : 0 0 auto;
+
+//     @include sm {
+//         width: 50%;
+//     }
+// }
+
+
+/*footer*/
+
+.footer {
+    @include flex_between;
+    background-color: $footer;
+    padding         : 3% 2%;
+
+    .logo {
+        @include hide-text;
+        background: url(../images/logo-02.png) no-repeat;
+        width     : 309px;
+        height    : 47px;
+    }
+}
+
+.footer_logo {
+    width: 20%;
+
+    li:nth-child(2) {
+        @include flex_start;
+        align-items: center;
+
+        a {
+            display: block;
+            margin : 5% 4% auto 0;
+        }
+    }
+}
+
+.footer_detial {
+
+    a {
+        color : $white;
+        margin: 5% 0 auto 0;
+        @include mouse;
+    }
+
+    li {
+        ul {
+            @include flex_between;
+        }
+    }
+
+    li:nth-child(2) {
+        ul {
+            li:nth-child(2) {
+                a {
+                    font-size: $text_s;
+                }
+            }
+        }
+    }
+}
+
+@include md {
+    .footer {
+        @include flex_column;
+    }
+
+    .footer_logo {
+        width: 100%;
+        @include flex_between;
+        align-items: center;
+    }
+
+    .footer_detial {
+        width : 90%;
+        margin: 5% auto;
+
+        li:nth-child(2) {
+            ul {
+                @include flex_column;
+                align-items: flex-end;
+                margin     : 5% auto;
+
+                li:nth-child(2) {
+                    a {
+                        font-size: $text_s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*footer end*/

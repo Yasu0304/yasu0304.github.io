@@ -1,0 +1,75 @@
+
+
+@mixin block {
+    display: block;
+    @content
+}
+
+@mixin flex {
+    display: flex;
+    @content
+}
+
+@mixin flex_center {
+    display        : flex;
+    justify-content: center;
+    @content
+}
+
+@mixin flex_between {
+    display        : flex;
+    justify-content: space-between;
+    @content
+}
+
+@mixin flex_around {
+    display        : flex;
+    justify-content: space-around;
+    @content
+}
+
+@mixin flex_start {
+    display        : flex;
+    justify-content: flex-start;
+    @content
+}
+
+@mixin flex_end {
+    display        : flex;
+    justify-content: flex-end;
+    @content
+}
+
+@mixin flex_column {
+    display       : flex;
+    flex-direction: column;
+    @content
+}
+
+@mixin none {
+    display: none;
+    @content
+}
+
+
+@mixin mouse {
+    cursor: pointer;
+    cursor: auto;
+    @content
+}
+
+@mixin markpen_y {
+    background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
+    padding   : 2px 1px;
+    @content
+}
+
+@mixin center-cover {
+    background-position: center center;
+    background-size    : cover;
+}
+
+@mixin l-card {
+    overflow     : hidden;
+    border-radius: 20px;
+}
