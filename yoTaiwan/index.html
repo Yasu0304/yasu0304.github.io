@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YO ! Taiwan</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/flexslider.css">
+    <link rel="stylesheet" href="./scss/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="#" class="logo">YO ! Taiwan</a></h1>
+        <ul class="navbar">
+            <li><a href="#">找景點</a></li>
+            <li><a href="#">找美食</a></li>
+            <li><a href="./latestact.html">找活動</a></li>
+            <li><a href="#">找旅宿</a></li>
+            <li><a href="#">找交通</a></li>
+            <li><a href="#">我的行程</a></li>
+        </ul>
+        <a href="#" class="phone-navbar">Menu</a>
+    </div>
+    <!-- banner -->
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/banner-01.png" alt="出發吧"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/banner-02.png" alt="出發吧"></a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- banner end -->
+    <div class="wrap">
+        <div class="togo">
+            <div class="togo_title">
+                <h2>不知道要去哪裡嗎？</h2>
+                <h3>看看大家都去哪裡吧！</h3>
+                <ul>
+                    <li class="flex-nav-prev">
+                        <a class="flex-prev" href="#" tabindex="-1">
+                            <img src="./images/left.png" alt="上一張" class="flex-active">
+                        </a>
+                    </li>
+                    <li class="flex-nav-next">
+                        <a class="flex-next flex-disabled" href="#" tabindex="-1">
+                            <img src="./images/right.png" alt="下一張">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="togo_area">
+                <div class="flexslider carousel">
+                    <ul class="slides">
+                        <li>
+                            <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                <div class="togo_img_mark">
+                                    <a href="#">
+                                        <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="togo_img_info">
+                                        <div class="togo_img_info_name">
+                                            <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                            <p>Hebe</p>
+                                        </div>
+                                        <ul class="togo_img_info_detial">
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                <p>52,700</p>
+                                            </li>
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                <p>52,700</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="togo_detail">
+                                        <p>小琉球自潛之旅</p>
+                                        <ul class="togo_detail_text">
+                                            <li>
+                                                <img src="./images/togo-item/icon-time.png"
+                                                    alt="2021年12月03日-2021年12月06日">
+                                                <p>2021年12月03日-2021年12月06日</p>
+                                            </li>
+                                            <li>
+                                                <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                <p>屏東縣</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                <div class="togo_img_mark">
+                                    <a href="#">
+                                        <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="togo_img_info">
+                                        <div class="togo_img_info_name">
+                                            <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                            <p>Hebe</p>
+                                        </div>
+                                        <ul class="togo_img_info_detial">
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                <p>52,700</p>
+                                            </li>
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                <p>52,700</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="togo_detail">
+                                        <p>小琉球自潛之旅</p>
+                                        <ul class="togo_detail_text">
+                                            <li>
+                                                <img src="./images/togo-item/icon-time.png"
+                                                    alt="2021年12月03日-2021年12月06日">
+                                                <p>2021年12月03日-2021年12月06日</p>
+                                            </li>
+                                            <li>
+                                                <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                <p>屏東縣</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                <div class="togo_img_mark">
+                                    <a href="#">
+                                        <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="togo_img_info">
+                                        <div class="togo_img_info_name">
+                                            <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                            <p>Hebe</p>
+                                        </div>
+                                        <ul class="togo_img_info_detial">
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                <p>52,700</p>
+                                            </li>
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                <p>52,700</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="togo_detail">
+                                        <p>小琉球自潛之旅</p>
+                                        <ul class="togo_detail_text">
+                                            <li>
+                                                <img src="./images/togo-item/icon-time.png"
+                                                    alt="2021年12月03日-2021年12月06日">
+                                                <p>2021年12月03日-2021年12月06日</p>
+                                            </li>
+                                            <li>
+                                                <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                <p>屏東縣</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="togo_item" style="background-image:
+                                        url('./images/togo-item/location-01.jpg');">
+                                <div class="togo_img_mark">
+                                    <a href="#">
+                                        <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="togo_img_info">
+                                        <div class="togo_img_info_name">
+                                            <img src="./images/togo-item/who.jpg" alt="用戶頭像">
+                                            <p>Hebe</p>
+                                        </div>
+                                        <ul class="togo_img_info_detial">
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-eye.png" alt="關注人數">
+                                                <p>52,700</p>
+                                            </li>
+                                            <li class="togo_img_info_item">
+                                                <img src="./images/togo-item/icon-heart.png" alt="喜歡人數">
+                                                <p>52,700</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="togo_detail">
+                                        <p>小琉球自潛之旅</p>
+                                        <ul class="togo_detail_text">
+                                            <li>
+                                                <img src="./images/togo-item/icon-time.png"
+                                                    alt="2021年12月03日-2021年12月06日">
+                                                <p>2021年12月03日-2021年12月06日</p>
+                                            </li>
+                                            <li>
+                                                <img src="./images/togo-item/icon-location.png" alt="屏東縣">
+                                                <p>屏東縣</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="hottop">
+            <h2>推薦景點TOP10</h2>
+            <div class="hottop_area">
+                <div class="hottop_bnt">
+                    <img src="./images/left.png" alt="上一張">
+                </div>
+                <div class="hottop_list">
+                    <div class="flexslider carousel">
+                        <ul class="slides">
+                            <li>
+                                <div class="hottop_js">
+                                    <div class="hottop_item">
+                                        <div class="hottop_rank">
+                                            <div class="rank">
+                                                <img src="./images/hottop-item/01.svg" alt="">
+                                            </div>
+                                            <img src="./images/hottop-item/crown.svg" alt="">
+                                        </div>
+                                        <div class="hottop_img">
+                                            <img src="./images/hottop-item/location-01.png" alt="">
+                                        </div>
+                                        <div class="hottop_mark">
+                                            <a href="#">
+                                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                            </a>
+                                        </div>
+                                        <div class="hottop_detail">
+                                            <p>絕美秘境</p>
+                                            <ul class="hottop_text">
+                                                <li>
+                                                    <h4>紫坪</h4>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="台東縣">
+                                                    <p>台東縣・綠島鄉</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hottop_js">
+                                    <div class="hottop_item">
+                                        <div class="hottop_rank">
+                                            <div class="rank">
+                                                <img src="./images/hottop-item/02.svg" alt="">
+                                            </div>
+                                            <img src="./images/hottop-item/crown.svg" alt="">
+                                        </div>
+                                        <div class="hottop_img">
+                                            <img src="./images/hottop-item/location-01.png" alt="">
+                                        </div>
+                                        <div class="hottop_mark">
+                                            <a href="#">
+                                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                            </a>
+                                        </div>
+                                        <div class="hottop_detail">
+                                            <p>絕美秘境</p>
+                                            <ul class="hottop_text">
+                                                <li>
+                                                    <h4>紫坪</h4>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="台東縣">
+                                                    <p>台東縣・綠島鄉</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hottop_js">
+                                    <div class="hottop_item">
+                                        <div class="hottop_rank">
+                                            <div class="rank">
+                                                <img src="./images/hottop-item/03.svg" alt="">
+                                            </div>
+                                            <img src="./images/hottop-item/crown.svg" alt="">
+                                        </div>
+                                        <div class="hottop_img">
+                                            <img src="./images/hottop-item/location-01.png" alt="">
+                                        </div>
+                                        <div class="hottop_mark">
+                                            <a href="#">
+                                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                            </a>
+                                        </div>
+                                        <div class="hottop_detail">
+                                            <p>絕美秘境</p>
+                                            <ul class="hottop_text">
+                                                <li>
+                                                    <h4>紫坪</h4>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="台東縣">
+                                                    <p>台東縣・綠島鄉</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hottop_js">
+                                    <div class="hottop_item">
+                                        <div class="hottop_rank">
+                                            <div class="rank">
+                                                <img src="./images/hottop-item/04.svg" alt="">
+                                            </div>
+                                            <img src="./images/hottop-item/crown.svg" alt="">
+                                        </div>
+                                        <div class="hottop_img">
+                                            <img src="./images/hottop-item/location-01.png" alt="">
+                                        </div>
+                                        <div class="hottop_mark">
+                                            <a href="#">
+                                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                            </a>
+                                        </div>
+                                        <div class="hottop_detail">
+                                            <p>絕美秘境</p>
+                                            <ul class="hottop_text">
+                                                <li>
+                                                    <h4>紫坪</h4>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="台東縣">
+                                                    <p>台東縣・綠島鄉</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hottop_js">
+                                    <div class="hottop_item">
+                                        <div class="hottop_rank">
+                                            <div class="rank">
+                                                <img src="./images/hottop-item/01.svg" alt="">
+                                            </div>
+                                            <img src="./images/hottop-item/crown.svg" alt="">
+                                        </div>
+                                        <div class="hottop_img">
+                                            <img src="./images/hottop-item/location-01.png" alt="">
+                                        </div>
+                                        <div class="hottop_mark">
+                                            <a href="#">
+                                                <img src="./images/togo-item/icon-bookmark.png" alt="標註地點">
+                                            </a>
+                                        </div>
+                                        <div class="hottop_detail">
+                                            <p>絕美秘境</p>
+                                            <ul class="hottop_text">
+                                                <li>
+                                                    <h4>紫坪</h4>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/togo-item/icon-location.png" alt="台東縣">
+                                                    <p>台東縣・綠島鄉</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hottop_bnt">
+                    <img src="./images/right.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="food">
+            <h2>美食饗宴</h2>
+            <div class="food_map">
+                <a href="#">
+                    <div class="food_map_baanner">
+                        <img src="./images/food-item/food-bn.png" alt="">
+                    </div>
+                    <div class="food_map_text">
+                        <p>跟著YO !TAIWAN展開你的吃貨之旅吧！</p>
+                        <img src="./images/food-item/map-icon.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="food_area">
+                <div class="food_area_item">
+                    <div class="food_area_text">
+                        <img src="./images/food-item/country-icon.png" alt="">
+                        <p>異國料理</p>
+                    </div>
+                    <a href="#">
+                        <div class="food_area_bn">
+                            <img src="./images/food-item/local.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_area_item">
+                    <div class="food_area_text">
+                        <img src="./images/food-item/country-icon.png" alt="">
+                        <p>異國料理</p>
+                    </div>
+                    <a href="#">
+                        <div class="food_area_bn">
+                            <img src="./images/food-item/country.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_area_item">
+                    <div class="food_area_text">
+                        <img src="./images/food-item/cafe-icon.png" alt="">
+                        <p>文青咖啡廳</p>
+                    </div>
+                    <a href="#">
+                        <div class="food_area_bn">
+                            <img src="./images/food-item/cafe.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_area_item">
+                    <div class="food_area_text">
+                        <img src="./images/food-item/diet-icon.png" alt="">
+                        <p>健康蔬食</p>
+                    </div>
+                    <a href="#">
+                        <div class="food_area_bn">
+                            <img src="./images/food-item/diet.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="latestact">
+            <h2>最新熱門活動</h2>
+            <div class="latestact_area">
+                <div class="latestact_areacontrol">
+                    <div class="latestact_item">
+                        <div class="latestact_img">
+                            <img src="./images/latestact-item/latestact-01.png" alt="">
+                        </div>
+                        <div class="latestact_content">
+                            <div class="latestact_title">
+                                <div class="latestact_maintitle">
+                                    <p>馬祖年度節慶活動</p>
+                                </div>
+                                <div class="latestact_tag">
+                                    <p>節慶活動</p>
+                                </div>
+                            </div>
+                            <div class="latestact_article">
+                                <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                </p>
+                            </div>
+                            <div class="latestact_footer">
+                                <div>
+                                    <img src="./images/latestact-item/icon-location.png" alt="">
+                                </div>
+                                <div>
+                                    <p>馬祖縣・南竿</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latestact_areacontrol">
+                    <div class="latestact_item">
+                        <div class="latestact_img">
+                            <img src="./images/latestact-item/latestact-02.png" alt="">
+                        </div>
+                        <div class="latestact_content">
+                            <div class="latestact_title">
+                                <div class="latestact_maintitle">
+                                    <p>沙灘跑步比賽</p>
+                                </div>
+                                <div class="latestact_tag">
+                                    <p>運動賽事</p>
+                                </div>
+                            </div>
+                            <div class="latestact_article">
+                                <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                </p>
+                            </div>
+                            <div class="latestact_footer">
+                                <div>
+                                    <img src="./images/latestact-item/icon-location.png" alt="">
+                                </div>
+                                <div>
+                                    <p>屏東縣・恆春鄉</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latestact_areacontrol">
+                    <div class="latestact_item">
+                        <div class="latestact_img">
+                            <img src="./images/latestact-item/latestact-03.png" alt="">
+                        </div>
+                        <div class="latestact_content">
+                            <div class="latestact_title">
+                                <div class="latestact_maintitle">
+                                    <p>攀岩體驗活動</p>
+                                </div>
+                                <div class="latestact_tag">
+                                    <p>人文體驗</p>
+                                </div>
+                            </div>
+                            <div class="latestact_article">
+                                <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                </p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim dignissimos
+                                    laborum maxime quasi laboriosam eveniet nobis, accusantium rerum sequi repellendus
+                                    tenetur quis facere suscipit nesciunt error magni quaerat consectetur possimus. Iure
+                                    officia quibusdam nobis nihil molestias veniam, necessitatibus eum. Sapiente, odit
+                                    ad minima dicta laborum dolore. Id, incidunt consequatur!</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim dignissimos
+                                    laborum maxime quasi laboriosam eveniet nobis, accusantium rerum sequi repellendus
+                                    tenetur quis facere suscipit nesciunt error magni quaerat consectetur possimus. Iure
+                                    officia quibusdam nobis nihil molestias veniam, necessitatibus eum. Sapiente, odit
+                                    ad minima dicta laborum dolore. Id, incidunt consequatur!</p>
+                            </div>
+                            <div class="latestact_footer">
+                                <div>
+                                    <img src="./images/latestact-item/icon-location.png" alt="">
+                                </div>
+                                <div>
+                                    <p>高雄市・三民區</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latestact_areacontrol">
+                    <div class="latestact_item">
+                        <div class="latestact_img">
+                            <img src="./images/latestact-item/latestact-04.png" alt="">
+                        </div>
+                        <div class="latestact_content">
+                            <div class="latestact_title">
+                                <div class="latestact_maintitle">
+                                    <p>鶯歌陶藝小教室</p>
+                                </div>
+                                <div class="latestact_tag">
+                                    <p>節慶活動</p>
+                                </div>
+                            </div>
+                            <div class="latestact_article">
+                                <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                </p>
+                            </div>
+                            <div class="latestact_footer">
+                                <div>
+                                    <img src="./images/latestact-item/icon-location.png" alt="">
+                                </div>
+                                <div>
+                                    <p>桃園市・鶯歌</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="latestact_item">
+                    <a href="#">
+                        <ul class="latestact_item_content">
+                            <li class="latestact_item_pic">
+                                <img src="./images/latestact-item/latestact-01.png" alt="">
+                            </li>
+                            <li class="latestact_item_text">
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p>馬祖年度節慶活動</p>
+                                            </li>
+                                            <li>
+                                                <p>節慶活動</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/latestact-item/icon-location.png" alt="">
+                                        <p>馬祖縣・南竿</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </ul>
+                    </a>
+                </div>
+                <div class="latestact_item">
+                    <a href="#">
+                        <ul class="latestact_item_content">
+                            <li class="latestact_item_pic">
+                                <img src="./images/latestact-item/latestact-04.png" alt="鶯歌陶藝小教室">
+                            </li>
+                            <li class="latestact_item_text">
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p>鶯歌陶藝小教室</p>
+                                            </li>
+                                            <li>
+                                                <p>人文體驗</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/latestact-item/icon-location.png" alt="">
+                                        <p>桃園市・鶯歌</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="latestact_item">
+                    <a href="#">
+                        <ul class="latestact_item_content">
+                            <li class="latestact_item_pic">
+                                <img src="./images/latestact-item/latestact-02.png" alt="沙灘跑步比賽">
+                            </li>
+                            <li class="latestact_item_text">
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p>沙灘跑步比賽</p>
+                                            </li>
+                                            <li>
+                                                <p>運動賽事</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/latestact-item/icon-location.png" alt="">
+                                        <p>屏東縣・恆春鄉</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="latestact_item">
+                    <a href="#">
+                        <ul class="latestact_item_content">
+                            <li class="latestact_item_pic">
+                                <img src="./images/latestact-item/latestact-03.png" alt="攀岩體驗活動">
+                            </li>
+                            <li class="latestact_item_text">
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p>攀岩體驗活動</p>
+                                            </li>
+                                            <li>
+                                                <p>人文體驗</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>馬祖民俗節慶活動，最熱鬧的過年，一路到九月的馬祖昇天祭，還有扛乩、擺暝等特殊文化，元宵節是其中之最，從農曆元月十一日開始，可以一路延續到元月十九、甚至是二十日！
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/latestact-item/icon-location.png" alt="">
+                                        <p>高雄市・三民區</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </a>
+                </div>-->
+            </div>
+        </div>
+
+        <div class="lodging">
+            <div>
+                <h2>人氣旅宿</h2>
+            </div>
+            <div class="lodging_area">
+                <div class="lodging_bnt">
+                    <img src="./images/left.png" alt="上一張">
+                </div>
+                <div class="lodging_list">
+                    <div class="flexslider carousel">
+                        <ul class="slides">
+                            <li>
+                                <div class="lodging_item" style="background-image:
+                            url('./images/lodging-item/lodging-01.png');">
+                                    <ul class="lodging_content">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>慕夏四季海景民宿</p>
+                                                </li>
+                                                <li>
+                                                    <p>飯店</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="./images/lodging-item/icon-location.png" alt="地點">
+                                            <p>台中市・和平區</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>$1,200</p>
+                                                </li>
+                                                <li>
+                                                    <p>詳情</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lodging_item" style="background-image:
+                            url('./images/lodging-item/lodging-02.png');">
+                                    <ul class="lodging_content">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>慕夏四季海景民宿</p>
+                                                </li>
+                                                <li>
+                                                    <p>飯店</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="./images/lodging-item/icon-location.png" alt="地點">
+                                            <p>台中市・和平區</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>$1,200</p>
+                                                </li>
+                                                <li>
+                                                    <p>詳情</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lodging_item" style="background-image:
+                            url('./images/lodging-item/lodging-03.png');">
+                                    <ul class="lodging_content">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>慕夏四季海景民宿</p>
+                                                </li>
+                                                <li>
+                                                    <p>飯店</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="./images/lodging-item/icon-location.png" alt="地點">
+                                            <p>台中市・和平區</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>$1,200</p>
+                                                </li>
+                                                <li>
+                                                    <p>詳情</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lodging_item" style="background-image:
+                            url('./images/lodging-item/lodging-04.png');">
+                                    <ul class="lodging_content">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>慕夏四季海景民宿</p>
+                                                </li>
+                                                <li>
+                                                    <p>飯店</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="./images/lodging-item/icon-location.png" alt="地點">
+                                            <p>台中市・和平區</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>$1,200</p>
+                                                </li>
+                                                <li>
+                                                    <p>詳情</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lodging_item" style="background-image:
+                            url('./images/lodging-item/lodging-01.png');">
+                                    <ul class="lodging_content">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>慕夏四季海景民宿</p>
+                                                </li>
+                                                <li>
+                                                    <p>飯店</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="./images/lodging-item/icon-location.png" alt="地點">
+                                            <p>台中市・和平區</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>$1,200</p>
+                                                </li>
+                                                <li>
+                                                    <p>詳情</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lodging_item" style="background-image:
+                            url('./images/lodging-item/lodging-01.png');">
+                                    <ul class="lodging_content">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>慕夏四季海景民宿</p>
+                                                </li>
+                                                <li>
+                                                    <p>飯店</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="./images/lodging-item/icon-location.png" alt="地點">
+                                            <p>台中市・和平區</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p>$1,200</p>
+                                                </li>
+                                                <li>
+                                                    <p>詳情</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lodging_bnt">
+                    <img src="./images/right.png" alt="下一張">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <ul class="footer_logo">
+            <li>
+                <h5>
+                    <a href="#" class="logo">YO ! Taiwan</a>
+                </h5>
+            </li>
+            <li>
+                <a href="#"><img src="./images/line.png" alt="line"></a>
+                <a href="#"><img src="./images/fb.png" alt="fb"></a>
+                <a href="#"><img src="./images/ig.png" alt="ig"></a>
+            </li>
+        </ul>
+        <ul class="footer_detial">
+            <li>
+                <ul>
+                    <li><a href="#">找景點</a></li>
+                    <li><a href="#">找美食</a></li>
+                    <li><a href="#">找活動</a></li>
+                    <li><a href="#">找旅宿</a></li>
+                    <li><a href="#">找交通</a></li>
+                    <li><a href="#">我的行程</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">關於Yo!Taiwan</a></li>
+                    <li><a href="#">© 2021 Copyright YO!TAIWAN | <br>Designer by Penny Huang</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
