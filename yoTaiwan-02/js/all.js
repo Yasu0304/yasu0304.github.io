@@ -38,9 +38,13 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
         },
     });
 
