@@ -1,7 +1,8 @@
-@import "header";
 @import "layout";
 @import "media";
 @import "reset";
+@import "components";
+@import "flex";
 $text_s   : 1rem;
 $text_m   : 1.5rem;
 $text_l   : 2rem;
@@ -15,14 +16,13 @@ $g500     :#58585859;
 $footer   : #434343;
 $b100     :#000000;
 
-
-
-
-
-/*header*/
 .l-h2 {
     font-size  : $text_xl;
     font-weight: bold;
+
+    @include md {
+        font-size: $text_l;
+    }
 }
 
 .l-h3 {
@@ -53,6 +53,9 @@ a:hover {
 
 .p-l {
     font-size: $text_l;
+    @include md{
+        font-size: $text_m;
+    }
 }
 
 .bi-clock-fill,
@@ -71,6 +74,22 @@ a:hover {
     background-color: $y200;
 }
 
+.content {
+    @include py1;
+}
+
+
+.container {
+    @include px2;
+    @include mt2;
+
+    @include md {
+        @include px1;
+    }
+}
+
+
+/*header*/
 .header {
     width   : 100%;
     position: fixed;
@@ -79,7 +98,7 @@ a:hover {
     right   : 0;
     z-index : 999;
     @include flex_between;
-    height          : 40px;
+    height          : 2.5rem;
     align-items     : center;
     background-color: $white;
     box-shadow      : 0 2px 5px $g500;
@@ -87,14 +106,13 @@ a:hover {
 
 .logo {
     @include hide-text;
-    background : url(../images/logo.jpg) no-repeat;
-    width      : 227px;
-    height     : 34px;
+    background: url(../images/logo.jpg) no-repeat;
+    width     : 227px;
+    height    : 34px;
 }
 
 .navbar {
     @include flex_between;
-    @include mouse;
     min-width: 70%;
 
     a {
@@ -127,7 +145,7 @@ a:hover {
     .navbar {
         @include flex_column;
         position        : absolute;
-        top             : 40px;
+        top             : 2.5rem;
         right           : 0;
         left            : 0;
         max-height      : 0;
@@ -149,7 +167,7 @@ a:hover {
     }
 
     .show {
-        max-height: 1200px;
+        max-height: 75rem;
         padding   : 0.5rem 0;
     }
 
@@ -165,71 +183,92 @@ a:hover {
 
 /*banner*/
 .banner-lg {
-    margin-top: 41px;
-}
+    @include mt2;
 
-.swiper {
-    max-width: 100%;
-    height   : auto;
-}
+    .swiper {
+        max-width: 100%;
+        height   : auto;
+    }
 
-.swiper-slide {
-    text-align             : center;
-    font-size              : 18px;
-    background             : #fff;
-    /* Center slide text vertically */
-    display                : -webkit-box;
-    display                : -ms-flexbox;
-    display                : -webkit-flex;
-    display                : flex;
-    -webkit-box-pack       : center;
-    -ms-flex-pack          : center;
-    -webkit-justify-content: center;
-    justify-content        : center;
-    -webkit-box-align      : center;
-    -ms-flex-align         : center;
-    -webkit-align-items    : center;
-    align-items            : center;
+    .swiper-slide {
+        text-align             : center;
+        font-size              : 18px;
+        background             : #fff;
+        /* Center slide text vertically */
+        display                : -webkit-box;
+        display                : -ms-flexbox;
+        display                : -webkit-flex;
+        display                : flex;
+        -webkit-box-pack       : center;
+        -ms-flex-pack          : center;
+        -webkit-justify-content: center;
+        justify-content        : center;
+        -webkit-box-align      : center;
+        -ms-flex-align         : center;
+        -webkit-align-items    : center;
+        align-items            : center;
 
-    img {
-        display   : block;
-        height    : auto;
-        object-fit: cover;
-        max-width : 100%;
+        img {
+            display   : block;
+            height    : auto;
+            object-fit: cover;
+            max-width : 100%;
+        }
     }
 }
-
 
 /*banner end*/
 
-.container {
-    @include xxl;
-    margin-right: 20px;
-    margin-left : 20px;
-    margin-top  : 41px;
-}
+/*togo+swiper*/
 
-.togowrap {
-    @include flex_between;
-    align-items: center;
+.togo {
+    @include flex_center;
+    @include mx-2;
 
     @include md {
         @include flex_column;
+        width: 100%;
+    }
+}
+
+.togo-text {
+    width: 30%;
+    @include flex_column;
+    justify-content: center;
+    @include px2;
+
+    @include md {
+        width     : 100%;
+        text-align: center;
+        @include px1;
     }
 
-    .togowrap-swiper {
-        width: 70%;
+    img {
+        width       : 80px;
+        height      : auto;
+        margin-right: 20px;
 
         @include md {
-            width: 100%;
+            display: none;
         }
+    }
+}
+
+.togo-swiper {
+    width: 70%;
+    @include px2;
+
+    @include md {
+        width: 100%;
+        @include px1;
     }
 
     .swiper {
-        width : 100%;
-        height: 100%;
+        width: 100%;
     }
+}
 
+.togoSwiper {
     .swiper-slide {
         display        : flex;
         flex-direction : column;
@@ -278,14 +317,9 @@ a:hover {
 
 .swiper-card,
 .top-tenwrap-card {
-    @include l-card;
-    @include center-cover;
-    border-radius: 20px;
-    width        : 100%;
-    padding-top  : 100%;
-    position     : relative;
-    box-shadow   : 2px 2px 5px $g500;
-    flex         : 0 0 auto;
+    @include l-100card;
+    @include bg-center-cover;
+
 
     @include md {
         width      : 100%;
@@ -360,56 +394,44 @@ a:hover {
     }
 }
 
-.togowrap-text {
-    width: 30%;
-    @include flex;
-
-
-    @include md {
-        width     : 100%;
-        text-align: center;
-    }
-
-    img {
-        width       : 80px;
-        height      : auto;
-        margin-right: 20px;
-
-        @include md {
-            display: none;
-        }
-    }
-}
 
 .l-h2,
-    .p-l {
-        margin-bottom: 30px;
+.p-l {
+    margin-bottom: 30px;
 
-        @include md {
-            margin-bottom: 15px;
-        }
+    @include md {
+        margin-bottom: 15px;
     }
-
-.top-tenwrap {
-    margin-top: 41px;
-    overflow  : hidden;
-    @include flex_column;
-    padding: 10px;
 }
 
-.top-tenwrap-title {
+/*togo+swiper end*/
+
+.topten {
+    @include mx-2;
+}
+
+.topten-text {
     @include flex_between;
+    @include px2;
     align-items: center;
-    @include md{
+    width      : 100%;
+
+    @include md {
         @include flex_column;
     }
+
+    .l-h2{
+        @include markpen_y;
+    }
 }
 
-.top-tenwrap-wrapper {
+.topten-wrap {
     @include flex;
+    @include px2;
     flex-wrap: wrap;
     width    : 100%;
-    @include md{
+
+    @include md {
         @include flex-start;
     }
 }
@@ -523,7 +545,6 @@ a:hover {
     a {
         color : $white;
         margin: 5% 0 auto 0;
-        @include mouse;
     }
 
     li {

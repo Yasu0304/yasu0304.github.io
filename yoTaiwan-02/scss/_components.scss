@@ -1,0 +1,28 @@
+@mixin l-100card {
+    overflow     : hidden;
+    border-radius: 1.25rem;
+    width        : 100%;
+    padding-top  : 100%;
+    position     : relative;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+}
+
+@mixin markpen_y {
+    background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
+    padding   : 2px 1px;
+    @content
+}
+
+@mixin bg-center-cover {
+    background-position: center center;
+    background-size    : cover;
+}
+
+@mixin hide-text {
+    text-indent: 101%;
+    overflow   : hidden;
+    white-space: nowrap;
+    display    : block;
+    @content
+}

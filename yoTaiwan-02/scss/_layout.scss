@@ -1,75 +1,39 @@
+@mixin py1 {
+    padding-top   : 1rem;
+    padding-bottom: 1rem;
 
-
-@mixin block {
-    display: block;
-    @content
 }
 
-@mixin flex {
-    display: flex;
-    @content
+@mixin mt2 {
+    margin-top: 2rem;
 }
 
-@mixin flex_center {
-    display        : flex;
-    justify-content: center;
-    @content
+@mixin mx2 {
+    margin-left : 2rem;
+    margin-right: 2rem;
 }
 
-@mixin flex_between {
-    display        : flex;
-    justify-content: space-between;
-    @content
-}
-
-@mixin flex_around {
-    display        : flex;
-    justify-content: space-around;
-    @content
-}
-
-@mixin flex_start {
-    display        : flex;
-    justify-content: flex-start;
-    @content
-}
-
-@mixin flex_end {
-    display        : flex;
-    justify-content: flex-end;
-    @content
-}
-
-@mixin flex_column {
-    display       : flex;
-    flex-direction: column;
-    @content
-}
-
-@mixin none {
-    display: none;
-    @content
+@mixin mx-2 {
+    margin-left : -2rem;
+    margin-right: -2rem;
 }
 
 
-@mixin mouse {
-    cursor: pointer;
-    cursor: auto;
-    @content
+@mixin px1 {
+    padding-left : 1rem;
+    padding-right: 1rem;
 }
 
-@mixin markpen_y {
-    background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
-    padding   : 2px 1px;
-    @content
+@mixin px2 {
+    padding-left : 2rem;
+    padding-right: 2rem;
 }
 
-@mixin center-cover {
-    background-position: center center;
-    background-size    : cover;
+@mixin mt0 {
+    margin-bottom: 0%;
 }
 
-@mixin l-card {
-    overflow     : hidden;
-    border-radius: 20px;
+@mixin mxa {
+    margin-left : auto;
+    margin-right: auto;
 }
