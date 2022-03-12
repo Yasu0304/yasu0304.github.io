@@ -116,7 +116,7 @@ a {
 }
 
 body {
-  font-family: "Microsoft JhengHei", 微軟正黑體, "sans-serif", "Noto Sans CJK TC";
+  font-family: 'Microsoft JhengHei', 微軟正黑體,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .l-h2 {
@@ -391,7 +391,7 @@ a:hover {
   }
 }
 
-.togo-text {
+.togo-title {
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,7 +408,7 @@ a:hover {
 }
 
 @media (max-width: 960px) {
-  .togo-text {
+  .togo-title {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -419,19 +419,23 @@ a:hover {
   }
 }
 
-.togo-text img {
+.togo-title img {
   width: 80px;
   height: auto;
   margin-right: 20px;
 }
 
 @media (max-width: 960px) {
-  .togo-text img {
+  .togo-title img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: none;
   }
+}
+
+.togo-text {
+  padding: 0.5rem;
 }
 
 .togo-swiper {
@@ -469,7 +473,7 @@ a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 1rem;
+  padding: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -651,23 +655,14 @@ a:hover {
   margin-right: -2rem;
 }
 
-.topten-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.topten-title {
   padding-left: 2rem;
   padding-right: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
 }
 
 @media (max-width: 960px) {
-  .topten-text {
+  .topten-title {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -681,10 +676,23 @@ a:hover {
   }
 }
 
-.topten-text .l-h2 {
+.topten-title .l-h2 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(90%, #FFF176), color-stop(95%, transparent));
   background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
   padding: 2px 1px;
+}
+
+.topten-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
 }
 
 .topten-wrap {
@@ -714,7 +722,7 @@ a:hover {
 
 .top-tenwrap-slide {
   width: 20%;
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 @media (max-width: 960px) {

@@ -3,18 +3,6 @@
 @import "reset";
 @import "components";
 @import "flex";
-$text_s   : 1rem;
-$text_m   : 1.5rem;
-$text_l   : 2rem;
-$text_xl  : 3rem;
-$title_h4 : 1.5rem;
-$y200     : #FFEC3D;
-$white    : #ffffff;
-$g300     : #9C9C9C;
-$g400     : #616161;
-$g500     :#58585859;
-$footer   : #434343;
-$b100     :#000000;
 
 .l-h2 {
     font-size  : $text_xl;
@@ -231,7 +219,7 @@ a:hover {
     }
 }
 
-.togo-text {
+.togo-title {
     width: 30%;
     @include flex_column;
     justify-content: center;
@@ -254,6 +242,10 @@ a:hover {
     }
 }
 
+.togo-text{
+    padding: 0.5rem;
+}
+
 .togo-swiper {
     width: 70%;
     @include px2;
@@ -274,7 +266,7 @@ a:hover {
         flex-direction : column;
         align-items    : center;
         justify-content: flex-end;
-        padding        : 1rem;
+        padding        : 0.5rem;
         flex           : 0 0 auto;
     }
 
@@ -410,10 +402,8 @@ a:hover {
     @include mx-2;
 }
 
-.topten-text {
-    @include flex_between;
+.topten-title {
     @include px2;
-    align-items: center;
     width      : 100%;
 
     @include md {
@@ -423,6 +413,12 @@ a:hover {
     .l-h2{
         @include markpen_y;
     }
+}
+
+.topten-text{
+    @include flex_between;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 .topten-wrap {
@@ -438,7 +434,7 @@ a:hover {
 
 .top-tenwrap-slide {
     width  : 20%;
-    padding: 10px;
+    padding: 0.5rem;
 
     @include md {
         width: 50%;
