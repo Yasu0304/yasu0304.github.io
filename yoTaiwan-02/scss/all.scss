@@ -41,7 +41,8 @@ a:hover {
 
 .p-l {
     font-size: $text_l;
-    @include md{
+
+    @include md {
         font-size: $text_m;
     }
 }
@@ -66,6 +67,13 @@ a:hover {
     @include py1;
 }
 
+.content-none {
+    @include py1;
+
+    @include md {
+        display: none;
+    }
+}
 
 .container {
     @include px2;
@@ -242,7 +250,7 @@ a:hover {
     }
 }
 
-.togo-text{
+.togo-text {
     padding: 0.5rem;
 }
 
@@ -308,7 +316,7 @@ a:hover {
 }
 
 .swiper-card,
-.top-tenwrap-card {
+.topten-card {
     @include l-100card;
     @include bg-center-cover;
 
@@ -329,7 +337,7 @@ a:hover {
 }
 
 .swiper-position,
-.top-tenwrap-position {
+.topten-position {
     position: absolute;
     left    : 0;
     right   : 0;
@@ -404,21 +412,17 @@ a:hover {
 
 .topten-title {
     @include px2;
-    width      : 100%;
+    width: 100%;
 
-    @include md {
-        @include flex_column;
-    }
-
-    .l-h2{
+    .l-h2 {
         @include markpen_y;
     }
 }
 
-.topten-text{
+.topten-text {
     @include flex_between;
     align-items: center;
-    padding: 0.5rem;
+    padding    : 0.5rem;
 }
 
 .topten-wrap {
@@ -426,22 +430,14 @@ a:hover {
     @include px2;
     flex-wrap: wrap;
     width    : 100%;
-
-    @include md {
-        @include flex-start;
-    }
 }
 
-.top-tenwrap-slide {
+.topten-grid {
     width  : 20%;
     padding: 0.5rem;
-
-    @include md {
-        width: 50%;
-    }
 }
 
-.top-tenwrap-text {
+.topten-content {
     padding   : 2%;
     text-align: left;
 
