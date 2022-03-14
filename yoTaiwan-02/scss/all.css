@@ -778,7 +778,8 @@ a:hover {
 }
 
 .topten-wrap,
-.food-wrap, .hot-wrap {
+.food-wrap,
+.hot-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,7 +792,8 @@ a:hover {
 
 @media (max-width: 960px) {
   .topten-wrap,
-  .food-wrap, .hot-wrap {
+  .food-wrap,
+  .hot-wrap {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -922,7 +924,6 @@ a:hover {
 }
 
 .hot-card {
-  padding-top: 29%;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -932,6 +933,32 @@ a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+.hot-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.hot-pic {
+  padding-top: 29%;
+  width: 60%;
+  height: auto;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
+  .hot-pic {
+    display: none;
+  }
+}
+
+.hot-body {
+  width: 40%;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,15 +971,41 @@ a:hover {
           justify-content: center;
 }
 
-.pic-card {
-  width: 30%;
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
+.hot-body .p-s {
+  margin-bottom: 1rem;
+  color: #9C9C9C;
 }
 
-.hot-content {
-  width: 70%;
+@media (max-width: 960px) {
+  .hot-body {
+    width: 100%;
+  }
+}
+
+.hot-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hot-title .l-h3 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.p-s-y200 {
+  background-color: #FFEC3D;
+  color: #000000;
+  display: inline;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.p-s-auto {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #000000;
 }
 
 /*footer*/

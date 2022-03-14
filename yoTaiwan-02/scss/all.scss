@@ -93,7 +93,7 @@ a:hover {
 
 }
 
-.bg{
+.bg {
     @include py2;
     @include bg-center-cover;
 }
@@ -475,7 +475,8 @@ a:hover {
 }
 
 .topten-wrap,
-.food-wrap ,.hot-wrap{
+.food-wrap,
+.hot-wrap {
     @include flex;
     @include px2;
     flex-wrap: wrap;
@@ -584,8 +585,8 @@ a:hover {
 }
 
 .hot-grid {
-    width  : 50%;
-    padding: 0.5rem;
+    width           : 50%;
+    padding         : 0.5rem;
     background-color: $white;
 
     @include md {
@@ -594,26 +595,72 @@ a:hover {
 }
 
 .hot-card {
-    padding-top: 29%;
-    width      : 100%;
-    height: 100%;
+    width        : 100%;
+    height       : 100%;
     overflow     : hidden;
     border-radius: 1.25rem;
     box-shadow   : 2px 2px 5px $g500;
     flex         : 0 0 auto;
+}
+
+.hot-row {
+    @include flex;
+    height: 100%;
+}
+
+.hot-pic {
+    padding-top: 29%;
+    width      : 60%;
+    height     : auto;
+    @include bg-center-cover;
+
+    @media (max-width: 960px) {
+        @include none;
+    }
+}
+
+.hot-body {
+    width  : 40%;
+    padding: 1em;
     @include flex_column;
 
+    .p-s {
+        @include mb1;
+        color: $g300;
+    }
+
+    @media (max-width: 960px) {
+        width: 100%;
+    }
 }
 
-.pic-card{
-    width: 30%;
-    height: 100%;
-    @include bg-center-cover;
+.hot-title {
+    @include my1;
+
+    .l-h3 {
+        font-weight: bold;
+        color      : $b100;
+    }
 }
 
-.hot-content{
-    width: 70%;
+.p-s-y200 {
+    background-color: $y200;
+    color           : $b100;
+    display         : inline;
+    padding         : 0 10px;
+    border-radius   : 10px;
+    font-weight     : bold;
+
 }
+
+.p-s-auto {
+    margin-top: auto;
+    @include mb1;
+    font-weight: bold;
+    color      : $b100;
+}
+
+
 
 
 
