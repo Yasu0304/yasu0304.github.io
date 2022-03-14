@@ -1,8 +1,8 @@
-@import "layout";
-@import "media";
 @import "reset";
-@import "components";
+@import "media";
 @import "flex";
+@import "components";
+@import "layout";
 
 .l-h2 {
     font-size  : $text_xl;
@@ -39,6 +39,15 @@ a:hover {
     font-size: $text_m;
 }
 
+.p-m-w {
+    font-size: $text_m;
+    color    : $white;
+
+    @include md {
+        font-size: $text_s;
+    }
+}
+
 .p-l {
     font-size: $text_l;
 
@@ -63,27 +72,72 @@ a:hover {
     background-color: $y200;
 }
 
-.content {
-    @include py1;
-}
-
-.content-none {
-    @include py1;
-
-    @include md {
+.md-none {
+    @media (max-width: 960px) {
         display: none;
     }
 }
 
 .container {
-    @include px2;
-    @include mt2;
+    @include mxa;
+    width    : 100%;
+    max-width: 1672px;
 
-    @include md {
+    @media (max-width: 1140px) {
+        @include px2;
+    }
+
+    @media (max-width: 960px) {
         @include px1;
+    }
+
+}
+
+.bg{
+    @include py2;
+    @include bg-center-cover;
+}
+
+.row {
+    @include flex_center;
+    @include py1;
+
+    @media (max-width: 1140px) {
+        @include mx-2;
+    }
+
+    @media (max-width: 960px) {
+        @include flex_column;
+        @include mx-1;
     }
 }
 
+.row-column-md-none {
+    @include flex_column;
+    @include py1;
+
+    @media (max-width: 1140px) {
+        @include mx-2;
+    }
+
+    @media (max-width: 960px) {
+        @include none;
+    }
+}
+
+.row-column {
+    @include flex_column;
+    @include py1;
+
+    @media (max-width: 1140px) {
+        @include mx-2;
+    }
+
+    @media (max-width: 960px) {
+        @include flex_column;
+        @include mx-1;
+    }
+}
 
 /*header*/
 .header {
@@ -217,20 +271,9 @@ a:hover {
 
 /*togo+swiper*/
 
-.togo {
-    @include flex_center;
-    @include mx-2;
-
-    @include md {
-        @include flex_column;
-        width: 100%;
-    }
-}
-
 .togo-title {
     width: 30%;
     @include flex_column;
-    justify-content: center;
     @include px2;
 
     @include md {
@@ -250,10 +293,6 @@ a:hover {
     }
 }
 
-.togo-text {
-    padding: 0.5rem;
-}
-
 .togo-swiper {
     width: 70%;
     @include px2;
@@ -266,6 +305,11 @@ a:hover {
     .swiper {
         width: 100%;
     }
+}
+
+
+.togo-text {
+    padding: 0.5rem;
 }
 
 .togoSwiper {
@@ -319,7 +363,6 @@ a:hover {
 .topten-card {
     @include l-100card;
     @include bg-center-cover;
-
 
     @include md {
         width      : 100%;
@@ -406,35 +449,50 @@ a:hover {
 
 /*togo+swiper end*/
 
-.topten {
-    @include mx-2;
-}
-
-.topten-title {
+.title {
     @include px2;
     width: 100%;
+
+    @include md {
+        @include px1;
+    }
 
     .l-h2 {
         @include markpen_y;
     }
 }
 
-.topten-text {
+.text {
     @include flex_between;
     align-items: center;
+    text-align : center;
     padding    : 0.5rem;
+
+    @include md {
+        @include flex_column;
+        justify-content: center;
+    }
 }
 
-.topten-wrap {
+.topten-wrap,
+.food-wrap ,.hot-wrap{
     @include flex;
     @include px2;
     flex-wrap: wrap;
     width    : 100%;
+
+    @include md {
+        @include px1;
+    }
 }
 
 .topten-grid {
     width  : 20%;
     padding: 0.5rem;
+
+    @include md {
+        width: 50%;
+    }
 }
 
 .topten-content {
@@ -457,7 +515,102 @@ a:hover {
     }
 }
 
+.food-banner {
+    @include px2;
+    width   : 100%;
+    position: relative;
 
+    @include md {
+        @include px1;
+
+    }
+
+    a {
+        height: 30rem;
+        @include bg-center-cover;
+        overflow     : hidden;
+        border-radius: 1.25rem;
+        flex         : 0 0 auto;
+        padding      : 0.5rem;
+    }
+
+
+    .p-m {
+        background-color: $white;
+        border-radius   : 2rem;
+        padding         : 0.5rem 2rem;
+        position        : absolute;
+        left            : 60px;
+        bottom          : 51px;
+
+        @include md {
+            width    : 80%;
+            font-size: $text_s;
+            position : absolute;
+            left     : auto;
+            right    : auto;
+            bottom   : 51px;
+        }
+
+    }
+}
+
+.food-grid {
+    width  : 25%;
+    padding: 0.5rem;
+
+    @include md {
+        width: 50%;
+    }
+}
+
+.food-card {
+    padding-top: 106%;
+    width      : 100%;
+    @include bg-center-cover;
+    overflow     : hidden;
+    border-radius: 1.25rem;
+    position     : relative;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+}
+
+.food-content {
+    text-align: center;
+    position  : absolute;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+}
+
+.hot-grid {
+    width  : 50%;
+    padding: 0.5rem;
+    background-color: $white;
+
+    @include md {
+        width: 100%;
+    }
+}
+
+.hot-card {
+    padding-top: 29%;
+    width      : 100%;
+    overflow     : hidden;
+    border-radius: 1.25rem;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+}
+
+.pic-card{
+    width: 30%;
+    height: 100%;
+    @include bg-center-cover;
+}
+
+.hot-content{
+    width: 70%;
+}
 
 
 

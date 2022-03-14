@@ -14,7 +14,11 @@ $b100     :#000000;
 @mixin py1 {
     padding-top   : 1rem;
     padding-bottom: 1rem;
+}
 
+@mixin py2 {
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
 }
 
 @mixin mt2 {
@@ -31,6 +35,10 @@ $b100     :#000000;
     margin-right: -2rem;
 }
 
+@mixin mx-1 {
+    margin-left : -1rem;
+    margin-right: -1rem;
+}
 
 @mixin px1 {
     padding-left : 1rem;
@@ -50,4 +58,3 @@ $b100     :#000000;
     margin-left : auto;
     margin-right: auto;
 }
-
