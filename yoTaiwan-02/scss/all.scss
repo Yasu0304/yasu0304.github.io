@@ -82,6 +82,7 @@ a:hover {
     @include mxa;
     width    : 100%;
     max-width: 1672px;
+    @include px2;
 
     @media (max-width: 1140px) {
         @include px2;
@@ -101,6 +102,7 @@ a:hover {
 .row {
     @include flex_center;
     @include py1;
+    @include mx-2;
 
     @media (max-width: 1140px) {
         @include mx-2;
@@ -115,6 +117,7 @@ a:hover {
 .row-column-md-none {
     @include flex_column;
     @include py1;
+    @include mx-2;
 
     @media (max-width: 1140px) {
         @include mx-2;
@@ -128,6 +131,7 @@ a:hover {
 .row-column {
     @include flex_column;
     @include py1;
+    @include mx-2;
 
     @media (max-width: 1140px) {
         @include mx-2;
