@@ -496,9 +496,7 @@ a:hover {
     }
 }
 
-.topten-wrap,
-.food-wrap,
-.hot-wrap {
+.l-wrap {
     @include flex;
     @include px2;
     flex-wrap: wrap;

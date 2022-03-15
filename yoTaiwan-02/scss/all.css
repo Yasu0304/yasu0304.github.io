@@ -813,9 +813,7 @@ a:hover {
   }
 }
 
-.topten-wrap,
-.food-wrap,
-.hot-wrap {
+.l-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,9 +825,7 @@ a:hover {
 }
 
 @media (max-width: 960px) {
-  .topten-wrap,
-  .food-wrap,
-  .hot-wrap {
+  .l-wrap {
     padding-left: 1rem;
     padding-right: 1rem;
   }
