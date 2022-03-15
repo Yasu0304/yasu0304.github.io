@@ -33,6 +33,20 @@ a:hover {
     color: $g500;
 }
 
+.xsa {
+    font-size: $text_xs;
+    color    : $g300;
+}
+
+.b {
+    @include flex_between;
+    align-items: center;
+}
+
+.f {
+    @include flex;
+}
+
 .p-s {
     font-size: $text_s;
 }
@@ -745,12 +759,9 @@ a:hover {
 
 .hotel-text {
     padding: 1rem;
-    p{
+
+    p {
         @include my02;
-    }
-    .b {
-        @include flex_between;
-        align-items: center;
     }
 
     .l-h4 {
@@ -759,57 +770,10 @@ a:hover {
     }
 }
 
-
-
-
-// .wrap {
-//     margin-top  : 41px;
-//     padding : 10px 5px;
-//     overflow: hidden;
-
-//     img {
-//         max-width: 100%;
-//         height   : auto;
-//     }
-
-//     @include sm {
-//         margin-right: 10px;
-//         margin-left : 10px;
-//     }
-// }
-
-// .card-100pa {
-//     @include l-card;
-//     @include center-cover;
-//     overflow     : hidden;
-//     border-radius: 20px;
-//     padding-top  : 100%;
-//     flex         : 0 0 auto;
-// }
-
-// .row {
-//     @include flex;
-//     flex-wrap: wrap;
-//     margin   : -5px;
-// }
-
-// .col {
-//     width  : 25%;
-//     padding: 5px;
-//     flex   : 0 0 auto;
-
-//     @include sm {
-//         width: 50%;
-//     }
-// }
-
-
 /*footer*/
 
 .footer {
-    @include flex_between;
     background-color: $footer;
-    padding         : 3% 2%;
 
     .logo {
         @include hide-text;
@@ -817,73 +781,108 @@ a:hover {
         width     : 309px;
         height    : 47px;
     }
-}
 
-.footer_logo {
-    width: 20%;
+    @include mxa;
+    width    : 100%;
+    max-width: 1672px;
+    @include px2;
 
-    li:nth-child(2) {
-        @include flex_start;
-        align-items: center;
+    @media (max-width: 1140px) {
+        @include px2;
+    }
 
-        a {
-            display: block;
-            margin : 5% 4% auto 0;
-        }
+    @media (max-width: 960px) {
+        @include px1;
     }
 }
 
-.footer_detial {
+.footer-title {
+    @include flex;
+    align-items: center;
+    @include px2;
+    width: 50%;
+
+    @include md {
+        @include px1;
+        width: 100%;
+        @include flex_center;
+    }
+}
+
+.footer-text {
+    @include flex_column;
+    align-items: left;
+    text-align : center;
+    padding    : 0.5rem;
+
+    @include md {
+        width: 100%;
+        @include mb1;
+    }
 
     a {
-        color : $white;
-        margin: 5% 0 auto 0;
-    }
+        margin-right: 1rem;
+        @include my02;
+        font-size: $text_l;
+        color    : $white;
 
-    li {
-        ul {
-            @include flex_between;
-        }
-    }
-
-    li:nth-child(2) {
-        ul {
-            li:nth-child(2) {
-                a {
-                    font-size: $text_s;
-                }
-            }
+        @include md {
+            font-size   : $text_m;
+            margin-right: 0.5rem
         }
     }
 }
 
-@include md {
-    .footer {
-        @include flex_column;
-    }
 
-    .footer_logo {
+.footer-title2 {
+    @include flex_column;
+    align-items: right;
+    @include px2;
+    width: 50%;
+
+    @include md {
+        @include px1;
         width: 100%;
-        @include flex_between;
-        align-items: center;
+        @include flex_center;
+    }
+}
+
+.footer-text2 {
+    @include flex-end;
+    padding: 0.5rem;
+
+    a {
+        margin-left: 1rem;
+        color      : $white;
+        @include mb0;
     }
 
-    .footer_detial {
-        width : 90%;
-        margin: 5% auto;
+    @include md {
+        @include flex_between;
+        width: 100%;
 
-        li:nth-child(2) {
-            ul {
-                @include flex_column;
-                align-items: flex-end;
-                margin     : 5% auto;
+        a {
+            margin: auto;
+        }
+    }
+}
 
-                li:nth-child(2) {
-                    a {
-                        font-size: $text_s;
-                    }
-                }
-            }
+.footer-text3 {
+    @include flex-end;
+    padding: 0.5rem;
+
+    a {
+        margin-left: 1rem;
+        color      : $white;
+        @include mb0;
+    }
+
+    @include md {
+        @include flex_column;
+        text-align: right;
+        width: 100%;
+        a {
+            margin: 0;
         }
     }
 }

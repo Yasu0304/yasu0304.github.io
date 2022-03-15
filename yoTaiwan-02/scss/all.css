@@ -148,6 +148,29 @@ a:hover {
   color: #58585859;
 }
 
+.xsa {
+  font-size: 0.3rem;
+  color: #9C9C9C;
+}
+
+.b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .p-s {
   font-size: 1rem;
 }
@@ -1137,18 +1160,6 @@ a:hover {
   margin-bottom: 0.2rem;
 }
 
-.hotel-text .b {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .hotel-text .l-h4 {
   color: #000000;
   font-weight: bold;
@@ -1156,14 +1167,13 @@ a:hover {
 
 /*footer*/
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: #434343;
-  padding: 3% 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1672px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .footer .logo {
@@ -1176,75 +1186,168 @@ a:hover {
   height: 47px;
 }
 
-.footer_logo {
-  width: 20%;
-}
-
-.footer_logo li:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer_logo li:nth-child(2) a {
-  display: block;
-  margin: 5% 4% auto 0;
-}
-
-.footer_detial a {
-  color: #ffffff;
-  margin: 5% 0 auto 0;
-}
-
-.footer_detial li ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer_detial li:nth-child(2) ul li:nth-child(2) a {
-  font-size: 1rem;
+@media (max-width: 1140px) {
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (max-width: 960px) {
   .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  .footer-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer_logo {
+}
+
+.footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 960px) {
+  .footer-text {
     width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer-text a {
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .footer-text a {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.footer-title2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  .footer-title2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer-text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.footer-text2 a {
+  margin-left: 1rem;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .footer-text2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
   }
-  .footer_detial {
-    width: 90%;
-    margin: 5% auto;
+  .footer-text2 a {
+    margin: auto;
   }
-  .footer_detial li:nth-child(2) ul {
+}
+
+.footer-text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.footer-text3 a {
+  margin-left: 1rem;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .footer-text3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1255,13 +1358,11 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin: 5% auto;
+    text-align: right;
+    width: 100%;
   }
-  .footer_detial li:nth-child(2) ul li:nth-child(2) a {
-    font-size: 1rem;
+  .footer-text3 a {
+    margin: 0;
   }
 }
 

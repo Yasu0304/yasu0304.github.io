@@ -1,3 +1,4 @@
+$text_xs :0.3rem;
 $text_s   : 1rem;
 $text_m   : 1.5rem;
 $text_l   : 2rem;
@@ -48,7 +49,10 @@ $b100     :#000000;
 @mixin mb1 {
     margin-bottom: 1rem;
 }
-
+@mixin mx05 {
+    margin-left : 0.5rem;
+    margin-right: 0.5rem;
+}
 @mixin mx2 {
     margin-left : 2rem;
     margin-right: 2rem;
@@ -56,6 +60,10 @@ $b100     :#000000;
 
 @mixin mb0 {
     margin-bottom: 0;
+}
+
+@mixin mba {
+    margin-bottom: auto;
 }
 
 @mixin mxa {
