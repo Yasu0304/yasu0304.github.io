@@ -47,6 +47,37 @@ $(document).ready(function () {
             disableOnInteraction: false,
         },
     });
+    //推薦住宿用
+    var swiper = new Swiper(".hotelSwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            769: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+            },
+        },
+        // scrollbar: {
+        //     el: ".swiper-scrollbar",
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+    });
 
     $('.phone-navbar').on('click', function (e) {
         e.preventDefault();

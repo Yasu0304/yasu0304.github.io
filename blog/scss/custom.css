@@ -6,5 +6,6 @@
 .bg-cover {
   background-position: center center;
   background-size: cover;
+  display: block;
 }
 /*# sourceMappingURL=custom.css.map */

@@ -21,13 +21,28 @@ $b100     :#000000;
     padding-bottom: 2rem;
 }
 
+@mixin px1 {
+    padding-left : 1rem;
+    padding-right: 1rem;
+}
+
+@mixin px2 {
+    padding-left : 2rem;
+    padding-right: 2rem;
+}
+
 @mixin mt2 {
     margin-top: 2rem;
 }
 
 @mixin my1 {
-    margin-top: 1rem;
+    margin-top   : 1rem;
     margin-bottom: 1rem;
+}
+
+@mixin my02 {
+    margin-top   : 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 @mixin mb1 {
@@ -39,9 +54,13 @@ $b100     :#000000;
     margin-right: 2rem;
 }
 
-@mixin mx-2 {
-    margin-left : -2rem;
-    margin-right: -2rem;
+@mixin mb0 {
+    margin-bottom: 0;
+}
+
+@mixin mxa {
+    margin-left : auto;
+    margin-right: auto;
 }
 
 @mixin mx-1 {
@@ -49,21 +68,7 @@ $b100     :#000000;
     margin-right: -1rem;
 }
 
-@mixin px1 {
-    padding-left : 1rem;
-    padding-right: 1rem;
-}
-
-@mixin px2 {
-    padding-left : 2rem;
-    padding-right: 2rem;
-}
-
-@mixin mt0 {
-    margin-bottom: 0%;
-}
-
-@mixin mxa {
-    margin-left : auto;
-    margin-right: auto;
+@mixin mx-2 {
+    margin-left : -2rem;
+    margin-right: -2rem;
 }

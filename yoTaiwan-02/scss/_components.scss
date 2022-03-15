@@ -8,6 +8,16 @@
     flex         : 0 0 auto;
 }
 
+@mixin l-117card {
+    overflow     : hidden;
+    border-radius: 1.25rem;
+    width        : 100%;
+    padding-top  : 117%;
+    position     : relative;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+}
+
 @mixin markpen_y {
     background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
     padding   : 2px 1px;
