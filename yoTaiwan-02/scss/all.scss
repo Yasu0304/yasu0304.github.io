@@ -488,7 +488,6 @@ a:hover {
 .text {
     @include flex_between;
     align-items: center;
-    text-align : center;
     padding    : 0.5rem;
 
     @include md {
@@ -772,28 +771,11 @@ a:hover {
 
 /*footer*/
 
-.footer {
+.footer-bg {
     background-color: $footer;
-
-    .logo {
-        @include hide-text;
-        background: url(../images/logo-02.png) no-repeat;
-        width     : 309px;
-        height    : 47px;
-    }
-
-    @include mxa;
-    width    : 100%;
-    max-width: 1672px;
-    @include px2;
-
-    @media (max-width: 1140px) {
-        @include px2;
-    }
-
-    @media (max-width: 960px) {
-        @include px1;
-    }
+    width: 100%;
+    @include py2;
+    @include mt5;
 }
 
 .footer-title {
@@ -801,6 +783,13 @@ a:hover {
     align-items: center;
     @include px2;
     width: 50%;
+
+    .logo {
+        @include hide-text;
+        background: url(../images/logo-02.png) no-repeat;
+        width     : 309px;
+        height    : 47px;
+    }
 
     @include md {
         @include px1;

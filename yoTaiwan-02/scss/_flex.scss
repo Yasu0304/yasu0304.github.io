@@ -21,6 +21,12 @@
     @content
 }
 
+@mixin flex_evenly{
+    display        : flex;
+    justify-content: space-evenly;
+    @content
+}
+
 @mixin flex_start {
     display        : flex;
     justify-content: flex-start;
