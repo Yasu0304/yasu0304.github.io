@@ -1,0 +1,86 @@
+//最上面促購廣告純文字
+@mixin box($color, $size) {
+    background-color: $color;
+    font-size       : $size;
+    text-align      : center;
+    align-items     : center;
+    @content
+}
+
+@mixin hide-text($hight, $width) {
+    text-indent: 101%;
+    overflow   : hidden;
+    white-space: nowrap;
+    display    : block;
+    height     : $hight;
+    width      : $width;
+    @content
+}
+
+@mixin icon($hight, $width) {
+    height: $hight;
+    width : $width;
+    @content
+}
+
+@mixin link($color, $size) {
+    color    : $color;
+    font-size: $size;
+    @content
+}
+
+@mixin bg-center-cover {
+    background-position: center center;
+    background-size    : cover;
+    @content
+}
+
+@mixin l-32banner {
+    overflow     : hidden;
+    border-radius: 0.6rem;
+    width        : 100%;
+    padding-top  : 32%;
+    position     : relative;
+    @content
+}
+
+
+
+
+
+
+@mixin l-100card {
+    overflow     : hidden;
+    border-radius: 1.25rem;
+    width        : 100%;
+    padding-top  : 100%;
+    position     : relative;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+    @content
+}
+
+@mixin l-117card {
+    overflow     : hidden;
+    border-radius: 1.25rem;
+    width        : 100%;
+    padding-top  : 117%;
+    position     : relative;
+    box-shadow   : 2px 2px 5px $g500;
+    flex         : 0 0 auto;
+    @content
+}
+
+@mixin markpen_y {
+    background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
+    padding   : 2px 1px;
+    @content
+}
+
+@mixin color($color, $size) {
+    color          : $color;
+    border         : $color solid 2px;
+    text-decoration: $color;
+    font-size      : $size * 1.5;
+    @content
+}

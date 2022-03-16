@@ -1,0 +1,48 @@
+@mixin xxl {
+    @media (max-width: 1320px) {
+        @content
+    }
+}
+
+@mixin xl {
+    @media (max-width: 1140px) {
+        @content
+    }
+}
+
+@mixin md {
+    @media (max-width: 960px) {
+        @content
+    }
+}
+
+@mixin md-none {
+    @media (max-width: 960px) {
+        display: none;
+        @content
+    }
+}
+
+@mixin sm {
+    @media (max-width: 720px) {
+        @content
+    }
+}
+
+@mixin s {
+    @media (max-width: 540px) {
+        @content
+    }
+}
+
+@mixin togoSwiper {
+    @media only screen and (min-width: 720px) {
+        @content
+    }
+}
+
+@mixin hotelSwiper {
+    @media only screen and (min-width: 720px) {
+        @content
+    }
+}

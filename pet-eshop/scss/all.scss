@@ -1,0 +1,104 @@
+@import "reset";
+@import "media";
+@import "flex";
+@import "layout";
+@import "components";
+
+
+.box {
+    @include box($main-color, $fs-4);
+    @include md-none;
+    color      : $white;
+    height     : 40px;
+    align-items: center;
+}
+
+.h-bg {
+    @include l-center;
+    background-color: $white;
+}
+
+.h-container {
+    @include px-1;
+    max-width: 1440px;
+    width    : 100%;
+}
+
+.h-row {
+    @include flex;
+    @include mx-3;
+    border-bottom: 1px solid $g5;
+    width        : 100%;
+}
+
+.h-col {
+    @include flex_between;
+    align-items   : center;
+    padding-top   : 27px;
+    padding-bottom: 15px;
+    width         : 100%;
+
+    img {
+        width : 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+h1 {
+    @include hide-text(58.63px, 160px);
+    background-image: url(../img/logo.svg);
+}
+
+.nav {
+    @include flex_between;
+    width: 33rem;
+
+    a {
+        @include link($g10, $fs-6);
+    }
+
+    a:hover {
+        @include link ($main-color, $fs-6);
+    }
+}
+
+.b-bg {
+    @include l-center;
+    margin-top   : 32px;
+    margin-bottom: 28px;
+}
+
+.b-container {
+    @include px-1;
+    max-width: 1440px;
+    width    : 100%;
+}
+
+.b-row {
+    @include mx-3;
+    width : 100%;
+    height: auto;
+}
+
+.b-col {
+    flex: 0 0 auto;
+}
+
+.banner {
+    @include bg-center-cover;
+    @include l-32banner;
+    width: 100%;
+}
+
+.container {
+    @include l-center;
+    @include px-2;
+    max-width: 1146px;
+    width    : 100%;
+
+    @include xxl {}
+}
+
+.row {
+    @include mx-2;
+}
