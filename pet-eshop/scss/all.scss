@@ -72,6 +72,10 @@ h1 {
 .b-bg {
     margin-top   : 32px;
     margin-bottom: 28px;
+
+    @include md {
+        margin-top: 0;
+    }
 }
 
 .b-container {
@@ -109,7 +113,7 @@ h1 {
     @include l-32banner;
 
     @include md {
-        padding-top: 79%;
+        padding-top  : 79%;
         border-radius: 0;
     }
 }
