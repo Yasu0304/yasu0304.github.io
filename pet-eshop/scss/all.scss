@@ -1,42 +1,45 @@
 @import "reset";
-@import "media";
-@import "flex";
 @import "layout";
+@import "flex";
 @import "components";
+@import "media";
 
 
 .box {
-    @include box($main-color, $fs-4);
     @include md-none;
-    color      : $white;
-    height     : 40px;
-    align-items: center;
+    height          : 40px;
+    background-color: $main-color;
+
+    p {
+        color        : $white;
+        align-items  : center;
+        text-align   : center;
+        margin-bottom: 0;
+        line-height  : 40px;
+    }
 }
 
 .h-bg {
-    @include l-center;
     background-color: $white;
 }
 
 .h-container {
+    @include l-center;
     @include px-1;
     max-width: 1440px;
-    width    : 100%;
 }
 
 .h-row {
-    @include flex;
     @include mx-3;
-    border-bottom: 1px solid $g5;
-    width        : 100%;
 }
 
 .h-col {
     @include flex_between;
+    @include px-1;
     align-items   : center;
     padding-top   : 27px;
     padding-bottom: 15px;
-    width         : 100%;
+    border-bottom : 1px solid $g5;
 
     img {
         width : 2.5rem;
@@ -60,45 +63,122 @@ h1 {
     a:hover {
         @include link ($main-color, $fs-6);
     }
+
+    @include md {
+        @include md-none;
+    }
 }
 
 .b-bg {
-    @include l-center;
     margin-top   : 32px;
     margin-bottom: 28px;
 }
 
 .b-container {
+    @include l-center;
     @include px-1;
     max-width: 1440px;
-    width    : 100%;
+
+    @include md {
+        padding-left : 0;
+        padding-right: 0;
+    }
 }
 
 .b-row {
     @include mx-3;
-    width : 100%;
-    height: auto;
+
+    @include md {
+        margin-left : 0;
+        margin-right: 0;
+    }
 }
 
 .b-col {
+    @include px-1;
     flex: 0 0 auto;
+
+    @include md {
+        padding-left : 0;
+        padding-right: 0;
+    }
 }
 
 .banner {
     @include bg-center-cover;
     @include l-32banner;
-    width: 100%;
+
+    @include md {
+        padding-top: 79%;
+        border-radius: 0;
+    }
 }
 
 .container {
     @include l-center;
-    @include px-2;
-    max-width: 1146px;
-    width    : 100%;
+    @include px-3;
+    max-width: 1440px;
 
-    @include xxl {}
+    @include md {
+        @include px-4;
+    }
 }
 
 .row {
-    @include mx-2;
+    @include mx-4;
+    @include flex;
+    @include l-center;
+    flex-wrap: wrap;
+    max-width: 1164px;
+
+    @include md {
+        @include mx-5;
+    }
+}
+
+.col {
+    @include flex_center;
+    flex         : 0 0 auto;
+    width        : 25%;
+    margin-bottom: 12px;
+
+    @include md {
+        width        : 33.333%;
+        margin-bottom: 8px;
+    }
+}
+
+.btn {
+    @include l-bottom(3rem, 3rem, 13.5rem);
+    border: 1px solid $main-color;
+    @include flex_center;
+
+    @include md {
+        @include l-bottom(3rem, 30px, 100px)
+    }
+}
+
+.b-text {
+    @include flex;
+    align-items: center;
+
+    img {
+        width : 2.5rem;
+        height: auto;
+        @include block;
+
+        @include md {
+            width: 1.1rem;
+        }
+    }
+
+    p {
+        font-size    : $fs-5;
+        color        : $main-color;
+        margin-bottom: 0;
+
+        @include md {
+            font-size: 0.7rem;
+        }
+    }
 }
