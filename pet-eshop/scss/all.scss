@@ -25,25 +25,25 @@
 
 .h-container {
     @include l-center;
-    @include px-1;
-    width: 1440px;
+    @include px40;
+    max-width: 1440px;
 }
 
 .h-row {
-    @include mx-3;
+    @include mx-40;
 }
 
 .h-col {
     @include flex_between;
-    @include px-1;
+    @include px40;
     align-items   : center;
     padding-top   : 27px;
     padding-bottom: 15px;
     border-bottom : 1px solid $g5;
 
     img {
-        width : 2.5rem;
-        height: 2.5rem;
+        width : 40px;
+        height: 40px;
     }
 }
 
@@ -85,7 +85,7 @@ h1 {
 
 .b-container {
     @include l-center;
-    @include px-1;
+    @include px40;
     max-width: 1440px;
 }
 
@@ -97,7 +97,7 @@ h1 {
 }
 
 .b-row {
-    @include mx-3;
+    @include mx-40;
 }
 
 @include md {
@@ -108,7 +108,7 @@ h1 {
 }
 
 .b-col {
-    @include px-1;
+    @include px40;
     flex: 0 0 auto;
 
     @include md {
@@ -139,28 +139,28 @@ h1 {
 
 .container {
     @include l-center;
-    @include px-3;
+    @include px137;
 }
 
 @include md {
     .container {
-        @include px-4;
+        @include px30;
     }
 }
 
 .row {
-    @include mx-4;
+    @include mx-137;
     @include flex;
     flex-wrap: wrap;
 
     @include md {
-        @include mx-5;
+        @include mx30;
     }
 }
 
 .row {
     @include md {
-        @include mx-5;
+        @include mx30;
     }
 }
 

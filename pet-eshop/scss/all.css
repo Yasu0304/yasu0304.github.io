@@ -147,14 +147,14 @@ body img {
 .h-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1440px;
 }
 
 .h-row {
-  margin-left: -2.5rem;
-  margin-right: -2.5rem;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .h-col {
@@ -164,8 +164,8 @@ body img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 40px;
+  padding-right: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -175,8 +175,8 @@ body img {
 }
 
 .h-col img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 40px;
+  height: 40px;
 }
 
 h1 {
@@ -229,8 +229,8 @@ h1 {
 .b-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 40px;
+  padding-right: 40px;
   max-width: 1440px;
 }
 
@@ -242,8 +242,8 @@ h1 {
 }
 
 .b-row {
-  margin-left: -2.5rem;
-  margin-right: -2.5rem;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 @media (max-width: 960px) {
@@ -254,8 +254,8 @@ h1 {
 }
 
 .b-col {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 40px;
+  padding-right: 40px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -295,8 +295,8 @@ h1 {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 8.6rem;
-  padding-right: 8.6rem;
+  padding-left: 137px;
+  padding-right: 137px;
 }
 
 @media (max-width: 960px) {
@@ -307,8 +307,8 @@ h1 {
 }
 
 .row {
-  margin-left: -8.6rem;
-  margin-right: -8.6rem;
+  margin-left: -137px;
+  margin-right: -137px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
