@@ -218,6 +218,35 @@ h1 {
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .b-bg {
   margin-top: 32px;
   margin-bottom: 28px;
@@ -276,7 +305,7 @@ h1 {
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  border-radius: 0.6rem;
+  border-radius: 30px;
   width: 100%;
   padding-top: 32%;
   position: relative;
@@ -309,9 +338,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -138px;
@@ -334,30 +360,41 @@ h1 {
 
 .col {
   width: 20%;
-  padding: 6px 9px;
+}
+
+.col a {
+  color: #C4C4C4;
+  border: 1px solid #C4C4C4;
+}
+
+.col a:hover {
+  color: #4CC2B1;
+  border: 1px solid #4CC2B1;
 }
 
 @media (max-width: 960px) {
   .col {
     width: 33.3333%;
-    padding: 4px;
   }
 }
 
 .btn {
   border-radius: 30px;
-  border: 1px solid #4CC2B1;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 9px 12px 9px;
 }
 
 @media (max-width: 960px) {
   .btn {
     border-radius: 30px;
+    height: 30px;
+    margin: 0 4px 8px 4px;
   }
 }
 
@@ -378,7 +415,6 @@ h1 {
 
 .b-text p {
   font-size: 18px;
-  color: #4CC2B1;
   margin-bottom: 0;
 }
 
@@ -389,5 +425,18 @@ h1 {
   p {
     font-size: 12px;
   }
+}
+
+.btnn {
+  overflow: hidden;
+  border-radius: 30px;
+  width: 100%;
+  padding-top: 22%;
+  position: relative;
+}
+
+.btnn img {
+  width: 40px;
+  height: auto;
 }
 /*# sourceMappingURL=all.css.map */

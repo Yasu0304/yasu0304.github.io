@@ -29,9 +29,18 @@
 
 @mixin l-32banner {
     overflow     : hidden;
-    border-radius: 0.6rem;
+    border-radius: 30px;
     width        : 100%;
     padding-top  : 32%;
+    position     : relative;
+    @content
+}
+
+@mixin l-22banner {
+    overflow     : hidden;
+    border-radius: 30px;
+    width        : 100%;
+    padding-top  : 22%;
     position     : relative;
     @content
 }

@@ -80,6 +80,38 @@ h1 {
     }
 }
 
+.swiper {
+    width : 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size : 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
+}
+
+.swiper-slide img {
+    display   : block;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+}
+
 .b-bg {
     margin-top   : 32px;
     margin-bottom: 28px;
@@ -158,7 +190,7 @@ h1 {
 
 
 .row {
-    @include flex_between;
+    @include flex;
     flex-wrap: wrap;
     @include mx-138;
     @include px138;
@@ -173,29 +205,41 @@ h1 {
 }
 
 .col {
-    width  : 20%;
-    padding: 6px 9px;
+    width: 20%;
+
+    a {
+        color : $g5;
+        border: 1px solid $g5;
+    }
+
+    a:hover {
+        color : $main-color;
+        border: 1px solid $main-color;
+    }
 }
 
 
 @include md {
     .col {
-        width  : 33.3333%;
-        padding: 4px;
+        width: 33.3333%;
     }
 }
 
 .btn {
     border-radius: 30px;
-    border       : 1px solid $main-color;
+    height       : 48px;
     @include flex_center;
+    margin: 0 9px 12px 9px;
 }
 
 @include md {
     .btn {
         border-radius: 30px;
+        height       : 30px;
+        margin       : 0 4px 8px 4px;
     }
 }
+
 
 .b-text {
     @include flex;
@@ -209,7 +253,6 @@ h1 {
 
     p {
         font-size    : $fs-5;
-        color        : $main-color;
         margin-bottom: 0;
     }
 }
@@ -224,5 +267,14 @@ h1 {
 
     p {
         font-size: $fs-2;
+    }
+}
+
+.btnn {
+    @include l-22banner;
+
+    img {
+        width : 40px;
+        height: auto;
     }
 }
