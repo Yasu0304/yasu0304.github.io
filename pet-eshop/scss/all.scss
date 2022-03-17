@@ -6,7 +6,6 @@
 
 
 .box {
-    @include md-none;
     height          : 40px;
     background-color: $main-color;
 
@@ -19,19 +18,29 @@
     }
 }
 
+@include md {
+    .box {
+        @include none;
+    }
+}
+
 .h-bg {
     background-color: $white;
 }
 
 .h-container {
+    max-width: 1440px;
     @include l-center;
     @include px40;
-    max-width: 1440px;
+    width: 100%;
 }
 
-.h-row {
-    @include mx-40;
+@include md {
+    .h-row {
+        @include mx-40;
+    }
 }
+
 
 .h-col {
     @include flex_between;
@@ -54,7 +63,7 @@ h1 {
 
 .nav {
     @include flex_between;
-    width: 33rem;
+    width: 528px;
 
     a {
         @include link($g10, $fs-6);
@@ -67,9 +76,8 @@ h1 {
 
 @include md {
     .nav {
-        @include md-none;
+        @include none;
     }
-
 }
 
 .b-bg {
@@ -83,10 +91,12 @@ h1 {
     }
 }
 
+
 .b-container {
+    max-width: 1440px;
     @include l-center;
     @include px40;
-    max-width: 1440px;
+    width: 100%;
 }
 
 @include md {
@@ -110,11 +120,6 @@ h1 {
 .b-col {
     @include px40;
     flex: 0 0 auto;
-
-    @include md {
-        padding-left : 0;
-        padding-right: 0;
-    }
 }
 
 @include md {
@@ -129,6 +134,7 @@ h1 {
     @include l-32banner;
 }
 
+
 @include md {
     .banner {
         padding-top  : 79%;
@@ -138,8 +144,10 @@ h1 {
 
 
 .container {
+    max-width: 1440px;
     @include l-center;
-    @include px137;
+    @include px138;
+    width: 100%;
 }
 
 @include md {
@@ -148,47 +156,44 @@ h1 {
     }
 }
 
-.row {
-    @include mx-137;
-    @include flex;
-    flex-wrap: wrap;
 
-    @include md {
-        @include mx30;
-    }
+.row {
+    @include flex_between;
+    flex-wrap: wrap;
+    @include mx-138;
+    @include px138;
+    flex: 0 0 auto;
 }
 
-.row {
-    @include md {
-        @include mx30;
+@include md {
+    .row {
+        @include mx-30;
+        @include px30;
     }
 }
 
 .col {
-    @include flex_center;
-    flex  : 0 0 auto;
-    width : 22%;
-    margin: 6px 9px;
-
+    width  : 20%;
+    padding: 6px 9px;
 }
 
 
 @include md {
     .col {
-        width : 33.333%;
-        margin: 4px;
+        width  : 33.3333%;
+        padding: 4px;
     }
 }
 
 .btn {
-    @include l-bottom(3rem, 3rem, 13.5rem);
-    border: 1px solid $main-color;
+    border-radius: 30px;
+    border       : 1px solid $main-color;
     @include flex_center;
 }
 
 @include md {
     .btn {
-        @include l-bottom(3rem, 30px, 100px)
+        border-radius: 30px;
     }
 }
 
@@ -197,22 +202,27 @@ h1 {
     align-items: center;
 
     img {
-        width : 2.5rem;
+        width : 40px;
         height: auto;
         @include block;
-
-        @include md {
-            width: 1.1rem;
-        }
     }
 
     p {
         font-size    : $fs-5;
         color        : $main-color;
         margin-bottom: 0;
+    }
+}
 
-        @include md {
-            font-size: 0.7rem;
+
+@include md {
+    .b-text {
+        img {
+            width: 20px;
         }
+    }
+
+    p {
+        font-size: $fs-2;
     }
 }

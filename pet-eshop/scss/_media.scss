@@ -1,5 +1,5 @@
 @mixin xxl {
-    @media (max-width: 1320px) {
+    @media (max-width: 1440px) {
         @content
     }
 }
@@ -12,13 +12,6 @@
 
 @mixin md {
     @media (max-width: 960px) {
-        @content
-    }
-}
-
-@mixin md-none {
-    @media (max-width: 960px) {
-        display: none;
         @content
     }
 }
