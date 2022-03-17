@@ -149,7 +149,7 @@ body img {
   margin-right: auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  max-width: 1440px;
+  width: 1440px;
 }
 
 .h-row {
@@ -201,12 +201,12 @@ h1 {
 
 .nav a {
   color: #3F3F3F;
-  font-size: 1.3rem;
+  font-size: 21px;
 }
 
 .nav a:hover {
   color: #4CC2B1;
-  font-size: 1.3rem;
+  font-size: 21px;
 }
 
 @media (max-width: 960px) and (max-width: 960px) {
@@ -218,6 +218,12 @@ h1 {
 .b-bg {
   margin-top: 32px;
   margin-bottom: 28px;
+}
+
+@media (max-width: 960px) {
+  .b-bg {
+    margin-top: 0;
+  }
 }
 
 .b-container {
@@ -262,6 +268,13 @@ h1 {
   }
 }
 
+@media (max-width: 960px) {
+  .b-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .banner {
   background-position: center center;
   background-size: cover;
@@ -284,7 +297,6 @@ h1 {
   margin-right: auto;
   padding-left: 8.6rem;
   padding-right: 8.6rem;
-  max-width: 1440px;
 }
 
 @media (max-width: 960px) {
@@ -300,11 +312,15 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1164px;
+}
+
+@media (max-width: 960px) {
+  .row {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -324,14 +340,14 @@ h1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 25%;
-  margin-bottom: 12px;
+  width: 22%;
+  margin: 6px 9px;
 }
 
 @media (max-width: 960px) {
   .col {
     width: 33.333%;
-    margin-bottom: 8px;
+    margin: 4px;
   }
 }
 
@@ -378,7 +394,7 @@ h1 {
 }
 
 .b-text p {
-  font-size: 1.1rem;
+  font-size: 18px;
   color: #4CC2B1;
   margin-bottom: 0;
 }

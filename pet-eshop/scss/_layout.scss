@@ -5,13 +5,13 @@ $g10       : #3F3F3F;
 $white     :#ffffff;
 
 
-$fs-1 :0.6rem; //10px
-$fs-2 :0.7rem; //12px
-$fs-3 :0.8rem; //14px
+$fs-1 :10px; 
+$fs-2 :12px; 
+$fs-3 :14px; 
 $fs-4 : 1rem;
-$fs-5 : 1.1rem; //18px
-$fs-6 : 1.3rem; // 21px
-$fs-7 : 1.7rem; // 27px
+$fs-5 : 18px; 
+$fs-6 : 21px; 
+$fs-7 : 27px; 
 
 @mixin l-center {
     margin-left : auto;
