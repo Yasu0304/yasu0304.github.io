@@ -5,12 +5,6 @@
 @import "media";
 
 
-.md-mx-40 {
-    @include md {
-        @include mx-40;
-    }
-}
-
 .mt32-mb28 {
     margin-top   : 32px;
     margin-bottom: 28px;
@@ -22,14 +16,20 @@
     }
 }
 
-@include md{
-    .none{
+.bg {
+    background-color: $white;
+}
+
+.none {
+    @include md {
         @include none;
     }
 }
 
-.bg {
-    background-color: $white;
+.px0 {
+    @include md {
+        @include px0;
+    }
 }
 
 .box {
@@ -43,20 +43,25 @@
         margin-bottom: 0;
         line-height  : 40px;
     }
+
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1360px;
     @include l-center;
-    @include px40;
     width: 100%;
 
     @include md {
-        padding-left : 0;
-        padding-right: 0;
-
+        @include px15;
     }
 }
+
+.row {
+    @include md {
+        @include mx-15;
+    }
+}
+
 
 .h-col {
     @include flex_between;
@@ -68,6 +73,12 @@
     img {
         width : 40px;
         height: 40px;
+    }
+
+    @include md {
+        @include px15;
+        padding-top   : 24px;
+        padding-bottom: 29px;
     }
 }
 
@@ -86,6 +97,10 @@ h1 {
 
     a:hover {
         @include link ($main-color, $fs-6);
+    }
+
+    @include md {
+        @include none;
     }
 
 }
@@ -123,37 +138,6 @@ h1 {
     object-fit: cover;
 }
 
-.b-row {
-    @include mx-40;
-
-    @include md {
-
-        margin-left : 0;
-        margin-right: 0;
-
-    }
-}
-
-@include md {
-    .b-row {
-        margin-left : 0;
-        margin-right: 0;
-    }
-}
-
-
-.b-col {
-    @include px40;
-    flex: 0 0 auto;
-
-    @include md {
-        padding-left : 0;
-        padding-right: 0;
-    }
-}
-
-
-
 .banner {
     @include bg-center-cover;
     @include l-banner (32%);
@@ -165,10 +149,11 @@ h1 {
     }
 }
 
-.container {
-    max-width: 1440px;
+
+.l-container {
+    max-width: 1360px;
     @include l-center;
-    @include px138;
+    @include px98;
     width: 100%;
 
     @include md {
@@ -176,95 +161,111 @@ h1 {
     }
 }
 
-
-.row {
-    @include flex;
-    flex-wrap: wrap;
-    @include mx-138;
-    @include px138;
-    flex: 0 0 auto;
+.l-row {
+    @include mx-98;
 
     @include md {
         @include mx-30;
+    }
+}
+
+.l-col {
+    @include flex;
+    @include px98;
+    flex-wrap: wrap;
+    flex     : 0 0 auto;
+
+    @include md {
         @include px30;
     }
 }
 
-
-
-
-.col {
+.grid {
     width: 20%;
 
-    a {
-        color : $g5;
-        border: 1px solid $g5;
-    }
-
-    a:hover {
-        color : $main-color;
-        border: 1px solid $main-color;
-    }
+    padding: 0 9px 12px 9px;
 
     @include md {
-
         width: 33.3333%;
+
+        padding: 0 4px 8px 4px;
     }
-
 }
-
-
 
 .btn {
-    border-radius: 30px;
-    height       : 48px;
-    @include flex_center;
-    margin: 0 9px 12px 9px;
-}
+    width           : 100%;
+    height          : 48px;
+    border-radius   : 100px;
+    border          : 1px solid $main-color;
+    color           : $main-color;
+    background-color: $white;
+    align-items     : center;
+    text-decoration : none;
+    display         : inline-block;
 
-@include md {
-    .btn {
-        border-radius: 30px;
-        height       : 30px;
-        margin       : 0 4px 8px 4px;
+    .b-text {
+        @include flex_center;
     }
-}
 
-
-.b-text {
-    @include flex;
-    align-items: center;
-
-    img {
+    svg {
+        fill  : $main-color;
         width : 40px;
         height: auto;
-        @include block;
+    }
+
+    path {
+        .evenodd {
+            fill: $main-color;
+        }
+    }
+
+    ellipse {
+        fill: $main-color;
     }
 
     p {
         font-size    : $fs-5;
         margin-bottom: 0;
     }
-}
 
+    @include md {
+        height: 30px;
 
-@include md {
-    .b-text {
-        img {
+        svg {
             width: 20px;
         }
-    }
 
-    p {
-        font-size: $fs-2;
+        p {
+            font-size: $fs-2;
+        }
     }
 }
 
-.btnn {
-    @include l-22banner;
+.btn:hover {
+    border          : 1px solid $main-color;
+    background-color: $main-color;
+    color           : $white;
 
-    img {
+    svg {
+        fill  : $white;
         width : 40px;
         height: auto;
     }
+
+    @include md {
+        svg {
+            width: 20px;
+        }
+
+        path {
+            .evenodd {
+                fill: $white;
+            }
+        }
+
+        ellipse {
+            fill: $white;
+        }
+    }
+
 }

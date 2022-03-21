@@ -19,27 +19,46 @@ $fs-7 : 27px;
     @content
 }
 
-@mixin px40 {
-    padding-left : 40px;
-    padding-right: 40px;
+
+@mixin px0 {
+    padding-left : 0px;
+    padding-right: 0px;
     @content
 }
 
-@mixin px138 {
-    padding-left : 138px;
-    padding-right: 138px;
+@mixin px15 {
+    padding-left : 15px;
+    padding-right: 15px;
     @content
 }
 
-@mixin mx-138 {
-    margin-left : -138px;
-    margin-right: -138px;
+@mixin px20 {
+    padding-left : 20px;
+    padding-right: 20px;
     @content
 }
 
 @mixin px30 {
     padding-left : 30px;
     padding-right: 30px;
+    @content
+}
+
+@mixin px98 {
+    padding-left : 98px;
+    padding-right: 98px;
+    @content
+}
+
+@mixin mx-98 {
+    margin-left :-98px;
+    margin-right: -98px;
+    @content
+}
+
+@mixin px13 {
+    padding-left : 13px;
+    padding-right: 13px;
     @content
 }
 
@@ -55,14 +74,32 @@ $fs-7 : 27px;
     @content
 }
 
+@mixin mx-13 {
+    margin-left : -13px;
+    margin-right: -13px;
+    @content
+}
+
 @mixin mx40 {
     margin-left : 40px;
     margin-right: 40px;
     @content
 }
 
-@mixin mx-40 {
-    margin-left : -40px;
-    margin-right: -40px;
+@mixin mx-15 {
+    margin-left : -15px;
+    margin-right: -15px;
+    @content
+}
+
+@mixin mx-20 {
+    margin-left : -20px;
+    margin-right: -20px;
+    @content
+}
+
+@mixin mx0 {
+    margin-left : 0px;
+    margin-right: 0px;
     @content
 }
