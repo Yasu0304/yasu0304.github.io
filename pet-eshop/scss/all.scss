@@ -5,6 +5,33 @@
 @import "media";
 
 
+.md-mx-40 {
+    @include md {
+        @include mx-40;
+    }
+}
+
+.mt32-mb28 {
+    margin-top   : 32px;
+    margin-bottom: 28px;
+}
+
+.mt0 {
+    @include md {
+        margin-top: 0;
+    }
+}
+
+@include md{
+    .none{
+        @include none;
+    }
+}
+
+.bg {
+    background-color: $white;
+}
+
 .box {
     height          : 40px;
     background-color: $main-color;
@@ -18,33 +45,21 @@
     }
 }
 
-@include md {
-    .box {
-        @include none;
-    }
-}
-
-.h-bg {
-    background-color: $white;
-}
-
-.h-container {
-    max-width: 1440px;
+.container {
+    max-width: 1400px;
     @include l-center;
     @include px40;
     width: 100%;
-}
 
-@include md {
-    .h-row {
-        @include mx-40;
+    @include md {
+        padding-left : 0;
+        padding-right: 0;
+
     }
 }
 
-
 .h-col {
     @include flex_between;
-    @include px40;
     align-items   : center;
     padding-top   : 27px;
     padding-bottom: 15px;
@@ -72,13 +87,9 @@ h1 {
     a:hover {
         @include link ($main-color, $fs-6);
     }
+
 }
 
-@include md {
-    .nav {
-        @include none;
-    }
-}
 
 .swiper {
     width : 100%;
@@ -112,34 +123,15 @@ h1 {
     object-fit: cover;
 }
 
-.b-bg {
-    margin-top   : 32px;
-    margin-bottom: 28px;
-}
-
-@include md {
-    .b-bg {
-        margin-top: 0;
-    }
-}
-
-
-.b-container {
-    max-width: 1440px;
-    @include l-center;
-    @include px40;
-    width: 100%;
-}
-
-@include md {
-    .b-container {
-        padding-left : 0;
-        padding-right: 0;
-    }
-}
-
 .b-row {
     @include mx-40;
+
+    @include md {
+
+        margin-left : 0;
+        margin-right: 0;
+
+    }
 }
 
 @include md {
@@ -149,41 +141,37 @@ h1 {
     }
 }
 
+
 .b-col {
     @include px40;
     flex: 0 0 auto;
-}
 
-@include md {
-    .b-col {
+    @include md {
         padding-left : 0;
         padding-right: 0;
     }
 }
 
+
+
 .banner {
     @include bg-center-cover;
-    @include l-32banner;
-}
+    @include l-banner (32%);
+    border-radius: 30px;
 
-
-@include md {
-    .banner {
+    @include md {
         padding-top  : 79%;
         border-radius: 0;
     }
 }
-
 
 .container {
     max-width: 1440px;
     @include l-center;
     @include px138;
     width: 100%;
-}
 
-@include md {
-    .container {
+    @include md {
         @include px30;
     }
 }
@@ -195,14 +183,15 @@ h1 {
     @include mx-138;
     @include px138;
     flex: 0 0 auto;
-}
 
-@include md {
-    .row {
+    @include md {
         @include mx-30;
         @include px30;
     }
 }
+
+
+
 
 .col {
     width: 20%;
@@ -216,14 +205,15 @@ h1 {
         color : $main-color;
         border: 1px solid $main-color;
     }
-}
 
+    @include md {
 
-@include md {
-    .col {
         width: 33.3333%;
     }
+
 }
+
+
 
 .btn {
     border-radius: 30px;

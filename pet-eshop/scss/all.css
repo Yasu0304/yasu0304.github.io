@@ -119,6 +119,28 @@ body img {
   width: 100%;
 }
 
+@media (max-width: 960px) {
+  .md-mx-40 {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.mt32-mb28 {
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 960px) {
+  .mt0 {
+    margin-top: 0;
+  }
+}
+
+.bg {
+  background-color: #ffffff;
+}
+
 .box {
   height: 40px;
   background-color: #4CC2B1;
@@ -134,17 +156,7 @@ body img {
   line-height: 40px;
 }
 
-@media (max-width: 960px) {
-  .box {
-    display: none;
-  }
-}
-
-.h-bg {
-  background-color: #ffffff;
-}
-
-.h-container {
+.container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -154,9 +166,9 @@ body img {
 }
 
 @media (max-width: 960px) {
-  .h-row {
-    margin-left: -40px;
-    margin-right: -40px;
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -167,8 +179,6 @@ body img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -213,7 +223,7 @@ h1 {
 }
 
 @media (max-width: 960px) {
-  .nav {
+  .none {
     display: none;
   }
 }
@@ -247,36 +257,16 @@ h1 {
      object-fit: cover;
 }
 
-.b-bg {
-  margin-top: 32px;
-  margin-bottom: 28px;
-}
-
-@media (max-width: 960px) {
-  .b-bg {
-    margin-top: 0;
-  }
-}
-
-.b-container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 100%;
-}
-
-@media (max-width: 960px) {
-  .b-container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .b-row {
   margin-left: -40px;
   margin-right: -40px;
+}
+
+@media (max-width: 960px) {
+  .b-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 960px) {
@@ -304,11 +294,10 @@ h1 {
 .banner {
   background-position: center center;
   background-size: cover;
+  padding-top: 32%;
+  width: 100%;
   overflow: hidden;
   border-radius: 30px;
-  width: 100%;
-  padding-top: 32%;
-  position: relative;
 }
 
 @media (max-width: 960px) {
