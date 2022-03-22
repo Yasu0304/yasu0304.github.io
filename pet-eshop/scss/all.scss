@@ -328,9 +328,7 @@ h1 {
     @include flex;
     align-items : center;
     margin-right: 32px;
-    p{
-        color: $main-color;
-    }
+
 }
 
 .outline {
@@ -339,6 +337,7 @@ h1 {
     border-radius: 10px;
     display      : inline-block;
     margin-right : 12px;
+    color        : $main-color;
 }
 
 .grid-3 {
