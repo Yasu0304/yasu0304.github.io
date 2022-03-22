@@ -42,6 +42,13 @@
     @content
 }
 
+@mixin l-card ($size) {
+    padding-top: $size;
+    width      : 100%;
+    overflow   : hidden;
+    @content
+}
+
 @mixin l-bottom ($size, $hight, $width) {
     border-radius: $size;
     height       : $hight;

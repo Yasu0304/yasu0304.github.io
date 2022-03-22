@@ -112,7 +112,7 @@ a {
 }
 
 body {
-  font-family: 'Roboto', 'Microsoft JhengHei', 微軟正黑體, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Microsoft JhengHei", 微軟正黑體, system-ui, -apple-system;
 }
 
 body img {
@@ -124,10 +124,51 @@ body img {
   margin-bottom: 28px;
 }
 
+.mb28 {
+  margin-bottom: 28px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb42 {
+  margin-bottom: 42px;
+}
+
 @media (max-width: 960px) {
   .mt0 {
     margin-top: 0;
   }
+}
+
+.mt12 {
+  margin-bottom: 12px;
+}
+
+.px9-md-px4 {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+@media (max-width: 960px) {
+  .px9-md-px4 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bg {
@@ -341,15 +382,17 @@ h1 {
   }
 }
 
-.grid {
+.grid-4-md-3 {
   width: 20%;
-  padding: 0 9px 12px 9px;
+  padding-top: 0;
+  padding-bottom: 12px;
 }
 
 @media (max-width: 960px) {
-  .grid {
+  .grid-4-md-3 {
     width: 33.3333%;
-    padding: 0 4px 8px 4px;
+    padding-top: 0;
+    padding-bottom: 8px;
   }
 }
 
@@ -357,14 +400,12 @@ h1 {
   width: 100%;
   height: 48px;
   border-radius: 100px;
-  border: 1px solid #4CC2B1;
-  color: #4CC2B1;
+  border: 1px solid #C4C4C4;
+  color: #C4C4C4;
   background-color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-decoration: none;
   display: inline-block;
+  line-height: 48px;
 }
 
 .btn .b-text {
@@ -377,30 +418,38 @@ h1 {
 }
 
 .btn svg {
-  fill: #4CC2B1;
-  width: 40px;
-  height: auto;
-}
-
-.btn path .evenodd {
-  fill: #4CC2B1;
-}
-
-.btn ellipse {
-  fill: #4CC2B1;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate(20%, 20%);
+          transform: translate(20%, 20%);
 }
 
 .btn p {
   font-size: 18px;
-  margin-bottom: 0;
+}
+
+.btn svg {
+  fill: #C4C4C4;
+}
+
+.btn path .evenodd {
+  fill: #C4C4C4;
+}
+
+.btn ellipse {
+  fill: #C4C4C4;
 }
 
 @media (max-width: 960px) {
   .btn {
     height: 30px;
+    line-height: 30px;
   }
   .btn svg {
-    width: 20px;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translate(-20%, -5%);
+            transform: translate(-20%, -5%);
   }
   .btn p {
     font-size: 12px;
@@ -409,25 +458,77 @@ h1 {
 
 .btn:hover {
   border: 1px solid #4CC2B1;
-  background-color: #4CC2B1;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #4CC2B1;
 }
 
 .btn:hover svg {
-  fill: #ffffff;
-  width: 40px;
-  height: auto;
+  fill: #4CC2B1;
 }
 
-@media (max-width: 960px) {
-  .btn:hover svg {
-    width: 20px;
-  }
-  .btn:hover path .evenodd {
-    fill: #ffffff;
-  }
-  .btn:hover ellipse {
-    fill: #ffffff;
-  }
+.btn:hover path .evenodd {
+  fill: #4CC2B1;
+}
+
+.btn:hover ellipse {
+  fill: #4CC2B1;
+}
+
+.inner {
+  border: 1px solid #4CC2B1;
+  width: 100%;
+  border-radius: 18px;
+  padding: 24px 16px;
+}
+
+.btn-2 {
+  width: 196px;
+  height: 50px;
+  background-color: #4CC2B1;
+  color: #ffffff;
+  border-radius: 47px;
+  border: 0;
+  font-size: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fs-9-blod {
+  font-size: 34px;
+  font-weight: bold;
+  color: #4CC2B1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 32px;
+}
+
+.outline {
+  padding: 8.5px 8px;
+  border: 1px solid #4CC2B1;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.grid-3 {
+  width: 33.3333%;
+  padding: 16px;
+}
+
+.card114 {
+  padding-top: 114%;
+  width: 100%;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid #4CC2B1;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #C4C4C4;
+          box-shadow: 2px 2px 5px #C4C4C4;
 }
 /*# sourceMappingURL=all.css.map */
