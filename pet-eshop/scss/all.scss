@@ -328,6 +328,9 @@ h1 {
     @include flex;
     align-items : center;
     margin-right: 32px;
+    p{
+        color: $main-color;
+    }
 }
 
 .outline {
