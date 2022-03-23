@@ -4,10 +4,18 @@
 @import "components";
 @import "media";
 
-
+//Spacing
 .mt32-mb28 {
     margin-top   : 32px;
     margin-bottom: 28px;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb16 {
+    margin-bottom: 16px;
 }
 
 .mb18 {
@@ -20,6 +28,12 @@
 
 .mb32 {
     margin-bottom: 32px;
+}
+
+.md-mb32{
+    @include md{
+        margin-bottom: 32px;
+    }
 }
 
 .mb48 {
@@ -36,6 +50,20 @@
     }
 }
 
+.md-mr0 {
+    @include md {
+        margin-right: 0;
+    }
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.ml42 {
+    margin-left: 42px;
+}
+
 .mt12 {
     margin-bottom: 12px;
 }
@@ -48,6 +76,85 @@
         padding-left : 4px;
         padding-right: 4px;
     }
+}
+
+.px9-px49 {
+    padding-left : 9px;
+    padding-right: 9px;
+
+    @include md {
+        padding-left : 49px;
+        padding-right: 49px;
+    }
+}
+
+.py24 {
+    padding-top   : 24px;
+    padding-bottom: 24px;
+}
+
+//Typography
+h1 {
+    @include hide-text(58.63px, 160px);
+    background-image: url(../img/logo.svg);
+}
+
+.fs-9-blod {
+    font-size  : $fs-9;
+    font-weight: bold;
+    color      : $main-color;
+    @include flex;
+    align-items : center;
+    margin-right: 32px;
+}
+
+.fs-3-white-blod {
+    font-size  : $fs-3;
+    color      : $white;
+    font-weight: bold;
+}
+
+.fs-3-white {
+    font-size: $fs-3;
+    color    : $white;
+}
+
+.fs-5-black-blod {
+    font-size  : $fs-5;
+    font-weight: bold;
+}
+
+.fs-5-black-blod-md-fs-6 {
+    font-size    : $fs-5;
+    font-weight  : bold;
+    margin-bottom: 16px;
+
+    @include md {
+        font-size    : $fs-6;
+        margin-bottom: 20px;
+    }
+}
+
+.fs-10 {
+    font-size: $fs-10;
+}
+
+.fs-8-blod {
+    font-size  : $fs-8;
+    font-weight: bold;
+    color      : $g10;
+    text-align : center;
+}
+
+.fs-1-white {
+    font-size: $fs-1;
+    color    : $white;
+}
+
+.fs-2-white-blod {
+    font-size  : $fs-2;
+    color      : $white;
+    font-weight: bold;
 }
 
 .w-100 {
@@ -69,16 +176,16 @@
     justify-content: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .bg {
     background-color: $white;
 }
 
 .bg-main {
     background-color: $main-color;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
 }
 
 .md-none {
@@ -108,11 +215,6 @@
     @include md {
         @include px15;
     }
-}
-
-h1 {
-    @include hide-text(58.63px, 160px);
-    background-image: url(../img/logo.svg);
 }
 
 .l-container {
@@ -230,18 +332,6 @@ h1 {
     }
 }
 
-.grid-5-md-3 {
-    width         : 20%;
-    padding-top   : 0;
-    padding-bottom: 12px;
-
-    @include md {
-        width         : 33.3333%;
-        padding-top   : 0;
-        padding-bottom: 8px;
-    }
-}
-
 .btn {
     width           : 100%;
     height          : 48px;
@@ -336,17 +426,8 @@ h1 {
     align-items     : center;
 }
 
-.btn-2:hover{
-    box-shadow         : 2px 2px 5px $secondary-color;
-}
-
-.fs-9-blod {
-    font-size  : $fs-9;
-    font-weight: bold;
-    color      : $main-color;
-    @include flex;
-    align-items : center;
-    margin-right: 32px;
+.btn-2:hover {
+    box-shadow: 2px 2px 5px $secondary-color;
 }
 
 .outline {
@@ -356,6 +437,18 @@ h1 {
     display      : inline-block;
     margin-right : 12px;
     color        : $main-color;
+}
+
+.grid-5-md-3 {
+    width         : 20%;
+    padding-top   : 0;
+    padding-bottom: 12px;
+
+    @include md {
+        width         : 33.3333%;
+        padding-top   : 0;
+        padding-bottom: 8px;
+    }
 }
 
 .grid-3 {
@@ -390,33 +483,35 @@ h1 {
 .card133 {
     @include l-card(133%);
     @include bg-top-contain;
-    border             : 1px solid $main-color;
-    box-shadow         : 2px 2px 5px $g5;
-    overflow           : hidden;
-    position           : relative;
+    border    : 1px solid $main-color;
+    box-shadow: 2px 2px 5px $g5;
+    overflow  : hidden;
+    position  : relative;
 
     @include md {
         margin-bottom: 12px;
     }
 }
 
-.card157 {
-    @include l-card(157%);
-    @include bg-top-contain;
+.card153 {
+    @include l-card(153%);
+    @include bg-center-cover;
     border  : 0;
     overflow: hidden;
     position: relative;
 
-    @include md {
-        margin-bottom: 12px;
+    img {
+        position: absolute;
+        margin-bottom: 0;
+        top     : 0;
+        left    : 0;
+        right   : 0;
     }
-}
 
-.fs-8-blod {
-    font-size  : $fs-8;
-    font-weight: bold;
-    color      : $g10;
-    text-align : center;
+    @include md {
+        text-align      : center;
+        @include l-card(140%);
+    }
 }
 
 .card-body {
@@ -425,23 +520,6 @@ h1 {
     left    : 0;
     right   : 0;
     bottom  : 0;
-}
-
-.fs-3-white-blod {
-    font-size  : $fs-3;
-    color      : $white;
-    font-weight: bold;
-}
-
-.fs-1-white {
-    font-size: $fs-1;
-    color    : $white;
-}
-
-.fs-2-white-blod {
-    font-size  : $fs-2;
-    color      : $white;
-    font-weight: bold;
 }
 
 .bnt-add {
@@ -457,7 +535,8 @@ h1 {
     font-size       : $fs-2;
     font-weight     : bold;
 }
-.bnt-add:hover{
-    font-size       : $fs-3;
-    box-shadow         : 2px 2px 2px $secondary-color;
+
+.bnt-add:hover {
+    font-size : $fs-3;
+    box-shadow: 2px 2px 2px $secondary-color;
 }

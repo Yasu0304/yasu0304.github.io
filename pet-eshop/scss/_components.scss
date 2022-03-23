@@ -25,8 +25,15 @@
     background-size    : cover;
     @content
 }
+
 @mixin bg-top-contain{
     background-position: center top;
+    background-size    : contain;
+    background-repeat: no-repeat;
+}
+
+@mixin bg-center-contain{
+    background-position: center center;
     background-size    : contain;
     background-repeat: no-repeat;
 }
