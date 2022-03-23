@@ -30,8 +30,14 @@
     margin-bottom: 32px;
 }
 
-.md-mb32{
-    @include md{
+.md-mb0 {
+    @include md {
+        margin-bottom: 0;
+    }
+}
+
+.md-mb32 {
+    @include md {
         margin-bottom: 32px;
     }
 }
@@ -106,6 +112,12 @@ h1 {
     @include flex;
     align-items : center;
     margin-right: 32px;
+
+    @include md {
+        @include flex_center;
+        margin-right : 0;
+        margin-bottom: 18px;
+    }
 }
 
 .fs-3-white-blod {
@@ -174,6 +186,14 @@ h1 {
     display        : flex;
     flex-direction : column;
     justify-content: center;
+}
+
+.md-flex-column {
+    @include md {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
 }
 
 .flex-wrap {
@@ -413,6 +433,9 @@ h1 {
     width        : 100%;
     border-radius: 18px;
     padding      : 24px 16px;
+    @include md{
+        padding: 24px;
+    }
 }
 
 .btn-2 {
@@ -451,9 +474,15 @@ h1 {
     }
 }
 
-.grid-3 {
+.grid-3-md-1 {
     width  : 33.3333%;
     padding: 16px;
+
+    @include md {
+        width  : 100%;
+        padding: 0;
+
+    }
 }
 
 .grid-5-md-2 {
@@ -501,15 +530,15 @@ h1 {
     position: relative;
 
     img {
-        position: absolute;
+        position     : absolute;
         margin-bottom: 0;
-        top     : 0;
-        left    : 0;
-        right   : 0;
+        top          : 0;
+        left         : 0;
+        right        : 0;
     }
 
     @include md {
-        text-align      : center;
+        text-align: center;
         @include l-card(140%);
     }
 }
