@@ -10,6 +10,10 @@
     margin-bottom: 28px;
 }
 
+.mb18 {
+    margin-bottom: 18px;
+}
+
 .mb28 {
     margin-bottom: 28px;
 }
@@ -22,7 +26,11 @@
     margin-bottom: 48px;
 }
 
-.mt0 {
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.md-mt0 {
     @include md {
         margin-top: 0;
     }
@@ -51,19 +59,31 @@
     justify-content: center;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-center-column {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
 .bg {
     background-color: $white;
 }
 
-.none {
-    @include md {
-        @include none;
-    }
+.bg-main {
+    background-color: $main-color;
 }
 
-.px0 {
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.md-none {
     @include md {
-        @include px0;
+        @include none;
     }
 }
 
@@ -90,9 +110,33 @@
     }
 }
 
+h1 {
+    @include hide-text(58.63px, 160px);
+    background-image: url(../img/logo.svg);
+}
+
+.l-container {
+    max-width: 1360px;
+    @include l-center;
+    @include px98;
+    width: 100%;
+
+    @include md {
+        @include px30;
+    }
+}
+
 .row {
     @include md {
         @include mx-15;
+    }
+}
+
+.l-row {
+    @include mx-98;
+
+    @include md {
+        @include mx-30;
     }
 }
 
@@ -115,9 +159,15 @@
     }
 }
 
-h1 {
-    @include hide-text(58.63px, 160px);
-    background-image: url(../img/logo.svg);
+.l-col {
+    @include flex;
+    @include px98;
+    flex-wrap: wrap;
+    flex     : 0 0 auto;
+
+    @include md {
+        @include px30;
+    }
 }
 
 .nav {
@@ -136,7 +186,6 @@ h1 {
         @include none;
     }
 }
-
 
 .swiper {
     width : 100%;
@@ -181,38 +230,7 @@ h1 {
     }
 }
 
-
-.l-container {
-    max-width: 1360px;
-    @include l-center;
-    @include px98;
-    width: 100%;
-
-    @include md {
-        @include px30;
-    }
-}
-
-.l-row {
-    @include mx-98;
-
-    @include md {
-        @include mx-30;
-    }
-}
-
-.l-col {
-    @include flex;
-    @include px98;
-    flex-wrap: wrap;
-    flex     : 0 0 auto;
-
-    @include md {
-        @include px30;
-    }
-}
-
-.grid-4-md-3 {
+.grid-5-md-3 {
     width         : 20%;
     padding-top   : 0;
     padding-bottom: 12px;
@@ -223,7 +241,6 @@ h1 {
         padding-bottom: 8px;
     }
 }
-
 
 .btn {
     width           : 100%;
@@ -241,9 +258,9 @@ h1 {
     }
 
     svg {
-        width    : 48px;
-        height   : 48px;
-        transform: translate(20%, 20%);
+        width    : 60px;
+        height   : 60px;
+        transform: translate(20%, 10%);
     }
 
     p {
@@ -269,9 +286,9 @@ h1 {
         line-height: 30px;
 
         svg {
-            width    : 30px;
-            height   : 30px;
-            transform: translate(-20%, -5%);
+            width       : 20px;
+            height      : 20px;
+            // transform: translate(-20%, -5%);
         }
 
         p {
@@ -319,6 +336,10 @@ h1 {
     align-items     : center;
 }
 
+.btn-2:hover{
+    box-shadow         : 2px 2px 5px $secondary-color;
+}
+
 .fs-9-blod {
     font-size  : $fs-9;
     font-weight: bold;
@@ -342,10 +363,101 @@ h1 {
     padding: 16px;
 }
 
+.grid-5-md-2 {
+    width: 20%;
+
+    @include md {
+        width: 50%;
+    }
+}
+
+.grid-4-md-1 {
+    width: 25%;
+
+    @include md {
+        width: 100%;
+    }
+}
+
 .card114 {
     @include l-card(114%);
     @include bg-center-cover;
     border       : 1px solid $main-color;
     border-radius: 10px;
     box-shadow   : 2px 2px 5px $g5;
+}
+
+.card133 {
+    @include l-card(133%);
+    @include bg-top-contain;
+    border             : 1px solid $main-color;
+    box-shadow         : 2px 2px 5px $g5;
+    overflow           : hidden;
+    position           : relative;
+
+    @include md {
+        margin-bottom: 12px;
+    }
+}
+
+.card157 {
+    @include l-card(157%);
+    @include bg-top-contain;
+    border  : 0;
+    overflow: hidden;
+    position: relative;
+
+    @include md {
+        margin-bottom: 12px;
+    }
+}
+
+.fs-8-blod {
+    font-size  : $fs-8;
+    font-weight: bold;
+    color      : $g10;
+    text-align : center;
+}
+
+.card-body {
+    padding : 8px 9px;
+    position: absolute;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+}
+
+.fs-3-white-blod {
+    font-size  : $fs-3;
+    color      : $white;
+    font-weight: bold;
+}
+
+.fs-1-white {
+    font-size: $fs-1;
+    color    : $white;
+}
+
+.fs-2-white-blod {
+    font-size  : $fs-2;
+    color      : $white;
+    font-weight: bold;
+}
+
+.bnt-add {
+    position        : absolute;
+    right           : 9px;
+    bottom          : 8px;
+    width           : 102px;
+    height          : 34px;
+    border-radius   : 100px;
+    border          : 0;
+    background-color: $white;
+    color           : $main-color;
+    font-size       : $fs-2;
+    font-weight     : bold;
+}
+.bnt-add:hover{
+    font-size       : $fs-3;
+    box-shadow         : 2px 2px 2px $secondary-color;
 }

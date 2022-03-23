@@ -1,4 +1,6 @@
 $main-color: #4CC2B1;
+$secondary-color: #378f82;
+$g3        :#F1F1F1;
 $g4        : #EAEAEA;
 $g5        : #C4C4C4;
 $g10       : #3F3F3F;
@@ -13,7 +15,7 @@ $fs-5 : 18px;
 $fs-6 : 21px;
 $fs-7 : 24px;
 $fs-8 : 27px;
-$fs-9:34px;
+$fs-9 :34px;
 
 @mixin l-center {
     margin-left : auto;
@@ -53,7 +55,7 @@ $fs-9:34px;
 }
 
 @mixin mx-98 {
-    margin-left :-98px;
+    margin-left : -98px;
     margin-right: -98px;
     @content
 }
