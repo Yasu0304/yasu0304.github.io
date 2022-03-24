@@ -73,11 +73,15 @@
 .ml42 {
     margin-left: 42px;
 }
-.px9py5{
-    @include md{
+
+.px9py5 {
+    padding: 8px 9px;
+
+    @include md {
         padding: 5px 9px;
     }
 }
+
 .px9-md-px4 {
     padding-left : 9px;
     padding-right: 9px;
@@ -516,10 +520,14 @@ h1 {
     }
 }
 
-.grid-4-md-1 {
+.grid-153 {
     width: 25%;
 
     @include md {
+        width: 50%;
+    }
+
+    @include s {
         width: 100%;
     }
 }
@@ -541,20 +549,20 @@ h1 {
     position  : relative;
 
     @include md {
-        @include l-card(160%);
+        @include bg-top-contain;
         margin-bottom: 12px;
     }
 }
 
 .card153 {
-    @include l-card(153%);
+    @include l-card(151%);
     @include bg-top-contain;
     border  : 0;
     overflow: hidden;
     position: relative;
 
     @include s {
-        @include l-card(167%);
+        @include l-card(160%);
         text-align: center;
         @include bg-top-contain;
     }
@@ -564,7 +572,7 @@ h1 {
     position: absolute;
     left    : 0;
     right   : 0;
-    bottom  : 0;
+    bottom: 0;
 }
 
 .bnt-add {

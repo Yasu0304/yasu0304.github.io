@@ -188,6 +188,10 @@ body img {
   margin-left: 42px;
 }
 
+.px9py5 {
+  padding: 8px 9px;
+}
+
 @media (max-width: 960px) {
   .px9py5 {
     padding: 5px 9px;
@@ -736,20 +740,26 @@ h1 {
   }
 }
 
-.grid-4-md-1 {
+.grid-153 {
   width: 25%;
 }
 
 @media (max-width: 960px) {
-  .grid-4-md-1 {
+  .grid-153 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  .grid-153 {
     width: 100%;
   }
 }
 
 .card114 {
   padding-top: 114%;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
   background-position: center center;
   background-size: cover;
   border: 1px solid #4CC2B1;
@@ -760,8 +770,8 @@ h1 {
 
 .card133 {
   padding-top: 133%;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -774,17 +784,17 @@ h1 {
 
 @media (max-width: 960px) {
   .card133 {
-    padding-top: 160%;
-    width: 100%;
-    overflow: hidden;
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 12px;
   }
 }
 
 .card153 {
-  padding-top: 153%;
-  width: 100%;
+  padding-top: 151%;
   overflow: hidden;
+  width: 100%;
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -795,9 +805,9 @@ h1 {
 
 @media (max-width: 540px) {
   .card153 {
-    padding-top: 167%;
-    width: 100%;
+    padding-top: 160%;
     overflow: hidden;
+    width: 100%;
     text-align: center;
     background-position: center top;
     background-size: contain;
