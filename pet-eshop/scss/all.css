@@ -188,8 +188,10 @@ body img {
   margin-left: 42px;
 }
 
-.px9py5 {
-  padding: 8px 9px;
+@media (max-width: 1440px) {
+  .px9py5 {
+    padding: 8px 9px;
+  }
 }
 
 @media (max-width: 960px) {

@@ -75,7 +75,9 @@
 }
 
 .px9py5 {
-    padding: 8px 9px;
+    @include xxl {
+        padding: 8px 9px;
+    }
 
     @include md {
         padding: 5px 9px;
@@ -572,7 +574,7 @@ h1 {
     position: absolute;
     left    : 0;
     right   : 0;
-    bottom: 0;
+    bottom  : 0;
 }
 
 .bnt-add {
