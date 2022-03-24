@@ -75,9 +75,7 @@
 }
 
 .px9py5 {
-    @include xxl {
-        padding: 8px 9px;
-    }
+    padding: 8px 9px;
 
     @include md {
         padding: 5px 9px;
