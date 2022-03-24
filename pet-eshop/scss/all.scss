@@ -561,11 +561,11 @@ h1 {
     overflow: hidden;
     position: relative;
 
-    @include s {
-        @include l-card(160%);
-        text-align: center;
-        @include bg-top-contain;
-    }
+    // @include s {
+    //     @include l-card(160%);
+    //     text-align: center;
+    //     @include bg-top-contain;
+    // }
 }
 
 .card-body {
