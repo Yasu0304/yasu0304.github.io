@@ -14,6 +14,10 @@
     margin-top: 0;
 }
 
+.mb12 {
+    margin-bottom: 12px;
+}
+
 .mb16 {
     margin-bottom: 16px;
 }
@@ -69,11 +73,11 @@
 .ml42 {
     margin-left: 42px;
 }
-
-.mt12 {
-    margin-bottom: 12px;
+.px9py5{
+    @include md{
+        padding: 5px 9px;
+    }
 }
-
 .px9-md-px4 {
     padding-left : 9px;
     padding-right: 9px;
@@ -91,6 +95,13 @@
     @include md {
         padding-left : 49px;
         padding-right: 49px;
+    }
+}
+
+.px30 {
+    @include md {
+        padding-left : 30px;
+        padding-right: 30px;
     }
 }
 
@@ -124,6 +135,10 @@ h1 {
     font-size  : $fs-3;
     color      : $white;
     font-weight: bold;
+
+    @include s {
+        font-size: fs-2;
+    }
 }
 
 .fs-3-white {
@@ -142,8 +157,7 @@ h1 {
     margin-bottom: 16px;
 
     @include md {
-        font-size    : $fs-6;
-        margin-bottom: 20px;
+        font-size: $fs-6;
     }
 }
 
@@ -161,12 +175,20 @@ h1 {
 .fs-1-white {
     font-size: $fs-1;
     color    : $white;
+
+    @include md {
+        font-size: $fs-11;
+    }
 }
 
 .fs-2-white-blod {
     font-size  : $fs-2;
     color      : $white;
     font-weight: bold;
+
+    @include md {
+        font-size: $fs-1;
+    }
 }
 
 .w-100 {
@@ -244,7 +266,7 @@ h1 {
     width: 100%;
 
     @include md {
-        @include px30;
+        @include px13;
     }
 }
 
@@ -258,7 +280,7 @@ h1 {
     @include mx-98;
 
     @include md {
-        @include mx-30;
+        @include mx-13;
     }
 }
 
@@ -288,7 +310,7 @@ h1 {
     flex     : 0 0 auto;
 
     @include md {
-        @include px30;
+        @include px13;
     }
 }
 
@@ -433,7 +455,8 @@ h1 {
     width        : 100%;
     border-radius: 18px;
     padding      : 24px 16px;
-    @include md{
+
+    @include md {
         padding: 24px;
     }
 }
@@ -518,33 +541,26 @@ h1 {
     position  : relative;
 
     @include md {
+        @include l-card(160%);
         margin-bottom: 12px;
     }
 }
 
 .card153 {
     @include l-card(153%);
-    @include bg-center-cover;
+    @include bg-top-contain;
     border  : 0;
     overflow: hidden;
     position: relative;
 
-    img {
-        position     : absolute;
-        margin-bottom: 0;
-        top          : 0;
-        left         : 0;
-        right        : 0;
-    }
-
-    @include md {
+    @include s {
+        @include l-card(167%);
         text-align: center;
-        @include l-card(140%);
+        @include bg-top-contain;
     }
 }
 
 .card-body {
-    padding : 8px 9px;
     position: absolute;
     left    : 0;
     right   : 0;
@@ -563,6 +579,12 @@ h1 {
     color           : $main-color;
     font-size       : $fs-2;
     font-weight     : bold;
+
+    @include md {
+        width    : 74px;
+        height   : 24px;
+        font-size: $fs-1;
+    }
 }
 
 .bnt-add:hover {
