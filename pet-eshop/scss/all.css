@@ -769,8 +769,8 @@ h1 {
   border: 1px solid #4CC2B1;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .card114:hover {
@@ -786,11 +786,11 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid #4CC2B1;
-  -webkit-box-shadow: 2px 2px 5px #C4C4C4;
-          box-shadow: 2px 2px 5px #C4C4C4;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px #C4C4C4;
+          box-shadow: 2px 2px 5px #C4C4C4;
 }
 
 @media (max-width: 960px) {
@@ -803,7 +803,7 @@ h1 {
 }
 
 .card153 {
-  padding-top: 151%;
+  padding-top: 100%;
   overflow: hidden;
   width: 100%;
   background-position: center top;
@@ -812,7 +812,6 @@ h1 {
   border: 0;
   overflow: hidden;
   position: relative;
-  cursor: pointer;
 }
 
 .card-body {
@@ -820,6 +819,16 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.card-body-noneposition {
+  margin: 20px 0;
+}
+
+@media (max-width: 960px) {
+  .card-body-noneposition {
+    text-align: center;
+  }
 }
 
 .bnt-add {
@@ -834,6 +843,9 @@ h1 {
   color: #4CC2B1;
   font-size: 12px;
   font-weight: bold;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -845,8 +857,15 @@ h1 {
 }
 
 .bnt-add:hover {
-  font-size: 14px;
+  font-size: 12px;
   -webkit-box-shadow: 2px 2px 2px #378f82;
           box-shadow: 2px 2px 2px #378f82;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .bnt-add:hover {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

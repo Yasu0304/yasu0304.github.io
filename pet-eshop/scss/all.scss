@@ -118,7 +118,7 @@
 h1 {
     @include hide-text(58.63px, 160px);
     background-image: url(../img/logo.svg);
-    cursor: pointer;
+    cursor          : pointer;
 }
 
 .fs-9-blod {
@@ -244,7 +244,7 @@ h1 {
 .box {
     height          : 40px;
     background-color: $main-color;
-    cursor: pointer;
+    cursor          : pointer;
 
     p {
         color        : $white;
@@ -259,7 +259,8 @@ h1 {
     max-width: 1360px;
     @include l-center;
     width: 100%;
-    img{
+
+    img {
         cursor: pointer;
     }
 
@@ -382,6 +383,7 @@ h1 {
         border-radius: 0;
     }
 }
+
 .btn-link {
     width         : 20%;
     padding-top   : 0;
@@ -393,7 +395,7 @@ h1 {
         padding-bottom: 8px;
     }
 
-    a{
+    a {
         display: block;
     }
 }
@@ -404,12 +406,13 @@ h1 {
     background-color: $white;
     color           : $g5;
     text-decoration : none;
-    cursor: pointer;
+    cursor          : pointer;
 
     .b-text {
         @include flex_center;
-        margin: 8px auto;
+        margin     : 8px auto;
         align-items: center;
+
         p {
             font-size  : $fs-5;
             margin-left: 5px;
@@ -477,8 +480,8 @@ h1 {
     border          : 0;
     font-size       : $fs-7;
     align-items     : center;
-    transition: 0.5s;
-    cursor:pointer
+    transition      : 0.5s;
+    cursor          : pointer
 }
 
 .btn-2:hover {
@@ -501,7 +504,6 @@ h1 {
     @include md {
         width  : 100%;
         padding: 0;
-
     }
 }
 
@@ -530,22 +532,22 @@ h1 {
     @include bg-center-cover;
     border       : 1px solid $main-color;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+    cursor       : pointer;
+    transition   : 0.7s;
 }
 
-.card114:hover{
-    box-shadow   : 2px 2px 5px $g5;
+.card114:hover {
+    box-shadow: 2px 2px 5px $g5;
 }
 
 .card133 {
     @include l-card(133%);
     @include bg-top-contain;
     border    : 1px solid $main-color;
-    box-shadow: 2px 2px 5px $g5;
     overflow  : hidden;
     position  : relative;
-    cursor: pointer;
+    cursor    : pointer;
+    box-shadow: 2px 2px 5px $g5;
 
     @include md {
         @include bg-top-contain;
@@ -554,18 +556,11 @@ h1 {
 }
 
 .card153 {
-    @include l-card(151%);
+    @include l-card(100%);
     @include bg-top-contain;
     border  : 0;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
-
-    // @include s {
-    //     @include l-card(160%);
-    //     text-align: center;
-    //     @include bg-top-contain;
-    // }
 }
 
 .card-body {
@@ -573,6 +568,13 @@ h1 {
     left    : 0;
     right   : 0;
     bottom  : 0;
+}
+
+.card-body-noneposition{
+    margin: 20px 0;
+    @include md{
+        text-align: center;
+    }
 }
 
 .bnt-add {
@@ -587,6 +589,8 @@ h1 {
     color           : $main-color;
     font-size       : $fs-2;
     font-weight     : bold;
+    transition      : 0.7s;
+    cursor          : pointer;
 
     @include md {
         width    : 74px;
@@ -596,6 +600,11 @@ h1 {
 }
 
 .bnt-add:hover {
-    font-size : $fs-3;
+    font-size       : $fs-2;
     box-shadow: 2px 2px 2px $secondary-color;
+    cursor    : pointer;
+
+    @include md {
+        font-size: $fs-1;
+    }
 }
