@@ -118,6 +118,7 @@
 h1 {
     @include hide-text(58.63px, 160px);
     background-image: url(../img/logo.svg);
+    cursor: pointer;
 }
 
 .fs-9-blod {
@@ -243,6 +244,7 @@ h1 {
 .box {
     height          : 40px;
     background-color: $main-color;
+    cursor: pointer;
 
     p {
         color        : $white;
@@ -257,6 +259,9 @@ h1 {
     max-width: 1360px;
     @include l-center;
     width: 100%;
+    img{
+        cursor: pointer;
+    }
 
     @include md {
         @include px15;
@@ -399,6 +404,7 @@ h1 {
     background-color: $white;
     color           : $g5;
     text-decoration : none;
+    cursor: pointer;
 
     .b-text {
         @include flex_center;
@@ -471,6 +477,8 @@ h1 {
     border          : 0;
     font-size       : $fs-7;
     align-items     : center;
+    transition: 0.5s;
+    cursor:pointer
 }
 
 .btn-2:hover {
@@ -522,6 +530,11 @@ h1 {
     @include bg-center-cover;
     border       : 1px solid $main-color;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card114:hover{
     box-shadow   : 2px 2px 5px $g5;
 }
 
@@ -532,6 +545,7 @@ h1 {
     box-shadow: 2px 2px 5px $g5;
     overflow  : hidden;
     position  : relative;
+    cursor: pointer;
 
     @include md {
         @include bg-top-contain;
@@ -545,6 +559,7 @@ h1 {
     border  : 0;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 
     // @include s {
     //     @include l-card(160%);

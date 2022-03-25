@@ -242,6 +242,7 @@ h1 {
   height: 58.63px;
   width: 160px;
   background-image: url(../img/logo.svg);
+  cursor: pointer;
 }
 
 .fs-9-blod {
@@ -407,6 +408,7 @@ h1 {
 .box {
   height: 40px;
   background-color: #4CC2B1;
+  cursor: pointer;
 }
 
 .box p {
@@ -424,6 +426,10 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.container img {
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -612,6 +618,7 @@ h1 {
   background-color: #ffffff;
   color: #C4C4C4;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn .b-text {
@@ -696,6 +703,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn-2:hover {
@@ -758,6 +768,12 @@ h1 {
   background-size: cover;
   border: 1px solid #4CC2B1;
   border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card114:hover {
   -webkit-box-shadow: 2px 2px 5px #C4C4C4;
           box-shadow: 2px 2px 5px #C4C4C4;
 }
@@ -774,6 +790,7 @@ h1 {
           box-shadow: 2px 2px 5px #C4C4C4;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -795,6 +812,7 @@ h1 {
   border: 0;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .card-body {
