@@ -300,10 +300,15 @@ h1 {
     padding-top   : 27px;
     padding-bottom: 15px;
     border-bottom : 1px solid $g5;
+    transition    : 0.7s;
 
     img {
-        width : 40px;
-        height: 40px;
+        width     : 40px;
+        height    : 40px;
+    }
+
+    a {
+        cursor: pointer;
     }
 
     @include md {
@@ -330,6 +335,7 @@ h1 {
 
     a {
         @include link($g10, $fs-6);
+        cursor: pointer;
     }
 
     a:hover {
@@ -424,8 +430,6 @@ h1 {
             }
         }
     }
-
-
 }
 
 .icon {
@@ -570,9 +574,10 @@ h1 {
     bottom  : 0;
 }
 
-.card-body-noneposition{
+.card-body-noneposition {
     margin: 20px 0;
-    @include md{
+
+    @include md {
         text-align: center;
     }
 }
@@ -600,7 +605,7 @@ h1 {
 }
 
 .bnt-add:hover {
-    font-size       : $fs-2;
+    font-size : $fs-2;
     box-shadow: 2px 2px 2px $secondary-color;
     cursor    : pointer;
 

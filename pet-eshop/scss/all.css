@@ -487,11 +487,17 @@ h1 {
   padding-top: 27px;
   padding-bottom: 15px;
   border-bottom: 1px solid #C4C4C4;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .h-col img {
   width: 40px;
   height: 40px;
+}
+
+.h-col a {
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -536,6 +542,7 @@ h1 {
 .nav a {
   color: #3F3F3F;
   font-size: 21px;
+  cursor: pointer;
 }
 
 .nav a:hover {
