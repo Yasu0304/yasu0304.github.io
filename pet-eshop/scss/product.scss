@@ -5,7 +5,7 @@
 @import "media";
 
 
-//導覽
+//導覽、footer
 .box {
     height          : 40px;
     background-color: $main-color;
@@ -82,6 +82,23 @@
     }
 }
 
+h1 {
+    @include hide-text(58.63px, 160px);
+    background-image: url(../img/logo.svg);
+    cursor          : pointer;
+}
+
+.md-mr0 {
+    @include md {
+        margin-right: 0;
+    }
+}
+
+.ml42 {
+    margin-left: 42px;
+}
+
+
 //本頁Spacing
 .md-none {
     @include md {
@@ -89,8 +106,8 @@
     }
 }
 
-.bg {
-    background-color: $white;
+.mb8 {
+    margin-bottom: 8px;
 }
 
 .mb48 {
@@ -101,7 +118,7 @@
     margin-bottom: 61px;
 }
 
-.mt-auto{
+.mt-auto {
     margin-top: auto;
 }
 
@@ -115,16 +132,46 @@
     }
 }
 
-.h-100{
+.px9py5 {
+    padding: 8px 9px;
+
+    @include md {
+        padding: 5px 9px;
+    }
+}
+
+.py24 {
+    padding-top   : 24px;
+    padding-bottom: 24px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
     height: 100%;
 }
+
+//本頁flex
 .flex-start-column {
     display       : flex;
     flex-direction: column;
     align-items   : flex-start;
 }
+
 .flex-center {
     display        : flex;
+    justify-content: center;
+}
+
+.flex {
+    @include flex;
+}
+
+.flex-center-column {
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
 }
 
@@ -134,6 +181,10 @@
         flex-direction : column;
         justify-content: center;
     }
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 //本頁通用
@@ -157,20 +208,12 @@
 }
 
 .l-col {
-    @include flex;
     @include px98;
     flex-wrap: wrap;
     flex     : 0 0 auto;
 
     @include md {
         @include px13;
-    }
-}
-
-.p-row {
-    @include mx-98;
-    @include md {
-        @include mx-13;
     }
 }
 
@@ -184,41 +227,24 @@
     }
 }
 
-.bnt-3 {
-    width           : 102px;
-    height          : 34px;
-    border-radius   : 100px;
-    border          : 0;
+.grid-5-md-2 {
+    width: 20%;
+
+    @include md {
+        width: 50%;
+    }
+}
+
+.bg {
+    background-color: $white;
+}
+
+.bg-main {
     background-color: $main-color;
-    color           : $white;
-    font-size       : $fs-2;
-    font-weight     : bold;
-    transition      : 0.7s;
-    cursor          : pointer;
-
-    @include md {
-        width    : 74px;
-        height   : 24px;
-        font-size: $fs-1;
-    }
 }
 
-.bnt-3:hover {
-    font-size : $fs-2;
-    box-shadow: 2px 2px 2px $secondary-color;
-    cursor    : pointer;
-
-    @include md {
-        font-size: $fs-1;
-    }
-}
 
 //本頁Typography
-h1 {
-    @include hide-text(58.63px, 160px);
-    background-image: url(../img/logo.svg);
-    cursor          : pointer;
-}
 
 .fs-9-blod {
     font-size  : $fs-9;
@@ -232,110 +258,14 @@ h1 {
     }
 }
 
-.fa-12{
+.fa-12 {
     font-size: $fa-12;
-    color: $main-color;
+    color    : $main-color;
 }
 
-
-
-
-
-//通用
-.mt32-mb28 {
-    margin-top   : 32px;
-    margin-bottom: 28px;
-}
-
-.mt0 {
-    margin-top: 0;
-}
-
-.mb12 {
-    margin-bottom: 12px;
-}
-
-.mb16 {
-    margin-bottom: 16px;
-}
-
-.mb18 {
-    margin-bottom: 18px;
-}
-
-.mb28 {
-    margin-bottom: 28px;
-}
-
-.mb32 {
-    margin-bottom: 32px;
-}
-
-.md-mb0 {
-    @include md {
-        margin-bottom: 0;
-    }
-}
-
-.md-mb32 {
-    @include md {
-        margin-bottom: 32px;
-    }
-}
-
-.mb8 {
-    margin-bottom: 8px;
-}
-
-.md-mt0 {
-    @include md {
-        margin-top: 0;
-    }
-}
-
-.md-mr0 {
-    @include md {
-        margin-right: 0;
-    }
-}
-
-.ml30 {
-    margin-left: 30px;
-}
-
-.ml42 {
-    margin-left: 42px;
-}
-
-.px9py5 {
-    padding: 8px 9px;
-
-    @include md {
-        padding: 5px 9px;
-    }
-}
-
-
-.px9-px49 {
-    padding-left : 9px;
-    padding-right: 9px;
-
-    @include md {
-        padding-left : 49px;
-        padding-right: 49px;
-    }
-}
-
-.px30 {
-    @include md {
-        padding-left : 30px;
-        padding-right: 30px;
-    }
-}
-
-.py24 {
-    padding-top   : 24px;
-    padding-bottom: 24px;
+.fs-3-white {
+    font-size: $fs-3;
+    color    : $white;
 }
 
 .fs-3-white-blod {
@@ -346,37 +276,6 @@ h1 {
     @include s {
         font-size: fs-2;
     }
-}
-
-.fs-3-white {
-    font-size: $fs-3;
-    color    : $white;
-}
-
-.fs-5-black-blod {
-    font-size  : $fs-5;
-    font-weight: bold;
-}
-
-.fs-5-black-blod-md-fs-6 {
-    font-size    : $fs-5;
-    font-weight  : bold;
-    margin-bottom: 16px;
-
-    @include md {
-        font-size: $fs-6;
-    }
-}
-
-.fs-10 {
-    font-size: $fs-10;
-}
-
-.fs-8-blod {
-    font-size  : $fs-8;
-    font-weight: bold;
-    color      : $g10;
-    text-align : center;
 }
 
 .fs-1-white {
@@ -398,192 +297,7 @@ h1 {
     }
 }
 
-.w-100 {
-    width: 100%;
-}
-
-.flex-center-column {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-}
-
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-
-.bg-main {
-    background-color: $main-color;
-}
-
-
-.banner {
-    @include bg-center-cover;
-    @include l-banner (32%);
-    border-radius: 30px;
-
-    @include md {
-        padding-top  : 79%;
-        border-radius: 0;
-    }
-}
-
-.btn-link {
-    width         : 20%;
-    padding-top   : 0;
-    padding-bottom: 12px;
-
-    @include md {
-        width         : 33.3333%;
-        padding-top   : 0;
-        padding-bottom: 8px;
-    }
-
-    a {
-        display: block;
-    }
-}
-
-.btn {
-    border-radius   : 100px;
-    border          : 1px solid $g5;
-    background-color: $white;
-    color           : $g5;
-    text-decoration : none;
-    cursor          : pointer;
-
-    .b-text {
-        @include flex_center;
-        margin     : 8px auto;
-        align-items: center;
-
-        p {
-            font-size  : $fs-5;
-            margin-left: 5px;
-        }
-
-        @include md {
-            p {
-                font-size: $fs-2;
-            }
-        }
-    }
-}
-
-.icon {
-    width : 40px;
-    height: 40px;
-
-    @include md {
-        width : 20px;
-        height: 20px;
-    }
-
-    svg {
-        width      : 100%;
-        height     : 100%;
-        align-items: center;
-
-        path {
-            fill: $g5;
-        }
-    }
-}
-
-.btn:hover {
-    border          : 1px solid $main-color;
-    background-color: $white;
-    color           : $main-color;
-
-    svg {
-        path {
-            fill: $main-color;
-        }
-    }
-}
-
-.inner {
-    border       : 1px solid $main-color;
-    width        : 100%;
-    border-radius: 18px;
-    padding      : 24px 16px;
-
-    @include md {
-        padding: 24px;
-    }
-}
-
-.btn-2 {
-    width           : 196px;
-    height          : 50px;
-    background-color: $main-color;
-    color           : $white;
-    border-radius   : 47px;
-    border          : 0;
-    font-size       : $fs-7;
-    align-items     : center;
-    transition      : 0.5s;
-    cursor          : pointer
-}
-
-.btn-2:hover {
-    box-shadow: 2px 2px 5px $secondary-color;
-}
-
-.outline {
-    padding      : 8.5px 8px;
-    border       : 1px solid $main-color;
-    border-radius: 10px;
-    display      : inline-block;
-    margin-right : 12px;
-    color        : $main-color;
-}
-
-.grid-3-md-1 {
-    width  : 33.3333%;
-    padding: 16px;
-
-    @include md {
-        width  : 100%;
-        padding: 0;
-    }
-}
-
-.grid-5-md-2 {
-    width: 20%;
-
-    @include md {
-        width: 50%;
-    }
-}
-
-.grid-153 {
-    width: 25%;
-
-    @include md {
-        width: 50%;
-    }
-
-    @include s {
-        width: 100%;
-    }
-}
-
-.card114 {
-    @include l-card(114%);
-    @include bg-center-cover;
-    border       : 1px solid $main-color;
-    border-radius: 10px;
-    cursor       : pointer;
-    transition   : 0.7s;
-}
-
-.card114:hover {
-    box-shadow: 2px 2px 5px $g5;
-}
-
+//本頁元件
 .card133 {
     @include l-card(133%);
     @include bg-top-contain;
@@ -599,27 +313,11 @@ h1 {
     }
 }
 
-.card153 {
-    @include l-card(100%);
-    @include bg-top-contain;
-    border  : 0;
-    overflow: hidden;
-    position: relative;
-}
-
 .card-body {
     position: absolute;
     left    : 0;
     right   : 0;
     bottom  : 0;
-}
-
-.card-body-noneposition {
-    margin: 20px 0;
-
-    @include md {
-        text-align: center;
-    }
 }
 
 .bnt-add {
@@ -653,3 +351,310 @@ h1 {
         font-size: $fs-1;
     }
 }
+
+.bnt-3 {
+    width           : 102px;
+    height          : 34px;
+    border-radius   : 100px;
+    border          : 0;
+    background-color: $main-color;
+    color           : $white;
+    font-size       : $fs-2;
+    font-weight     : bold;
+    transition      : 0.7s;
+    cursor          : pointer;
+
+    @include md {
+        width    : 74px;
+        height   : 24px;
+        font-size: $fs-1;
+    }
+}
+
+.bnt-3:hover {
+    font-size : $fs-2;
+    box-shadow: 2px 2px 2px $secondary-color;
+    cursor    : pointer;
+
+    @include md {
+        font-size: $fs-1;
+    }
+}
+
+
+
+
+
+
+
+
+// .mt32-mb28 {
+//     margin-top   : 32px;
+//     margin-bottom: 28px;
+// }
+
+// .mt0 {
+//     margin-top: 0;
+// }
+
+// .mb12 {
+//     margin-bottom: 12px;
+// }
+
+// .mb16 {
+//     margin-bottom: 16px;
+// }
+
+// .mb18 {
+//     margin-bottom: 18px;
+// }
+
+// .mb28 {
+//     margin-bottom: 28px;
+// }
+
+// .mb32 {
+//     margin-bottom: 32px;
+// }
+
+// .md-mb0 {
+//     @include md {
+//         margin-bottom: 0;
+//     }
+// }
+
+// .md-mb32 {
+//     @include md {
+//         margin-bottom: 32px;
+//     }
+// }
+
+
+// .md-mt0 {
+//     @include md {
+//         margin-top: 0;
+//     }
+// }
+
+// .ml30 {
+//     margin-left: 30px;
+// }
+
+// .px9-px49 {
+//     padding-left : 9px;
+//     padding-right: 9px;
+
+//     @include md {
+//         padding-left : 49px;
+//         padding-right: 49px;
+//     }
+// }
+
+// .px30 {
+//     @include md {
+//         padding-left : 30px;
+//         padding-right: 30px;
+//     }
+// }
+
+// .fs-5-black-blod {
+//     font-size  : $fs-5;
+//     font-weight: bold;
+// }
+
+// .fs-5-black-blod-md-fs-6 {
+//     font-size    : $fs-5;
+//     font-weight  : bold;
+//     margin-bottom: 16px;
+
+//     @include md {
+//         font-size: $fs-6;
+//     }
+// }
+
+// .fs-10 {
+//     font-size: $fs-10;
+// }
+
+// .fs-8-blod {
+//     font-size  : $fs-8;
+//     font-weight: bold;
+//     color      : $g10;
+//     text-align : center;
+// }
+
+
+// .banner {
+//     @include bg-center-cover;
+//     @include l-banner (32%);
+//     border-radius: 30px;
+
+//     @include md {
+//         padding-top  : 79%;
+//         border-radius: 0;
+//     }
+// }
+
+// .btn-link {
+//     width         : 20%;
+//     padding-top   : 0;
+//     padding-bottom: 12px;
+
+//     @include md {
+//         width         : 33.3333%;
+//         padding-top   : 0;
+//         padding-bottom: 8px;
+//     }
+
+//     a {
+//         display: block;
+//     }
+// }
+
+// .btn {
+//     border-radius   : 100px;
+//     border          : 1px solid $g5;
+//     background-color: $white;
+//     color           : $g5;
+//     text-decoration : none;
+//     cursor          : pointer;
+
+//     .b-text {
+//         @include flex_center;
+//         margin     : 8px auto;
+//         align-items: center;
+
+//         p {
+//             font-size  : $fs-5;
+//             margin-left: 5px;
+//         }
+
+//         @include md {
+//             p {
+//                 font-size: $fs-2;
+//             }
+//         }
+//     }
+// }
+
+// .icon {
+//     width : 40px;
+//     height: 40px;
+
+//     @include md {
+//         width : 20px;
+//         height: 20px;
+//     }
+
+//     svg {
+//         width      : 100%;
+//         height     : 100%;
+//         align-items: center;
+
+//         path {
+//             fill: $g5;
+//         }
+//     }
+// }
+
+// .btn:hover {
+//     border          : 1px solid $main-color;
+//     background-color: $white;
+//     color           : $main-color;
+
+//     svg {
+//         path {
+//             fill: $main-color;
+//         }
+//     }
+// }
+
+// .inner {
+//     border       : 1px solid $main-color;
+//     width        : 100%;
+//     border-radius: 18px;
+//     padding      : 24px 16px;
+
+//     @include md {
+//         padding: 24px;
+//     }
+// }
+
+// .btn-2 {
+//     width           : 196px;
+//     height          : 50px;
+//     background-color: $main-color;
+//     color           : $white;
+//     border-radius   : 47px;
+//     border          : 0;
+//     font-size       : $fs-7;
+//     align-items     : center;
+//     transition      : 0.5s;
+//     cursor          : pointer
+// }
+
+// .btn-2:hover {
+//     box-shadow: 2px 2px 5px $secondary-color;
+// }
+
+// .outline {
+//     padding      : 8.5px 8px;
+//     border       : 1px solid $main-color;
+//     border-radius: 10px;
+//     display      : inline-block;
+//     margin-right : 12px;
+//     color        : $main-color;
+// }
+
+// .grid-3-md-1 {
+//     width  : 33.3333%;
+//     padding: 16px;
+
+//     @include md {
+//         width  : 100%;
+//         padding: 0;
+//     }
+// }
+
+// .grid-153 {
+//     width: 25%;
+
+//     @include md {
+//         width: 50%;
+//     }
+
+//     @include s {
+//         width: 100%;
+//     }
+// }
+
+// .card114 {
+//     @include l-card(114%);
+//     @include bg-center-cover;
+//     border       : 1px solid $main-color;
+//     border-radius: 10px;
+//     cursor       : pointer;
+//     transition   : 0.7s;
+// }
+
+// .card114:hover {
+//     box-shadow: 2px 2px 5px $g5;
+// }
+
+
+// .card153 {
+//     @include l-card(100%);
+//     @include bg-top-contain;
+//     border  : 0;
+//     overflow: hidden;
+//     position: relative;
+// }
+
+
+// .card-body-noneposition {
+//     margin: 20px 0;
+
+//     @include md {
+//         text-align: center;
+//     }
+// }
