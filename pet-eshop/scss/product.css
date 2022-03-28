@@ -119,6 +119,130 @@ body img {
   --bs-font-sans-serif: 'Microsoft JhengHei', 微軟正黑體, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.box {
+  height: 40px;
+  background-color: #4CC2B1;
+  cursor: pointer;
+}
+
+.box p {
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.container {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container img {
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.h-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 27px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #C4C4C4;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.h-col img {
+  width: 40px;
+  height: 40px;
+}
+
+.h-col a {
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .h-col {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 29px;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 528px;
+}
+
+.nav a {
+  color: #3F3F3F;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  color: #4CC2B1;
+  font-size: 21px;
+}
+
+@media (max-width: 960px) {
+  .nav {
+    display: none;
+  }
+}
+
+h1 {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  height: 58.63px;
+  width: 160px;
+  background-image: url(../img/logo.svg);
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .md-mr0 {
+    margin-right: 0;
+  }
+}
+
+.ml42 {
+  margin-left: 42px;
+}
+
 @media (max-width: 960px) {
   .md-none {
     display: none;
