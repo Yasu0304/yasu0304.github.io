@@ -67,6 +67,11 @@
   }
 }
 
+.fs-3-linehight {
+  font-size: 14px;
+  line-height: 1rem;
+}
+
 .fs-1-white {
   font-size: 10px;
   color: #ffffff;

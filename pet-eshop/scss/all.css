@@ -310,6 +310,10 @@ h1 {
           align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .l-container {
   max-width: 1360px;
   margin-left: auto;
@@ -365,6 +369,16 @@ h1 {
 @media (max-width: 960px) {
   .grid-5-md-2 {
     width: 50%;
+  }
+}
+
+.grid-2-md-1 {
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  .grid-2-md-1 {
+    width: 100%;
   }
 }
 
