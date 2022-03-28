@@ -4,7 +4,6 @@
 @import "media";
 
 
-//index
 .md-none {
     @include md {
         @include none;
@@ -103,6 +102,10 @@
     @include md {
         margin-top: 0;
     }
+}
+
+.ml10 {
+    margin-left: 10px;
 }
 
 .ml30 {

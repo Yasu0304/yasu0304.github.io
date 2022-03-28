@@ -133,6 +133,10 @@ h1 {
     flex-wrap: wrap;
 }
 
+.align-center{
+    align-items: center;
+}
+
 .l-container {
     max-width: 1360px;
     @include l-center;

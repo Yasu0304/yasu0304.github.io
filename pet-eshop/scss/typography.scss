@@ -4,13 +4,12 @@
 @import "media";
 
 
-//index
 .fs-9-blod {
-    font-size  : $fs-9;
-    font-weight: bold;
+    font-size   : $fs-9;
+    font-weight : bold;
     margin-right: 32px;
-    color: $main-color;
-    align-items: center;
+    color       : $main-color;
+    align-items : center;
     @include flex;
 
     @include md {
@@ -71,7 +70,6 @@
     }
 }
 
-
 .fs-5-black-blod {
     font-size  : $fs-5;
     font-weight: bold;
@@ -85,6 +83,11 @@
     @include md {
         font-size: $fs-6;
     }
+}
+
+.fs-5-g10 {
+    font-size: $fs-5;
+    color    : $g10;
 }
 
 .fs-10 {
