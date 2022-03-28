@@ -270,6 +270,15 @@ h1 {
     }
 }
 
+
+.grid-5-md-2 {
+    width: 20%;
+
+    @include md {
+        width: 50%;
+    }
+}
+
 .card-body {
     position: absolute;
     left    : 0;

@@ -1,4 +1,3 @@
-@import "reset";
 @import "layout";
 @import "flex";
 @import "components";
@@ -12,6 +11,18 @@
     margin-right: 32px;
     color: $main-color;
     align-items: center;
+    @include flex;
+
+    @include md {
+        @include flex_center;
+        margin-right : 0;
+        margin-bottom: 18px;
+    }
+}
+
+.fs-9-blod-bk {
+    font-size  : $fs-9;
+    font-weight: bold;
     @include flex;
 
     @include md {
