@@ -1,0 +1,88 @@
+@import "reset";
+@import "layout";
+@import "flex";
+@import "components";
+@import "media";
+
+
+//index
+.fs-9-blod {
+    font-size  : $fs-9;
+    font-weight: bold;
+    margin-right: 32px;
+    color: $main-color;
+    align-items: center;
+    @include flex;
+
+    @include md {
+        @include flex_center;
+        margin-right : 0;
+        margin-bottom: 18px;
+    }
+}
+
+.fa-12 {
+    font-size: $fa-12;
+    color    : $main-color;
+}
+
+.fs-3-white {
+    font-size: $fs-3;
+    color    : $white;
+}
+
+.fs-3-white-blod {
+    font-size  : $fs-3;
+    color      : $white;
+    font-weight: bold;
+
+    @include s {
+        font-size: fs-2;
+    }
+}
+
+.fs-1-white {
+    font-size: $fs-1;
+    color    : $white;
+
+    @include md {
+        font-size: $fs-11;
+    }
+}
+
+.fs-2-white-blod {
+    font-size  : $fs-2;
+    color      : $white;
+    font-weight: bold;
+
+    @include md {
+        font-size: $fs-1;
+    }
+}
+
+
+.fs-5-black-blod {
+    font-size  : $fs-5;
+    font-weight: bold;
+}
+
+.fs-5-black-blod-md-fs-6 {
+    font-size    : $fs-5;
+    font-weight  : bold;
+    margin-bottom: 16px;
+
+    @include md {
+        font-size: $fs-6;
+    }
+}
+
+.fs-10 {
+    font-size: $fs-10;
+}
+
+.fs-8-blod {
+    font-size  : $fs-8;
+    font-weight: bold;
+    color      : $g10;
+    text-align : center;
+}

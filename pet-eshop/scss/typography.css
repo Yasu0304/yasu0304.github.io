@@ -119,27 +119,14 @@ body img {
   --bs-font-sans-serif: 'Microsoft JhengHei', 微軟正黑體, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.grid-5-md-2 {
-  width: 20%;
-}
-
-@media (max-width: 960px) {
-  .grid-5-md-2 {
-    width: 50%;
-  }
-}
-
-.bg {
-  background-color: #ffffff;
-}
-
-.bg-main {
-  background-color: #4CC2B1;
-}
-
 .fs-9-blod {
   font-size: 34px;
   font-weight: bold;
+  margin-right: 32px;
+  color: #4CC2B1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,107 +190,31 @@ body img {
   }
 }
 
-.card133 {
-  padding-top: 133%;
-  overflow: hidden;
-  width: 100%;
-  background-position: center top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid #4CC2B1;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  -webkit-box-shadow: 2px 2px 5px #C4C4C4;
-          box-shadow: 2px 2px 5px #C4C4C4;
-}
-
-@media (max-width: 960px) {
-  .card133 {
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 12px;
-  }
-}
-
-.card-body {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.bnt-add {
-  position: absolute;
-  right: 9px;
-  bottom: 8px;
-  width: 102px;
-  height: 34px;
-  border-radius: 100px;
-  border: 0;
-  background-color: #ffffff;
-  color: #4CC2B1;
-  font-size: 12px;
+.fs-5-black-blod {
+  font-size: 18px;
   font-weight: bold;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  cursor: pointer;
 }
 
-@media (max-width: 960px) {
-  .bnt-add {
-    width: 74px;
-    height: 24px;
-    font-size: 10px;
-  }
-}
-
-.bnt-add:hover {
-  font-size: 12px;
-  -webkit-box-shadow: 2px 2px 2px #378f82;
-          box-shadow: 2px 2px 2px #378f82;
-  cursor: pointer;
-}
-
-@media (max-width: 960px) {
-  .bnt-add:hover {
-    font-size: 10px;
-  }
-}
-
-.bnt-3 {
-  width: 102px;
-  height: 34px;
-  border-radius: 100px;
-  border: 0;
-  background-color: #4CC2B1;
-  color: #ffffff;
-  font-size: 12px;
+.fs-5-black-blod-md-fs-6 {
+  font-size: 18px;
   font-weight: bold;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  cursor: pointer;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 960px) {
-  .bnt-3 {
-    width: 74px;
-    height: 24px;
-    font-size: 10px;
+  .fs-5-black-blod-md-fs-6 {
+    font-size: 21px;
   }
 }
 
-.bnt-3:hover {
-  font-size: 12px;
-  -webkit-box-shadow: 2px 2px 2px #378f82;
-          box-shadow: 2px 2px 2px #378f82;
-  cursor: pointer;
+.fs-10 {
+  font-size: 15px;
 }
 
-@media (max-width: 960px) {
-  .bnt-3:hover {
-    font-size: 10px;
-  }
+.fs-8-blod {
+  font-size: 27px;
+  font-weight: bold;
+  color: #3F3F3F;
+  text-align: center;
 }
-/*# sourceMappingURL=product.css.map */
+/*# sourceMappingURL=typography.css.map */

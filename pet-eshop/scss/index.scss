@@ -1,225 +1,42 @@
+
 @import "reset";
 @import "layout";
 @import "flex";
 @import "components";
 @import "media";
 
-//Spacing
-.mt32-mb28 {
-    margin-top   : 32px;
-    margin-bottom: 28px;
+
+.swiper {
+    width : 100%;
+    height: 100%;
 }
 
-.mt0 {
-    margin-top: 0;
+.swiper-slide {
+    text-align: center;
+    font-size : 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
 }
 
-.mb12 {
-    margin-bottom: 12px;
+.swiper-slide img {
+    display   : block;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
 }
-
-.mb16 {
-    margin-bottom: 16px;
-}
-
-.mb18 {
-    margin-bottom: 18px;
-}
-
-.mb28 {
-    margin-bottom: 28px;
-}
-
-.mb32 {
-    margin-bottom: 32px;
-}
-
-.md-mb0 {
-    @include md {
-        margin-bottom: 0;
-    }
-}
-
-.md-mb32 {
-    @include md {
-        margin-bottom: 32px;
-    }
-}
-
-.mb48 {
-    margin-bottom: 48px;
-}
-
-.mb8 {
-    margin-bottom: 8px;
-}
-
-.md-mt0 {
-    @include md {
-        margin-top: 0;
-    }
-}
-
-.md-mr0 {
-    @include md {
-        margin-right: 0;
-    }
-}
-
-.ml30 {
-    margin-left: 30px;
-}
-
-.ml42 {
-    margin-left: 42px;
-}
-
-.pt-auto {
-    padding-top: auto;
-}
-
-.px9py5 {
-    padding: 8px 9px;
-
-    @include md {
-        padding: 5px 9px;
-    }
-}
-
-
-.px9-px49 {
-    padding-left : 9px;
-    padding-right: 9px;
-
-    @include md {
-        padding-left : 49px;
-        padding-right: 49px;
-    }
-}
-
-.px30 {
-    @include md {
-        padding-left : 30px;
-        padding-right: 30px;
-    }
-}
-
-.py24 {
-    padding-top   : 24px;
-    padding-bottom: 24px;
-}
-
-//Typography
-h1 {
-    @include hide-text(58.63px, 160px);
-    background-image: url(../img/logo.svg);
-    cursor          : pointer;
-}
-
-.fs-9-blod {
-    font-size  : $fs-9;
-    font-weight: bold;
-    color      : $main-color;
-    @include flex;
-    align-items : center;
-    margin-right: 32px;
-
-    @include md {
-        @include flex_center;
-        margin-right : 0;
-        margin-bottom: 18px;
-    }
-}
-
-.fs-3-white-blod {
-    font-size  : $fs-3;
-    color      : $white;
-    font-weight: bold;
-
-    @include s {
-        font-size: fs-2;
-    }
-}
-
-.fs-3-white {
-    font-size: $fs-3;
-    color    : $white;
-}
-
-.fs-5-black-blod {
-    font-size  : $fs-5;
-    font-weight: bold;
-}
-
-.fs-5-black-blod-md-fs-6 {
-    font-size    : $fs-5;
-    font-weight  : bold;
-    margin-bottom: 16px;
-
-    @include md {
-        font-size: $fs-6;
-    }
-}
-
-.fs-10 {
-    font-size: $fs-10;
-}
-
-.fs-8-blod {
-    font-size  : $fs-8;
-    font-weight: bold;
-    color      : $g10;
-    text-align : center;
-}
-
-.fs-1-white {
-    font-size: $fs-1;
-    color    : $white;
-
-    @include md {
-        font-size: $fs-11;
-    }
-}
-
-.fs-2-white-blod {
-    font-size  : $fs-2;
-    color      : $white;
-    font-weight: bold;
-
-    @include md {
-        font-size: $fs-1;
-    }
-}
-
-.w-100 {
-    width: 100%;
-}
-
-
-
-.flex {
-    display: flex;
-}
-
-.flex-center-column {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-}
-
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.bg {
-    background-color: $white;
-}
-
-.bg-main {
-    background-color: $main-color;
-}
-
 
 .banner {
     @include bg-center-cover;
@@ -343,23 +160,6 @@ h1 {
     color        : $main-color;
 }
 
-.grid-3-md-1 {
-    width  : 33.3333%;
-    padding: 16px;
-
-    @include md {
-        width  : 100%;
-        padding: 0;
-    }
-}
-
-.grid-5-md-2 {
-    width: 20%;
-
-    @include md {
-        width: 50%;
-    }
-}
 
 .grid-153 {
     width: 25%;
@@ -408,214 +208,3 @@ h1 {
     overflow: hidden;
     position: relative;
 }
-
-.card-body {
-    position: absolute;
-    left    : 0;
-    right   : 0;
-    bottom  : 0;
-}
-
-.card-body-noneposition {
-    margin: 20px 0;
-
-    @include md {
-        text-align: center;
-    }
-}
-
-.bnt-add {
-    position        : absolute;
-    right           : 9px;
-    bottom          : 8px;
-    width           : 102px;
-    height          : 34px;
-    border-radius   : 100px;
-    border          : 0;
-    background-color: $white;
-    color           : $main-color;
-    font-size       : $fs-2;
-    font-weight     : bold;
-    transition      : 0.7s;
-    cursor          : pointer;
-
-    @include md {
-        width    : 74px;
-        height   : 24px;
-        font-size: $fs-1;
-    }
-}
-
-.bnt-add:hover {
-    font-size : $fs-2;
-    box-shadow: 2px 2px 2px $secondary-color;
-    cursor    : pointer;
-
-    @include md {
-        font-size: $fs-1;
-    }
-}
-
-//通用
-.box {
-    height          : 40px;
-    background-color: $main-color;
-    cursor          : pointer;
-
-    p {
-        color        : $white;
-        align-items  : center;
-        text-align   : center;
-        margin-bottom: 0;
-        line-height  : 40px;
-    }
-}
-
-.l-container {
-    max-width: 1360px;
-    @include l-center;
-    @include px98;
-    width: 100%;
-
-    @include md {
-        @include px13;
-    }
-}
-
-.l-row {
-    @include mx-98;
-
-    @include md {
-        @include mx-13;
-    }
-}
-
-.l-col {
-    @include flex;
-    @include px98;
-    flex-wrap: wrap;
-    flex     : 0 0 auto;
-
-    @include md {
-        @include px13;
-    }
-
-    img {
-        @include block;
-    }
-}
-
-.h-100 {
-    height: 100%;
-}
-
-.flex-center {
-    display        : flex;
-    justify-content: center;
-}
-
-.md-flex-column {
-    @include md {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-    }
-}
-
-.px9-md-px4 {
-    padding-left : 9px;
-    padding-right: 9px;
-
-    @include md {
-        padding-left : 4px;
-        padding-right: 4px;
-    }
-}
-
-//字型
-.fs-9-blod {
-    font-size  : $fs-9;
-    font-weight: bold;
-    color      : $main-color;
-    @include flex;
-    align-items : center;
-    margin-right: 32px;
-
-    @include md {
-        @include flex_center;
-        margin-right : 0;
-        margin-bottom: 18px;
-    }
-}
-
-//導覽列
-.container {
-    max-width: 1360px;
-    @include l-center;
-    width: 100%;
-
-    img {
-        cursor: pointer;
-    }
-
-    @include md {
-        @include px15;
-    }
-}
-
-.row {
-    @include md {
-        @include mx-15;
-    }
-}
-
-.h-col {
-    @include flex_between;
-    align-items   : center;
-    padding-top   : 27px;
-    padding-bottom: 15px;
-    border-bottom : 1px solid $g5;
-    transition    : 0.7s;
-
-    img {
-        width : 40px;
-        height: 40px;
-    }
-
-    a {
-        cursor: pointer;
-    }
-
-    @include md {
-        @include px15;
-        padding-top   : 24px;
-        padding-bottom: 29px;
-    }
-}
-
-.nav {
-    @include flex_between;
-    width: 528px;
-
-    a {
-        @include link($g10, $fs-6);
-        cursor: pointer;
-    }
-
-    a:hover {
-        @include link ($main-color, $fs-6);
-    }
-
-    @include md {
-        @include none;
-    }
-}
-
-//rwd
-.md-none {
-    @include md {
-        @include none;
-    }
-}
-
-//本頁
