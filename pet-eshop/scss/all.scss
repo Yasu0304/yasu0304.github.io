@@ -74,6 +74,10 @@
     margin-left: 42px;
 }
 
+.pt-auto {
+    padding-top: auto;
+}
+
 .px9py5 {
     padding: 8px 9px;
 
@@ -82,15 +86,6 @@
     }
 }
 
-.px9-md-px4 {
-    padding-left : 9px;
-    padding-right: 9px;
-
-    @include md {
-        padding-left : 4px;
-        padding-right: 4px;
-    }
-}
 
 .px9-px49 {
     padding-left : 9px;
@@ -200,10 +195,7 @@ h1 {
     width: 100%;
 }
 
-.flex-center {
-    display        : flex;
-    justify-content: center;
-}
+
 
 .flex {
     display: flex;
@@ -215,13 +207,6 @@ h1 {
     justify-content: center;
 }
 
-.md-flex-column {
-    @include md {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-    }
-}
 
 .flex-wrap {
     flex-wrap: wrap;
@@ -235,149 +220,6 @@ h1 {
     background-color: $main-color;
 }
 
-.md-none {
-    @include md {
-        @include none;
-    }
-}
-
-.box {
-    height          : 40px;
-    background-color: $main-color;
-    cursor          : pointer;
-
-    p {
-        color        : $white;
-        align-items  : center;
-        text-align   : center;
-        margin-bottom: 0;
-        line-height  : 40px;
-    }
-}
-
-.container {
-    max-width: 1360px;
-    @include l-center;
-    width: 100%;
-
-    img {
-        cursor: pointer;
-    }
-
-    @include md {
-        @include px15;
-    }
-}
-
-.l-container {
-    max-width: 1360px;
-    @include l-center;
-    @include px98;
-    width: 100%;
-
-    @include md {
-        @include px13;
-    }
-}
-
-.row {
-    @include md {
-        @include mx-15;
-    }
-}
-
-.l-row {
-    @include mx-98;
-
-    @include md {
-        @include mx-13;
-    }
-}
-
-.h-col {
-    @include flex_between;
-    align-items   : center;
-    padding-top   : 27px;
-    padding-bottom: 15px;
-    border-bottom : 1px solid $g5;
-    transition    : 0.7s;
-
-    img {
-        width     : 40px;
-        height    : 40px;
-    }
-
-    a {
-        cursor: pointer;
-    }
-
-    @include md {
-        @include px15;
-        padding-top   : 24px;
-        padding-bottom: 29px;
-    }
-}
-
-.l-col {
-    @include flex;
-    @include px98;
-    flex-wrap: wrap;
-    flex     : 0 0 auto;
-
-    @include md {
-        @include px13;
-    }
-}
-
-.nav {
-    @include flex_between;
-    width: 528px;
-
-    a {
-        @include link($g10, $fs-6);
-        cursor: pointer;
-    }
-
-    a:hover {
-        @include link ($main-color, $fs-6);
-    }
-
-    @include md {
-        @include none;
-    }
-}
-
-.swiper {
-    width : 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size : 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display                : -webkit-box;
-    display                : -ms-flexbox;
-    display                : -webkit-flex;
-    display                : flex;
-    -webkit-box-pack       : center;
-    -ms-flex-pack          : center;
-    -webkit-justify-content: center;
-    justify-content        : center;
-    -webkit-box-align      : center;
-    -ms-flex-align         : center;
-    -webkit-align-items    : center;
-    align-items            : center;
-}
-
-.swiper-slide img {
-    display   : block;
-    width     : 100%;
-    height    : 100%;
-    object-fit: cover;
-}
 
 .banner {
     @include bg-center-cover;
@@ -613,3 +455,167 @@ h1 {
         font-size: $fs-1;
     }
 }
+
+//通用
+.box {
+    height          : 40px;
+    background-color: $main-color;
+    cursor          : pointer;
+
+    p {
+        color        : $white;
+        align-items  : center;
+        text-align   : center;
+        margin-bottom: 0;
+        line-height  : 40px;
+    }
+}
+
+.l-container {
+    max-width: 1360px;
+    @include l-center;
+    @include px98;
+    width: 100%;
+
+    @include md {
+        @include px13;
+    }
+}
+
+.l-row {
+    @include mx-98;
+
+    @include md {
+        @include mx-13;
+    }
+}
+
+.l-col {
+    @include flex;
+    @include px98;
+    flex-wrap: wrap;
+    flex     : 0 0 auto;
+
+    @include md {
+        @include px13;
+    }
+
+    img {
+        @include block;
+    }
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.flex-center {
+    display        : flex;
+    justify-content: center;
+}
+
+.md-flex-column {
+    @include md {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+}
+
+.px9-md-px4 {
+    padding-left : 9px;
+    padding-right: 9px;
+
+    @include md {
+        padding-left : 4px;
+        padding-right: 4px;
+    }
+}
+
+//字型
+.fs-9-blod {
+    font-size  : $fs-9;
+    font-weight: bold;
+    color      : $main-color;
+    @include flex;
+    align-items : center;
+    margin-right: 32px;
+
+    @include md {
+        @include flex_center;
+        margin-right : 0;
+        margin-bottom: 18px;
+    }
+}
+
+//導覽列
+.container {
+    max-width: 1360px;
+    @include l-center;
+    width: 100%;
+
+    img {
+        cursor: pointer;
+    }
+
+    @include md {
+        @include px15;
+    }
+}
+
+.row {
+    @include md {
+        @include mx-15;
+    }
+}
+
+.h-col {
+    @include flex_between;
+    align-items   : center;
+    padding-top   : 27px;
+    padding-bottom: 15px;
+    border-bottom : 1px solid $g5;
+    transition    : 0.7s;
+
+    img {
+        width : 40px;
+        height: 40px;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    @include md {
+        @include px15;
+        padding-top   : 24px;
+        padding-bottom: 29px;
+    }
+}
+
+.nav {
+    @include flex_between;
+    width: 528px;
+
+    a {
+        @include link($g10, $fs-6);
+        cursor: pointer;
+    }
+
+    a:hover {
+        @include link ($main-color, $fs-6);
+    }
+
+    @include md {
+        @include none;
+    }
+}
+
+//rwd
+.md-none {
+    @include md {
+        @include none;
+    }
+}
+
+//本頁
