@@ -67,4 +67,9 @@
   width: 100%;
   height: 570px;
 }
+
+.shadow {
+  -webkit-box-shadow: #4CC2B1 0px 3px 0px 0px;
+          box-shadow: #4CC2B1 0px 3px 0px 0px;
+}
 /*# sourceMappingURL=product.css.map */

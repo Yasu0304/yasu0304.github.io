@@ -127,4 +127,20 @@
   color: #3F3F3F;
   text-align: center;
 }
+
+.fs8-inline {
+  font-size: 27px;
+  font-weight: bold;
+  color: #3F3F3F;
+  text-align: center;
+  display: inline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bl {
+  border-left: 1px solid #4CC2B1;
+}
 /*# sourceMappingURL=typography.css.map */

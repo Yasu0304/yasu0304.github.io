@@ -51,8 +51,8 @@
     }
 }
 
-.fs-3-linehight{
-    font-size: $fs-3;
+.fs-3-linehight {
+    font-size  : $fs-3;
     line-height: 2rem;
 }
 
@@ -104,4 +104,20 @@
     font-weight: bold;
     color      : $g10;
     text-align : center;
+}
+
+.fs8-inline {
+    font-size  : $fs-8;
+    font-weight: bold;
+    color      : $g10;
+    text-align : center;
+    @include inline;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bl{
+    border-left: 1px solid $main-color;
 }
