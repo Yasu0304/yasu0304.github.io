@@ -3,7 +3,9 @@
 @import "components";
 @import "media";
 
-
+.text-center{
+    text-align: center;
+}
 .fs-9-blod {
     font-size   : $fs-9;
     font-weight : bold;
@@ -112,10 +114,6 @@
     color      : $g10;
     text-align : center;
     @include inline;
-}
-
-.text-center{
-    text-align: center;
 }
 
 .bl{

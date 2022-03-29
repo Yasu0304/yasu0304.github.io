@@ -133,13 +133,10 @@ h1 {
     flex-wrap: wrap;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.text-center{
-    text-align: center;
-}
 .l-container {
     max-width: 1360px;
     @include l-center;
@@ -331,10 +328,30 @@ h1 {
 
 .bnt-add:hover {
     font-size : $fs-2;
-    box-shadow: 2px 2px 2px $secondary-color;
+    box-shadow: 1px 1px 10px $secondary-color;
     cursor    : pointer;
 
     @include md {
         font-size: $fs-1;
     }
+}
+
+.card133 {
+    @include l-card(133%);
+    @include bg-top-contain;
+    border    : 1px solid $main-color;
+    overflow  : hidden;
+    position  : relative;
+    cursor    : pointer;
+    transition: 0.5s;
+
+    @include md {
+        @include bg-top-contain;
+        margin-bottom: 12px;
+    }
+}
+
+.card133:hover {
+    box-shadow: 5px 5px 10px $g5;
+    border-radius: 10px;
 }

@@ -310,10 +310,6 @@ h1 {
           align-items: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .l-container {
   max-width: 1360px;
   margin-left: auto;
@@ -549,8 +545,8 @@ h1 {
 
 .bnt-add:hover {
   font-size: 12px;
-  -webkit-box-shadow: 2px 2px 2px #378f82;
-          box-shadow: 2px 2px 2px #378f82;
+  -webkit-box-shadow: 1px 1px 10px #378f82;
+          box-shadow: 1px 1px 10px #378f82;
   cursor: pointer;
 }
 
@@ -558,5 +554,35 @@ h1 {
   .bnt-add:hover {
     font-size: 10px;
   }
+}
+
+.card133 {
+  padding-top: 133%;
+  overflow: hidden;
+  width: 100%;
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #4CC2B1;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 960px) {
+  .card133 {
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+  }
+}
+
+.card133:hover {
+  -webkit-box-shadow: 5px 5px 10px #C4C4C4;
+          box-shadow: 5px 5px 10px #C4C4C4;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=all.css.map */
