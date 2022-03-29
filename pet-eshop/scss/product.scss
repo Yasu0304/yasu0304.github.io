@@ -4,21 +4,6 @@
 @import "media";
 
 
-.card133 {
-    @include l-card(133%);
-    @include bg-top-contain;
-    border    : 1px solid $main-color;
-    overflow  : hidden;
-    position  : relative;
-    cursor    : pointer;
-    box-shadow: 2px 2px 5px $g5;
-
-    @include md {
-        @include bg-top-contain;
-        margin-bottom: 12px;
-    }
-}
-
 .bnt-3 {
     width           : 102px;
     height          : 34px;
