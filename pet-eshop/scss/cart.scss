@@ -46,7 +46,7 @@
     display              : grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows       : auto;
-    border-width               : 0 0 1px 0;
+    border-width         : 0 0 1px 0;
     border-style         : solid;
     border-color         : $main-color;
 }

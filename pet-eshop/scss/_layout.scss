@@ -18,7 +18,7 @@ $fs-8 : 27px;
 $fs-9 :34px;
 $fs-10:15px;
 $fs-11:8px;
-$fa-12:32px;    
+$fa-12:32px;
 
 @mixin l-center {
     margin-left : auto;
@@ -46,7 +46,7 @@ $fa-12:32px;
 }
 
 @mixin px13 {
-    padding-left :13px;
+    padding-left : 13px;
     padding-right: 13px;
     @content
 }
@@ -62,11 +62,13 @@ $fa-12:32px;
     padding-right: 98px;
     @content
 }
+
 @mixin mx-40 {
     margin-left : -40px;
     margin-right: -40px;
     @content
 }
+
 @mixin mx-98 {
     margin-left : -98px;
     margin-right: -98px;
@@ -90,11 +92,13 @@ $fa-12:32px;
     margin-right: -13px;
     @content
 }
+
 @mixin mx18 {
     margin-left : 18px;
     margin-right: 18px;
     @content
 }
+
 @mixin mx40 {
     margin-left : 40px;
     margin-right: 40px;
