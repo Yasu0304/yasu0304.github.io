@@ -8,6 +8,10 @@
   margin-bottom: 8px;
 }
 
+.mb33 {
+  margin-bottom: 33px;
+}
+
 .mb48 {
   margin-bottom: 48px;
 }
@@ -88,6 +92,11 @@
   margin-bottom: 32px;
 }
 
+.mx20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media (max-width: 960px) {
   .md-mb0 {
     margin-bottom: 0;
@@ -117,6 +126,11 @@
 .my11 {
   margin-top: 11px;
   margin-bottom: 11px;
+}
+
+.py32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .px9-px49 {

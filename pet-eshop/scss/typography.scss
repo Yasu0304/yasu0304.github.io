@@ -119,3 +119,16 @@
 .bl{
     border-left: 1px solid $main-color;
 }
+
+.fs-7-white{
+    font-size: $fs-7;
+    color: $white;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.fs-7-blod{
+    font-size: $fs-7;
+    font-weight: bold;
+}

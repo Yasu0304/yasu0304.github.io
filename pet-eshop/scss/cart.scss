@@ -1,0 +1,149 @@
+@import "layout";
+@import "flex";
+@import "components";
+@import "media";
+
+
+.line-g5 {
+    height        : 50px;
+    width         : 85px;
+    box-shadow    : 0 2px $g5;
+    padding-bottom: 20px;
+    @include mx18;
+}
+
+.c-container {
+    max-width: 1360px;
+    @include l-center;
+    @include px40;
+    width: 100%;
+
+    @include md {
+        @include px13;
+    }
+}
+
+.c-row {
+    @include mx-40;
+
+    @include md {
+        @include mx-13;
+    }
+}
+
+.c-col {
+
+    @include flex;
+    flex-wrap: wrap;
+    flex     : 0 0 auto;
+
+    @include md {
+        @include px13;
+    }
+}
+
+.list {
+    display              : grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows       : auto;
+    border-width               : 0 0 1px 0;
+    border-style         : solid;
+    border-color         : $main-color;
+}
+
+.m {
+    grid-column-start: 1;
+    grid-column-end  : 4;
+    grid-row-start   : 1;
+    grid-row-end     : 2;
+    background-color : $main-color;
+    @include flex_center;
+    border-radius: 10px 0 0 0;
+}
+
+.n {
+    grid-column-start: 4;
+    grid-column-end  : 5;
+    grid-row-start   : 1;
+    grid-row-end     : 2;
+    background-color : $main-color;
+    @include flex_center;
+}
+
+.b {
+    grid-column-start: 5;
+    grid-column-end  : 6;
+    grid-row-start   : 1;
+    grid-row-end     : 2;
+    background-color : $main-color;
+    @include flex_center;
+}
+
+.v {
+    grid-column-start: 6;
+    grid-column-end  : 7;
+    grid-row-start   : 1;
+    grid-row-end     : 2;
+    background-color : $main-color;
+    @include flex_center;
+    border-radius: 0 10px 0 0;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end  : 2;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    @include flex_center;
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    @include flex_center;
+}
+
+.box3 {
+    grid-column-start: 3;
+    grid-column-end  : 4;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    @include flex_center;
+}
+
+.box5 {
+    grid-column-start: 4;
+    grid-column-end  : 5;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    @include flex_center;
+}
+
+.box6 {
+    grid-column-start: 5;
+    grid-column-end  : 6;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    @include flex_center;
+}
+
+.box7 {
+    grid-column-start: 6;
+    grid-column-end  : 7;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    @include flex_center;
+}
+
+.c-icon {
+    width : 15px;
+    height: 15px;
+
+    svg {
+        width      : 100%;
+        height     : 100%;
+        align-items: center;
+    }
+}

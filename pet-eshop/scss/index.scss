@@ -192,3 +192,14 @@
     overflow: hidden;
     position: relative;
 }
+
+.inner {
+    border       : 1px solid $main-color;
+    width        : 100%;
+    border-radius: 18px;
+    padding      : 24px 16px;
+
+    @include md {
+        padding: 24px;
+    }
+}

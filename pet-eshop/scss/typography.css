@@ -143,4 +143,17 @@
 .bl {
   border-left: 1px solid #4CC2B1;
 }
+
+.fs-7-white {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.fs-7-blod {
+  font-size: 24px;
+  font-weight: bold;
+}
 /*# sourceMappingURL=typography.css.map */

@@ -137,6 +137,9 @@ h1 {
     align-items: center;
 }
 
+
+
+
 .l-container {
     max-width: 1360px;
     @include l-center;
@@ -167,21 +170,6 @@ h1 {
     }
 }
 
-.grid-5-md-2 {
-    width: 20%;
-
-    @include md {
-        width: 50%;
-    }
-}
-
-.grid-2-md-1 {
-    width: 50%;
-
-    @include md {
-        width: 100%;
-    }
-}
 
 .bg {
     background-color: $white;
@@ -234,17 +222,6 @@ h1 {
     }
 }
 
-.inner {
-    border       : 1px solid $main-color;
-    width        : 100%;
-    border-radius: 18px;
-    padding      : 24px 16px;
-
-    @include md {
-        padding: 24px;
-    }
-}
-
 .btn-2 {
     width           : 196px;
     height          : 50px;
@@ -286,6 +263,14 @@ h1 {
 
     @include md {
         width: 50%;
+    }
+}
+
+.grid-2-md-1 {
+    width: 50%;
+
+    @include md {
+        width: 100%;
     }
 }
 
@@ -352,6 +337,6 @@ h1 {
 }
 
 .card133:hover {
-    box-shadow: 5px 5px 10px $g5;
+    box-shadow   : 5px 5px 10px $g5;
     border-radius: 10px;
 }

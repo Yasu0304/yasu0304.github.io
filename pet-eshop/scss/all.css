@@ -358,26 +358,6 @@ h1 {
   }
 }
 
-.grid-5-md-2 {
-  width: 20%;
-}
-
-@media (max-width: 960px) {
-  .grid-5-md-2 {
-    width: 50%;
-  }
-}
-
-.grid-2-md-1 {
-  width: 50%;
-}
-
-@media (max-width: 960px) {
-  .grid-2-md-1 {
-    width: 100%;
-  }
-}
-
 .bg {
   background-color: #ffffff;
 }
@@ -436,19 +416,6 @@ h1 {
   fill: #4CC2B1;
 }
 
-.inner {
-  border: 1px solid #4CC2B1;
-  width: 100%;
-  border-radius: 18px;
-  padding: 24px 16px;
-}
-
-@media (max-width: 960px) {
-  .inner {
-    padding: 24px;
-  }
-}
-
 .btn-2 {
   width: 196px;
   height: 50px;
@@ -498,6 +465,16 @@ h1 {
 @media (max-width: 960px) {
   .grid-5-md-2 {
     width: 50%;
+  }
+}
+
+.grid-2-md-1 {
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  .grid-2-md-1 {
+    width: 100%;
   }
 }
 

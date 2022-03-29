@@ -51,12 +51,22 @@ $fa-12:32px;
     @content
 }
 
+@mixin px40 {
+    padding-left : 40px;
+    padding-right: 40px;
+    @content
+}
+
 @mixin px98 {
     padding-left : 98px;
     padding-right: 98px;
     @content
 }
-
+@mixin mx-40 {
+    margin-left : -40px;
+    margin-right: -40px;
+    @content
+}
 @mixin mx-98 {
     margin-left : -98px;
     margin-right: -98px;
@@ -80,13 +90,11 @@ $fa-12:32px;
     margin-right: -13px;
     @content
 }
-
-@mixin mx-13 {
-    margin-left : -13px;
-    margin-right: -13px;
+@mixin mx18 {
+    margin-left : 18px;
+    margin-right: 18px;
     @content
 }
-
 @mixin mx40 {
     margin-left : 40px;
     margin-right: 40px;
