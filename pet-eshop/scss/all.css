@@ -558,8 +558,8 @@ h1 {
 }
 
 .card133:hover {
-  -webkit-box-shadow: 5px 5px 10px #C4C4C4;
-          box-shadow: 5px 5px 10px #C4C4C4;
+  -webkit-box-shadow: 5px 5px 10px rgba(209, 209, 209, 0.397);
+          box-shadow: 5px 5px 10px rgba(209, 209, 209, 0.397);
   border-radius: 10px;
 }
 /*# sourceMappingURL=all.css.map */
