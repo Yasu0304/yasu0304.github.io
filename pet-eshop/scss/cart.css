@@ -252,21 +252,27 @@
   }
 }
 
-.btn-4 {
+input[type=text] {
   width: 210px;
-  height: 50px;
-  border-radius: 100px;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #4CC2B1;
-  color: #4CC2B1;
+  border-radius: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
   font-size: 21px;
+  color: #4CC2B1;
   font-weight: bold;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  cursor: pointer;
+  text-align: center;
 }
 
-.bnt-4:hover {
-  background-color: #4CC2B1;
-  color: #ffffff;
+input[type=text] placeholder {
+  color: #4CC2B1;
+}
+
+input[type=text]:focus {
+  border: 3px solid #378f82;
 }
 /*# sourceMappingURL=cart.css.map */
