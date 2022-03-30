@@ -203,3 +203,13 @@
         padding: 24px;
     }
 }
+
+.grid-3-md-1 {
+    width  : 33.3333%;
+    padding: 16px;
+
+    @include md {
+        width  : 100%;
+        padding: 0;
+    }
+}

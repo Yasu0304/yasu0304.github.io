@@ -350,4 +350,16 @@ body img {
     padding: 24px;
   }
 }
+
+.grid-3-md-1 {
+  width: 33.3333%;
+  padding: 16px;
+}
+
+@media (max-width: 960px) {
+  .grid-3-md-1 {
+    width: 100%;
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=index.css.map */
