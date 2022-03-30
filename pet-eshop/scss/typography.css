@@ -154,12 +154,15 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
-  margin-top: 22px;
-  margin-bottom: 22px;
 }
 
 .fs-7-blod {
   font-size: 24px;
   font-weight: bold;
+}
+
+.fs-6-outline {
+  font-size: 21px;
+  color: #4CC2B1;
 }
 /*# sourceMappingURL=typography.css.map */
