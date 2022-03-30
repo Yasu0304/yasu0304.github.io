@@ -127,6 +127,11 @@
   color: #3F3F3F;
 }
 
+.fs-5-g6 {
+  font-size: 18px;
+  color: #929292;
+}
+
 .fs-10 {
   font-size: 15px;
 }
@@ -159,10 +164,5 @@
 .fs-7-blod {
   font-size: 24px;
   font-weight: bold;
-}
-
-.fs-6-outline {
-  font-size: 21px;
-  color: #4CC2B1;
 }
 /*# sourceMappingURL=typography.css.map */

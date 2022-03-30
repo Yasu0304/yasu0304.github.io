@@ -259,8 +259,8 @@ input[type=text] {
           box-sizing: border-box;
   border: 2px solid #4CC2B1;
   border-radius: 100px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
   outline: none;
   font-size: 21px;
   color: #4CC2B1;
@@ -268,11 +268,7 @@ input[type=text] {
   text-align: center;
 }
 
-input[type=text] placeholder {
-  color: #4CC2B1;
-}
-
 input[type=text]:focus {
-  border: 3px solid #378f82;
+  border: 2px solid #929292;
 }
 /*# sourceMappingURL=cart.css.map */
