@@ -42,7 +42,7 @@
 
 .h-col {
     @include flex_between;
-    align-items   : center;
+    align-items: center;
     padding-top   : 27px;
     padding-bottom: 15px;
     border-bottom : 1px solid $g5;

@@ -12,39 +12,19 @@
     @include mx18;
 }
 
-.c-container {
-    max-width: 1360px;
-    @include l-center;
-    @include px40;
-    width: 100%;
-
-    @include md {
-        @include px13;
-    }
-}
-
-.c-row {
-    @include mx-40;
-
-    @include md {
-        @include mx-13;
-    }
-}
-
 .c-col {
-
-    @include flex;
+    @include flex_center;
     flex-wrap: wrap;
     flex     : 0 0 auto;
 
     @include md {
-        @include px13;
+        @include px15;
     }
 }
 
 .list {
     display              : grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 200px 2fr 2fr repeat(3, 1fr);
     grid-auto-rows       : auto;
     border-width         : 0 0 1px 0;
     border-style         : solid;
@@ -88,6 +68,7 @@
     @include flex_center;
     border-radius: 0 10px 0 0;
 }
+
 
 .box1 {
     grid-column-start: 1;
@@ -146,4 +127,32 @@
         height     : 100%;
         align-items: center;
     }
+}
+
+.select {
+    width           : 250px;
+    height          : 30px;
+    background-color: $main-color;
+    border-radius   : 100px;
+    @include flex_center;
+}
+
+.bi-caret-down-fill {
+    color: $white;
+}
+
+.card81 {
+    height          : 81px;
+    border-radius   : 10px 10px 0 0;
+    border          : 2px solid $main-color;
+    background-color: $main-color;
+}
+
+
+.card286 {
+    height       : 286px;
+    border-radius: 0 0 10px 10px;
+    border-left  : 2px solid $main-color;
+    border-right : 2px solid $main-color;
+    border-bottom: 2px solid $main-color;
 }
