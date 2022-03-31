@@ -1,3 +1,17 @@
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #378f82;
+            box-shadow: 0 0 0 0 #378f82;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #378f82;
+            box-shadow: 0 0 0 0 #378f82;
+  }
+}
+
 .line-g5 {
   height: 50px;
   width: 85px;

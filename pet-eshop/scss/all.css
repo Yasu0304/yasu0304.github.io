@@ -119,6 +119,20 @@ body img {
   --bs-font-sans-serif: 'Microsoft JhengHei', 微軟正黑體, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, "Arial", Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #378f82;
+            box-shadow: 0 0 0 0 #378f82;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #378f82;
+            box-shadow: 0 0 0 0 #378f82;
+  }
+}
+
 .box {
   height: 40px;
   background-color: #4CC2B1;
@@ -414,27 +428,6 @@ h1 {
 
 .btn:hover svg path {
   fill: #4CC2B1;
-}
-
-.btn-2 {
-  width: 196px;
-  height: 50px;
-  background-color: #4CC2B1;
-  color: #ffffff;
-  border-radius: 47px;
-  border: 0;
-  font-size: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.btn-2:hover {
-  -webkit-box-shadow: 2px 2px 5px #378f82;
-          box-shadow: 2px 2px 5px #378f82;
 }
 
 .outline {

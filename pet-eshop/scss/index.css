@@ -119,6 +119,20 @@ body img {
   --bs-font-sans-serif: 'Microsoft JhengHei', 微軟正黑體, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, "Arial", Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #378f82;
+            box-shadow: 0 0 0 0 #378f82;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #378f82;
+            box-shadow: 0 0 0 0 #378f82;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -270,19 +284,19 @@ body img {
   background-color: #4CC2B1;
   color: #ffffff;
   border-radius: 47px;
-  border: 0;
   font-size: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   cursor: pointer;
 }
 
-.btn-2:hover {
-  -webkit-box-shadow: 2px 2px 5px #378f82;
-          box-shadow: 2px 2px 5px #378f82;
+.btn-2:hover,
+.btn-2:focus {
+  -webkit-animation: pulse 1.3s;
+          animation: pulse 1.3s;
+  -webkit-box-shadow: 0 0 0 0.3em transparent;
+          box-shadow: 0 0 0 0.3em transparent;
 }
 
 .outline {
