@@ -284,6 +284,7 @@ body img {
   background-color: #4CC2B1;
   color: #ffffff;
   border-radius: 47px;
+  border: 1px solid #4CC2B1;
   font-size: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
