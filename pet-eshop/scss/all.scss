@@ -42,7 +42,7 @@
 
 .h-col {
     @include flex_between;
-    align-items: center;
+    align-items   : center;
     padding-top   : 27px;
     padding-bottom: 15px;
     border-bottom : 1px solid $g5;
@@ -292,8 +292,8 @@ h1 {
     color           : $main-color;
     font-size       : $fs-2;
     font-weight     : bold;
-    transition      : 0.7s;
     cursor          : pointer;
+    transition      : 0.5s;
 
     @include md {
         width    : 74px;
@@ -302,9 +302,11 @@ h1 {
     }
 }
 
-.bnt-add:hover {
+.bnt-add:hover,
+.btn-add:focus {
     font-size : $fs-2;
-    box-shadow: 1px 1px 10px $secondary-color;
+    box-shadow: 0 0.5em 0.5em -0.4em $secondary-color;
+    transform : translateY(-0.25em);
     cursor    : pointer;
 
     @include md {
@@ -321,6 +323,7 @@ h1 {
     cursor    : pointer;
     transition: 0.5s;
 
+
     @include md {
         @include bg-top-contain;
         margin-bottom: 12px;
@@ -328,6 +331,6 @@ h1 {
 }
 
 .card133:hover {
-    box-shadow   : 5px 5px 10px rgba(209, 209, 209, 0.397);
+    // box-shadow      : 5px 5px 10px rgba(209, 209, 209, 0.397);
     border-radius: 10px;
 }

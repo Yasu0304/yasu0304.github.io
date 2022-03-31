@@ -7,8 +7,8 @@
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -20,17 +20,12 @@
   }
 }
 
-.bnt-3:hover {
-  font-size: 12px;
-  -webkit-box-shadow: 2px 2px 2px #378f82;
-          box-shadow: 2px 2px 2px #378f82;
-  cursor: pointer;
-}
-
-@media (max-width: 960px) {
-  .bnt-3:hover {
-    font-size: 10px;
-  }
+.bnt-3:hover,
+.btn-3:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+          box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
 }
 
 .border-b-maincolor {

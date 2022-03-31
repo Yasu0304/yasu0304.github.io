@@ -495,9 +495,9 @@ h1 {
   color: #4CC2B1;
   font-size: 12px;
   font-weight: bold;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 960px) {
@@ -508,15 +508,19 @@ h1 {
   }
 }
 
-.bnt-add:hover {
+.bnt-add:hover,
+.btn-add:focus {
   font-size: 12px;
-  -webkit-box-shadow: 1px 1px 10px #378f82;
-          box-shadow: 1px 1px 10px #378f82;
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+          box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
   cursor: pointer;
 }
 
 @media (max-width: 960px) {
-  .bnt-add:hover {
+  .bnt-add:hover,
+  .btn-add:focus {
     font-size: 10px;
   }
 }
@@ -546,8 +550,6 @@ h1 {
 }
 
 .card133:hover {
-  -webkit-box-shadow: 5px 5px 10px rgba(209, 209, 209, 0.397);
-          box-shadow: 5px 5px 10px rgba(209, 209, 209, 0.397);
   border-radius: 10px;
 }
 /*# sourceMappingURL=all.css.map */

@@ -13,8 +13,9 @@
     color           : $white;
     font-size       : $fs-2;
     font-weight     : bold;
-    transition      : 0.7s;
+    transition      : 0.5s;
     cursor          : pointer;
+
 
     @include md {
         width    : 74px;
@@ -23,14 +24,11 @@
     }
 }
 
-.bnt-3:hover {
-    font-size : $fs-2;
-    box-shadow: 2px 2px 2px $secondary-color;
-    cursor    : pointer;
-
-    @include md {
-        font-size: $fs-1;
-    }
+.bnt-3:hover,
+.btn-3:focus {
+    // box-shadow: 2px 2px 2px $secondary-color;
+    box-shadow   : 0 0.5em 0.5em -0.4em $secondary-color;
+    transform    : translateY(-0.25em);
 }
 
 .border-b-maincolor {
