@@ -186,3 +186,31 @@ input[type=text] {
 input[type=text]:focus {
     border: 2px solid $g6;
 }
+
+
+.btn-p {
+    width           : 206px;
+    height          : 48px;
+    background-color: $main-color;
+    color           : $white;
+    border-radius   : 47px;
+    border          : 1px solid $main-color;
+    font-size       : $fs-5;
+    align-items     : center;
+    cursor          : pointer;
+}
+
+.btn-p:hover,
+.btn-p:focus {
+    animation : pulse 1.3s;
+    box-shadow: 0 0 0 0.3em transparent;
+}
+
+.count {
+    height       : 40px;
+    width        : 267px;
+    left         : 84px;
+    border-radius: 100px;
+    border       : 2px solid $main-color;
+    line-height: 40px;
+}
