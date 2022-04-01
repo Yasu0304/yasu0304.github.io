@@ -290,10 +290,13 @@ input[type=text]:focus {
     font-size       : $fs-5;
     align-items     : center;
     cursor          : pointer;
+    margin-left: 10px;
 
     @include md {
         width : 145px;
         height: 40px;
+        margin-left: 0;
+        margin-bottom: 12px;
     }
 }
 

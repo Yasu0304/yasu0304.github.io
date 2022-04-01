@@ -471,12 +471,15 @@ input[type=text]:focus {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 @media (max-width: 960px) {
   .btn-none {
     width: 145px;
     height: 40px;
+    margin-left: 0;
+    margin-bottom: 12px;
   }
 }
 
