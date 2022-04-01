@@ -66,6 +66,14 @@
     }
 }
 
+.c-fs-3-g6{
+    font-size: $fs-3;
+    color: $g6 ;
+    @include md{
+        font-size: $fs-2;
+    }
+}
+
 .fs-3-linehight {
     font-size  : $fs-3;
     line-height: 2rem;
