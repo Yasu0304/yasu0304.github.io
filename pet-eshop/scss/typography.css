@@ -68,6 +68,12 @@
   color: #4CC2B1;
 }
 
+.fa-12-blod {
+  font-size: 32px;
+  color: #4CC2B1;
+  font-weight: bold;
+}
+
 .fs-3-white {
   font-size: 14px;
   color: #ffffff;
@@ -144,6 +150,16 @@
 .fs-5-g6 {
   font-size: 18px;
   color: #929292;
+}
+
+.fs-5-warning {
+  font-size: 18px;
+  color: #f00;
+}
+
+.fs-5-main {
+  font-size: 18px;
+  color: #4CC2B1;
 }
 
 .fs-10 {

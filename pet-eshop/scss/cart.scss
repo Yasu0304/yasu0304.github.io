@@ -157,9 +157,6 @@
     border-bottom: 2px solid $main-color;
 }
 
-
-
-
 .grid-3-md-1 {
     width: 33.3333%;
 
@@ -204,6 +201,44 @@ input[type=text]:focus {
 .btn-p:focus {
     animation : pulse 1.3s;
     box-shadow: 0 0 0 0.3em transparent;
+}
+
+.btn-submit {
+    width           : 200px;
+    height          : 60px;
+    background-color: $main-color;
+    color           : $white;
+    border-radius   : 47px;
+    border          : 1px solid $main-color;
+    font-size       : $fs-5;
+    align-items     : center;
+    transition: 0.7s;
+    cursor          : pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em $secondary-color;
+    transform : translateY(-0.25em);
+    cursor    : pointer;
+}
+
+.btn-none {
+    width           : 200px;
+    height          : 60px;
+    background-color: $g5;
+    color           : $white;
+    border-radius   : 47px;
+    border          : 1px solid $g5;
+    font-size       : $fs-5;
+    align-items     : center;
+    cursor          : pointer;
+}
+
+.btn-none:hover {
+    background-color: $main-color;
+    border          : 1px solid $main-color;
+    cursor          : pointer;
 }
 
 .count {

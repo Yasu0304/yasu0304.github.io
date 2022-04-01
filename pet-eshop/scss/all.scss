@@ -121,6 +121,14 @@ h1 {
     justify-content: center;
 }
 
+.flex-end-column {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-end;
+}
+
+
+
 .md-flex-column {
     @include md {
         display        : flex;
@@ -136,6 +144,12 @@ h1 {
 .align-center {
     align-items: center;
 }
+
+.align-end {
+    align-items: flex-end;
+}
+
+
 
 
 
@@ -222,7 +236,6 @@ h1 {
     }
 }
 
-
 .outline {
     padding      : 8.5px 8px;
     border       : 1px solid $main-color;
@@ -231,7 +244,6 @@ h1 {
     margin-right : 12px;
     color        : $main-color;
 }
-
 
 .grid-5-md-2 {
     width: 20%;
@@ -247,6 +259,10 @@ h1 {
     @include md {
         width: 100%;
     }
+}
+
+.border-b{
+    border-bottom : 1px solid $g5;
 }
 
 .card-body {

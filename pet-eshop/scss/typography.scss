@@ -39,6 +39,12 @@
     color    : $main-color;
 }
 
+.fa-12-blod {
+    font-size: $fa-12;
+    color    : $main-color;
+    font-weight: bold;
+}
+
 .fs-3-white {
     font-size: $fs-3;
     color    : $white;
@@ -107,6 +113,16 @@
 .fs-5-g6 {
     font-size: $fs-5;
     color    : $g6;
+}
+
+.fs-5-warning {
+    font-size: $fs-5;
+    color    : $warning;
+}
+
+.fs-5-main {
+    font-size: $fs-5;
+    color    : $main-color;
 }
 
 .fs-10 {

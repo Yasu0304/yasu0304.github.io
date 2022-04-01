@@ -308,6 +308,51 @@ input[type=text]:focus {
           box-shadow: 0 0 0 0.3em transparent;
 }
 
+.btn-submit {
+  width: 200px;
+  height: 60px;
+  background-color: #4CC2B1;
+  color: #ffffff;
+  border-radius: 47px;
+  border: 1px solid #4CC2B1;
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+          box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+.btn-none {
+  width: 200px;
+  height: 60px;
+  background-color: #C4C4C4;
+  color: #ffffff;
+  border-radius: 47px;
+  border: 1px solid #C4C4C4;
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.btn-none:hover {
+  background-color: #4CC2B1;
+  border: 1px solid #4CC2B1;
+  cursor: pointer;
+}
+
 .count {
   height: 40px;
   width: 267px;
