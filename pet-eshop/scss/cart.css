@@ -255,6 +255,14 @@
   border-bottom: 2px solid #4CC2B1;
 }
 
+.cardauto {
+  padding: 34px 0;
+  border-radius: 0 0 10px 10px;
+  border-left: 2px solid #4CC2B1;
+  border-right: 2px solid #4CC2B1;
+  border-bottom: 2px solid #4CC2B1;
+}
+
 .grid-3-md-1 {
   width: 33.3333%;
 }

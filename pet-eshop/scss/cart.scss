@@ -148,9 +148,16 @@
     background-color: $main-color;
 }
 
-
 .card286 {
     height       : 286px;
+    border-radius: 0 0 10px 10px;
+    border-left  : 2px solid $main-color;
+    border-right : 2px solid $main-color;
+    border-bottom: 2px solid $main-color;
+}
+
+.cardauto {
+    padding      : 34px 0;
     border-radius: 0 0 10px 10px;
     border-left  : 2px solid $main-color;
     border-right : 2px solid $main-color;
@@ -212,7 +219,7 @@ input[type=text]:focus {
     border          : 1px solid $main-color;
     font-size       : $fs-5;
     align-items     : center;
-    transition: 0.7s;
+    transition      : 0.7s;
     cursor          : pointer;
 }
 
@@ -247,5 +254,5 @@ input[type=text]:focus {
     left         : 84px;
     border-radius: 100px;
     border       : 2px solid $main-color;
-    line-height: 40px;
+    line-height  : 40px;
 }
