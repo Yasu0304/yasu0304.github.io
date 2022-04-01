@@ -193,16 +193,18 @@
     background-color: $main-color;
 }
 
-.card812 {
+.card82 {
     height          : 81px;
     border-radius   : 10px 10px 0 0;
     border          : 2px solid $main-color;
     background-color: $main-color;
+    line-height     : 81px;
 
     @include md {
         border-radius   : 0;
         border          : 0;
         background-color: $white;
+        line-height     : auto;
     }
 }
 
@@ -221,11 +223,12 @@
     border-right : 2px solid $main-color;
     border-bottom: 2px solid $main-color;
 
-    @include md{
-        border-radius: 0 ;
-    border-left  : 0;
-    border-right : 0;
-    border-bottom: 0;
+    @include md {
+        border-radius: 0;
+        border-left  : 0;
+        border-right : 0;
+        border-bottom: 0;
+        padding      : 0;
     }
 }
 
@@ -233,7 +236,7 @@
     width: 33.3333%;
 
     @include md {
-        width  : 100%;
+        width: 100%;
     }
 }
 

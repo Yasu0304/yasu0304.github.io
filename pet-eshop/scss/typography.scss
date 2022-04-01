@@ -46,8 +46,8 @@
 }
 
 .fa-12-blod {
-    font-size: $fa-12;
-    color    : $main-color;
+    font-size  : $fa-12;
+    color      : $main-color;
     font-weight: bold;
 }
 
@@ -66,10 +66,11 @@
     }
 }
 
-.c-fs-3-g6{
+.c-fs-3-g6 {
     font-size: $fs-3;
-    color: $g6 ;
-    @include md{
+    color    : $g6;
+
+    @include md {
         font-size: $fs-2;
     }
 }
@@ -113,10 +114,12 @@
     font-size  : $fs-5;
     font-weight: bold;
     color      : $white;
-    @include md{
+
+    @include md {
         font-size: $fs-2;
     }
 }
+
 .fs-5-black-blod-md-fs-6 {
     font-size    : $fs-5;
     font-weight  : bold;
@@ -135,7 +138,8 @@
 .c-fs-5-g10 {
     font-size: $fs-5;
     color    : $g10;
-    @include md{
+
+    @include md {
         font-size: $fs-11;
     }
 }
@@ -171,7 +175,8 @@
     font-weight: bold;
     color      : $g10;
     text-align : center;
-    @include md{
+
+    @include md {
         font-size: $fs-3;
     }
 }
@@ -195,15 +200,17 @@
 }
 
 .c-fs-7-white {
-    font-size  : $fs-7;
-    color      : $white;
-    font-weight: bold;
-    @include md{
-        font-size: $fs-6;
-        color: $g10 ;
-        margin-bottom: 12px;
+    font-size    : $fs-7;
+    color        : $white;
+    font-weight  : bold;
+    margin-bottom: 0;
+
+    @include md {
+        font-size    : $fs-6;
+        color        : $g10;
     }
 }
+
 .fs-7-blod {
     font-size  : $fs-7;
     font-weight: bold;

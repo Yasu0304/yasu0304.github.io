@@ -246,13 +246,13 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 @media (max-width: 960px) {
   .c-fs-7-white {
     font-size: 21px;
     color: #3F3F3F;
-    margin-bottom: 12px;
   }
 }
 

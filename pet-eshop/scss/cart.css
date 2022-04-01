@@ -358,18 +358,20 @@
   background-color: #4CC2B1;
 }
 
-.card812 {
+.card82 {
   height: 81px;
   border-radius: 10px 10px 0 0;
   border: 2px solid #4CC2B1;
   background-color: #4CC2B1;
+  line-height: 81px;
 }
 
 @media (max-width: 960px) {
-  .card812 {
+  .card82 {
     border-radius: 0;
     border: 0;
     background-color: #ffffff;
+    line-height: auto;
   }
 }
 
@@ -395,6 +397,7 @@
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
+    padding: 0;
   }
 }
 

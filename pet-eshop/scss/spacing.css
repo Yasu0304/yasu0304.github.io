@@ -50,18 +50,6 @@
   }
 }
 
-.px9-md-px4 {
-  padding-left: 9px;
-  padding-right: 9px;
-}
-
-@media (max-width: 960px) {
-  .px9-md-px4 {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-}
-
 .px9py5 {
   padding: 8px 9px;
 }
