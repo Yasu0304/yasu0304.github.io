@@ -119,11 +119,6 @@
     @include md {
         grid-column: 2/4;
         grid-row   : 3/4;
-
-        .fs-5-g10 {
-            font-size: $fs-11;
-            color    : $g10;
-        }
     }
 }
 

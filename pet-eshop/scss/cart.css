@@ -233,10 +233,6 @@
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
-  .box3 .fs-5-g10 {
-    font-size: 8px;
-    color: #3F3F3F;
-  }
 }
 
 .box4 {
