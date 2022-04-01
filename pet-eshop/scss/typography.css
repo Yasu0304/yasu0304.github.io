@@ -134,6 +134,12 @@
   color: #ffffff;
 }
 
+@media (max-width: 960px) {
+  .fs-5-white-blod {
+    font-size: 12px;
+  }
+}
+
 .fs-5-black-blod-md-fs-6 {
   font-size: 18px;
   font-weight: bold;
@@ -175,6 +181,12 @@
   font-weight: bold;
   color: #3F3F3F;
   text-align: center;
+}
+
+@media (max-width: 960px) {
+  .fs-8-blod {
+    font-size: 14px;
+  }
 }
 
 .fs8-inline {

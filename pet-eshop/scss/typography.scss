@@ -99,6 +99,9 @@
     font-size  : $fs-5;
     font-weight: bold;
     color      : $white;
+    @include md{
+        font-size: $fs-2;
+    }
 }
 
 .fs-5-black-blod-md-fs-6 {
@@ -140,6 +143,9 @@
     font-weight: bold;
     color      : $g10;
     text-align : center;
+    @include md{
+        font-size: $fs-3;
+    }
 }
 
 .fs8-inline {
