@@ -100,6 +100,12 @@
   color: #929292;
 }
 
+@media (max-width: 960px) {
+  .c-fs-3-g6 {
+    font-size: 12px;
+  }
+}
+
 .fs-3-linehight {
   font-size: 14px;
   line-height: 2rem;
@@ -234,6 +240,20 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
+}
+
+.c-fs-7-white {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media (max-width: 960px) {
+  .c-fs-7-white {
+    font-size: 21px;
+    color: #3F3F3F;
+    margin-bottom: 12px;
+  }
 }
 
 .fs-7-blod {

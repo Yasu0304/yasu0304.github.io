@@ -194,6 +194,16 @@
     font-weight: bold;
 }
 
+.c-fs-7-white {
+    font-size  : $fs-7;
+    color      : $white;
+    font-weight: bold;
+    @include md{
+        font-size: $fs-6;
+        color: $g10 ;
+        margin-bottom: 12px;
+    }
+}
 .fs-7-blod {
     font-size  : $fs-7;
     font-weight: bold;

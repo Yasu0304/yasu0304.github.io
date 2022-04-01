@@ -358,6 +358,21 @@
   background-color: #4CC2B1;
 }
 
+.card812 {
+  height: 81px;
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #4CC2B1;
+  background-color: #4CC2B1;
+}
+
+@media (max-width: 960px) {
+  .card812 {
+    border-radius: 0;
+    border: 0;
+    background-color: #ffffff;
+  }
+}
+
 .card286 {
   height: 286px;
   border-radius: 0 0 10px 10px;
@@ -374,6 +389,15 @@
   border-bottom: 2px solid #4CC2B1;
 }
 
+@media (max-width: 960px) {
+  .cardauto {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+}
+
 .grid-3-md-1 {
   width: 33.3333%;
 }
@@ -381,7 +405,6 @@
 @media (max-width: 960px) {
   .grid-3-md-1 {
     width: 100%;
-    padding: 0;
   }
 }
 

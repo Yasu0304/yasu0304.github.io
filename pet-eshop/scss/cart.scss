@@ -193,6 +193,19 @@
     background-color: $main-color;
 }
 
+.card812 {
+    height          : 81px;
+    border-radius   : 10px 10px 0 0;
+    border          : 2px solid $main-color;
+    background-color: $main-color;
+
+    @include md {
+        border-radius   : 0;
+        border          : 0;
+        background-color: $white;
+    }
+}
+
 .card286 {
     height       : 286px;
     border-radius: 0 0 10px 10px;
@@ -207,6 +220,13 @@
     border-left  : 2px solid $main-color;
     border-right : 2px solid $main-color;
     border-bottom: 2px solid $main-color;
+
+    @include md{
+        border-radius: 0 ;
+    border-left  : 0;
+    border-right : 0;
+    border-bottom: 0;
+    }
 }
 
 .grid-3-md-1 {
@@ -214,7 +234,6 @@
 
     @include md {
         width  : 100%;
-        padding: 0;
     }
 }
 
@@ -290,12 +309,12 @@ input[type=text]:focus {
     font-size       : $fs-5;
     align-items     : center;
     cursor          : pointer;
-    margin-left: 10px;
+    margin-left     : 10px;
 
     @include md {
-        width : 145px;
-        height: 40px;
-        margin-left: 0;
+        width        : 145px;
+        height       : 40px;
+        margin-left  : 0;
         margin-bottom: 12px;
     }
 }
