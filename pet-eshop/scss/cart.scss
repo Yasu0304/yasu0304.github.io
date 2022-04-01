@@ -10,6 +10,9 @@
     box-shadow    : 0 2px $g5;
     padding-bottom: 20px;
     @include mx18;
+    @include md{
+        width         : 30px;
+    }
 }
 
 .c-col {

@@ -22,6 +22,12 @@
   margin-right: 18px;
 }
 
+@media (max-width: 960px) {
+  .line-g5 {
+    width: 30px;
+  }
+}
+
 .c-col {
   display: -webkit-box;
   display: -ms-flexbox;
