@@ -10,8 +10,9 @@
     box-shadow    : 0 2px $g5;
     padding-bottom: 20px;
     @include mx18;
-    @include md{
-        width         : 30px;
+
+    @include md {
+        width: 30px;
     }
 }
 
@@ -265,6 +266,11 @@ input[type=text]:focus {
     align-items     : center;
     transition      : 0.7s;
     cursor          : pointer;
+
+    @include md {
+        width : 145px;
+        height: 40px;
+    }
 }
 
 .btn-submit:hover,
@@ -284,6 +290,11 @@ input[type=text]:focus {
     font-size       : $fs-5;
     align-items     : center;
     cursor          : pointer;
+
+    @include md {
+        width : 145px;
+        height: 40px;
+    }
 }
 
 .btn-none:hover {

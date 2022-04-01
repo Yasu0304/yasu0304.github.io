@@ -443,6 +443,13 @@ input[type=text]:focus {
   cursor: pointer;
 }
 
+@media (max-width: 960px) {
+  .btn-submit {
+    width: 145px;
+    height: 40px;
+  }
+}
+
 .btn-submit:hover,
 .btn-submit:focus {
   -webkit-box-shadow: 0 0.5em 0.5em -0.4em #378f82;
@@ -464,6 +471,13 @@ input[type=text]:focus {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .btn-none {
+    width: 145px;
+    height: 40px;
+  }
 }
 
 .btn-none:hover {
