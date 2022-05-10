@@ -300,6 +300,26 @@ body img {
           box-shadow: 0 0 0 0.3em transparent;
 }
 
+.btn-3 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-3:hover,
+.btn-3:focus {
+  font-size: 12px;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .btn-3:hover,
+  .btn-3:focus {
+    font-size: 10px;
+  }
+}
+
 .outline {
   padding: 8.5px 8px;
   border: 1px solid #4CC2B1;

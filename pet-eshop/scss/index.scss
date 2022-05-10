@@ -162,10 +162,25 @@
 }
 
 .btn-2:hover,
-.btn-2:focus {
+.btn-2:focus{
     // box-shadow: 2px 2px 5px $secondary-color;
     animation : pulse 1.3s;
     box-shadow: 0 0 0 0.3em transparent;
+}
+
+.btn-3{
+    transition      : 0.3s;
+}
+
+.btn-3:hover,
+.btn-3:focus {
+    font-size : $fs-2;
+    transform : translateY(-0.25em);
+    cursor    : pointer;
+
+    @include md {
+        font-size: $fs-1;
+    }
 }
 
 .outline {
