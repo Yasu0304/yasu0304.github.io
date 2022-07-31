@@ -39,7 +39,14 @@
     @content
 }
 
+
 @mixin flex_column {
+    display       : flex;
+    flex-direction: column;
+    @content
+}
+
+@mixin flex_column_center {
     display       : flex;
     flex-direction: column;
     justify-content: center;
