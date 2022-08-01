@@ -83,12 +83,13 @@
 
 .headerWrap {
   @include flex;
-  align-items: center;
+  align-items: baseline;
 
   h1 {
-    font-size  : 1.5em;
+    font-size: 1.5em;
     color      : $earthly;
     line-height: 3rem;
+    margin-right: .5rem
   }
 }
 
@@ -141,8 +142,8 @@ li:hover .navLink::after {
     overflow     : hidden;
   }
 
-  display       : flex;
-  align-items   : center;
+  display     : flex;
+  align-items : center;
 
   .pic {
     width      : 55%;
@@ -258,7 +259,7 @@ li:hover .navLink::after {
   width           : 40%;
   background-color: $secondary;
   @include flex_column;
-  color: $earthly;
+  color  : $earthly;
   padding: 0 1rem;
 
   .bi {
@@ -277,15 +278,12 @@ li:hover .navLink::after {
     margin       : 1rem;
   }
 }
-.resumeConent{
-  padding: 0 2rem;
+
+.resumeConent {
   .resumeTitle {
-  margin-top: 1rem;
+    margin-top: 1rem;
+  }
 }
-}
-
-
-.resumeList {}
 
 .resumeLeft {
   width           : 60%;

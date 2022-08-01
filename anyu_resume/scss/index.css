@@ -75,12 +75,13 @@
 
 .headerWrap {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .headerWrap h1 {
   font-size: 1.5em;
   color: #432f2f;
   line-height: 3rem;
+  margin-right: 0.5rem;
 }
 
 .phoneNav {
@@ -270,9 +271,6 @@ li:hover .navLink::after {
   margin: 1rem;
 }
 
-.resumeConent {
-  padding: 0 2rem;
-}
 .resumeConent .resumeTitle {
   margin-top: 1rem;
 }
