@@ -11,7 +11,7 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 body{
-  background-color: #f9dbd94e;
+  background-color: #f9dbd93b;
 }
 .container {
   max-width    : 1200px;
@@ -21,10 +21,12 @@ body{
 }
 
 .header {
+  box-shadow: .3px .3px 5px #af576940;
   .max2000 {
     max-width: 1200px;
     @include flex-between;
     margin: 0 auto;
+    
   }
 
   width           : 100%;
@@ -267,6 +269,7 @@ li:hover .navLink::after {
   display      : flex;
   border-radius: 16px;
   overflow     : hidden;
+  box-shadow: .7px .3px 10px #af576940;
   p{
     color:$primary;
   }
@@ -281,10 +284,12 @@ li:hover .navLink::after {
   @include flex_column;
   color  : $earthly;
   padding: 1rem;
+  
 }
 
 .resumeLeft {
   width: 40%;
+  background-color: $secondary;
 
   @include md {
     width: 100%;
