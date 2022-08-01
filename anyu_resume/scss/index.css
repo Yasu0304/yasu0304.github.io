@@ -261,7 +261,6 @@ li:hover .navLink::after {
   display: flex;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0.5px 0.8px 10px rgba(71, 35, 42, 0.4078431373);
 }
 .resume p {
   color: #af5768;
