@@ -6,6 +6,10 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+body {
+  background-color: rgba(249, 219, 217, 0.3058823529);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -16,7 +20,6 @@
 .header {
   width: 100%;
   background-color: #f9dbd9;
-  margin-bottom: 3rem;
   position: relative;
   height: 3rem;
   padding: 0 1rem;
@@ -69,7 +72,7 @@
 .header ul li .navLink {
   font-size: 1rem;
   font-weight: 800;
-  color: #c97586;
+  color: #af5768;
   text-decoration: none;
 }
 
@@ -109,7 +112,7 @@
   display: block;
   width: 0%;
   height: 2px;
-  background-color: #c97586;
+  background-color: #af5768;
   transition: width 0.5s 0.5s;
 }
 @media (max-width: 960px) {
@@ -236,6 +239,10 @@ li:hover .navLink::after {
   margin-bottom: 1rem;
 }
 
+.mb_5 {
+  margin-bottom: 0.5rem;
+}
+
 .alingCenter {
   align-items: center;
 }
@@ -245,11 +252,25 @@ li:hover .navLink::after {
   padding: 1rem;
 }
 
+.p1 {
+  padding: 1rem;
+}
+
 .resume {
   width: 100%;
   display: flex;
   border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0.5px 0.8px 10px rgba(71, 35, 42, 0.4078431373);
+}
+.resume p {
+  color: #af5768;
+}
+@media (max-width: 960px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .resumeLeft,
@@ -262,6 +283,11 @@ li:hover .navLink::after {
 
 .resumeLeft {
   width: 40%;
+}
+@media (max-width: 960px) {
+  .resumeLeft {
+    width: 100%;
+  }
 }
 
 .resumeList li {
@@ -295,4 +321,66 @@ li:hover .navLink::after {
 .resumeRight {
   width: 60%;
   background-color: rgba(249, 219, 217, 0.6431372549);
+}
+@media (max-width: 960px) {
+  .resumeRight {
+    width: 100%;
+  }
+}
+
+.resumeWork ul li {
+  position: relative;
+}
+.resumeWork ul .dot::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #3b2525;
+}
+.resumeWork ul .dot::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 4px;
+  width: 2px;
+  height: 98px;
+  background: #3b2525;
+}
+@media (max-width: 960px) {
+  .resumeWork ul .dot::after {
+    height: 120px;
+  }
+}
+.resumeWork ul .dot70::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #3b2525;
+}
+.resumeWork ul .dot70::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 4px;
+  width: 2px;
+  height: 70px;
+  background: #3b2525;
+}
+@media (max-width: 960px) {
+  .resumeWork ul .dot70::after {
+    height: 138px;
+  }
+}
+
+.resumeData,
+.resumeInfo {
+  margin-left: 20px;
 }/*# sourceMappingURL=index.css.map */

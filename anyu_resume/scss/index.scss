@@ -10,7 +10,9 @@
   box-sizing : border-box;
   font-family: "Noto Sans TC", sans-serif;
 }
-
+body{
+  background-color: #f9dbd94e;
+}
 .container {
   max-width    : 1200px;
   margin       : 0 auto;
@@ -27,7 +29,6 @@
 
   width           : 100%;
   background-color: $secondary;
-  margin-bottom   : 3rem;
   position        : relative;
   height          : 3rem;
   padding         : 0 1rem;
@@ -244,6 +245,10 @@ li:hover .navLink::after {
   margin-bottom: 1rem;
 }
 
+.mb_5 {
+  margin-bottom: .5rem;
+}
+
 .alingCenter {
   align-items: center;
 }
@@ -253,11 +258,23 @@ li:hover .navLink::after {
   padding      : 1rem;
 }
 
+.p1{
+  padding      : 1rem;
+}
+
 .resume {
   width        : 100%;
   display      : flex;
   border-radius: 16px;
   overflow     : hidden;
+  box-shadow: .5px .8px 10px #47232a68;
+  p{
+    color:$primary;
+  }
+
+  @include md {
+    @include flex_column;
+  }
 }
 
 .resumeLeft,
@@ -269,6 +286,10 @@ li:hover .navLink::after {
 
 .resumeLeft {
   width: 40%;
+
+  @include md {
+    width: 100%;
+  }
 }
 
 
@@ -309,4 +330,71 @@ li:hover .navLink::after {
 .resumeRight {
   width           : 60%;
   background-color: $secondary_a;
+
+  @include md {
+    width: 100%;
+  }
+}
+
+.resumeWork {
+  ul {
+    li {
+      position: relative;
+    }
+
+    .dot::before {
+      content      : '';
+      position     : absolute;
+      top          : 8px;
+      left         : 0px;
+      width        : 6px;
+      height       : 6px;
+      border-radius: 50%;
+      border       : 2px solid $earthly;
+    }
+
+    .dot::after {
+      content   : '';
+      position  : absolute;
+      top       : 16px;
+      left      : 4px;
+      width     : 2px;
+      height    : 98px;
+      background: $earthly;
+
+      @include md {
+        height: 120px;
+      }
+    }
+
+    .dot70::before {
+      content      : '';
+      position     : absolute;
+      top          : 8px;
+      left         : 0px;
+      width        : 6px;
+      height       : 6px;
+      border-radius: 50%;
+      border       : 2px solid $earthly;
+    }
+
+    .dot70::after {
+      content   : '';
+      position  : absolute;
+      top       : 16px;
+      left      : 4px;
+      width     : 2px;
+      height    : 70px;
+      background: $earthly;
+
+      @include md {
+        height: 138px;
+      }
+    }
+  }
+}
+
+.resumeData,
+.resumeInfo {
+  margin-left: 20px;
 }
