@@ -77,9 +77,11 @@
 } */
 .resume {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   border-radius: 16px;
   overflow: hidden;
+  position: relative;
 }
 .resume a {
   text-decoration: none;
@@ -167,7 +169,7 @@
 
 .resumeRight {
   width: 60%;
-  background-color: rgba(249, 219, 217, 0.6431372549);
+  background-color: #fae5e4;
 }
 @media (max-width: 960px) {
   .resumeRight {

@@ -81,31 +81,39 @@
 /* .item .pic img:hover{
     transform: translateY(-0.25em);
 } */
+// position: relative;
+// transition: all translateY(1160px) 1s;
 
-// .resumePosition {
+// body {
 //   position: relative;
-//   .toTop{
-//     position: absolute;
-//     bottom: 8px;
-//     left: 12px;
-//     @include flex;
-//     align-items: center;
-//     a{
-//       cursor: pointer;
-//     }
-//     p{
-//       margin: 0 .5rem;
-//     }
+// }
+
+// .toTop {
+//   position: absolute;
+//   bottom: 500px;
+//   right    : 100px;
+//   @include flex;
+//   align-items: center;
+
+//   a {
+//     cursor: pointer;
 //   }
+
+//   p {
+//     margin: 0 .5rem;
+//   }
+
 // }
 
 .resume {
   width        : 100%;
+  max-width    : 1200px;
   display      : flex;
   border-radius: 16px;
   overflow     : hidden;
-  // position     : absolute;
-  // top          : -1160px;
+  position     : relative;
+  // top          : 0px;
+
 
   a {
     text-decoration: none;
@@ -121,6 +129,11 @@
     @include flex_column;
   }
 }
+
+// .resume:hover,
+// .resume:active{
+//   top: 1rem;
+// }
 
 .resumeLeft,
 .resumeRight {
@@ -199,7 +212,7 @@
 
 .resumeRight {
   width           : 60%;
-  background-color: $secondary_a;
+  background-color: #fae5e4;
 
   @include md {
     width: 100%;
