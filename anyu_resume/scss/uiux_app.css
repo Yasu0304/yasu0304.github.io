@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .app {
   max-width: 1200px;
 }
@@ -6,4 +10,62 @@
 }
 .app td img {
   width: 100%;
+}
+
+.linkBtn {
+  padding: 0.3rem 0.5rem;
+  display: none;
+}
+@media (max-width: 960px) {
+  .linkBtn {
+    display: block;
+  }
+}
+.linkBtn a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.linkBtn a .bi-hand-index-thumb-fill {
+  margin-right: 0.5rem;
+}
+
+.prototype {
+  padding: 0.3rem 0.5rem;
+  background-color: #f9dbd9;
+  position: fixed;
+  bottom: 5rem;
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+.prototype a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.prototype .txt {
+  display: flex;
+  align-items: center;
+}
+.prototype .prototypeIcon {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  margin-right: 8px;
+}
+.prototype .prototypeIcon .bi-hand-index-thumb-fill {
+  font-size: 20px;
+  color: #af5768;
+  line-height: 27px;
+  position: center center;
+}
+.prototype p {
+  font-size: 1rem;
+  color: #3b2525;
+  text-decoration: none;
+}
+@media (max-width: 960px) {
+  .prototype {
+    display: none;
+  }
 }/*# sourceMappingURL=uiux_app.css.map */

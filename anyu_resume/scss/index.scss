@@ -82,53 +82,30 @@
     transform: translateY(-0.25em);
 } */
 
-.btn1 {
-  display         : block;
-  width           : 7rem;
-  padding         : 12px 24px;
-  background-color: rgba(85, 85, 85, 0.439);
-  border          : none;
-  color           : white;
-  transition      : 0.25s;
-
-  @include md {
-    width     : auto;
-    text-align: center;
-  }
-}
-
-.btn1:hover,
-.btn1:focus {
-  border-radius: 24px;
-  box-shadow   : inset 0 -3.25em 0 0 rgb(85, 85, 85);
-}
-
-.btn2 {
-  display         : block;
-  width           : 7rem;
-  padding         : 12px 24px;
-  background-color: rgba(255, 255, 255, 0.489);
-  border          : none;
-  color           : rgb(85, 85, 85);
-  transition      : 0.25s;
-
-  @include md {
-    width     : auto;
-    text-align: center;
-  }
-}
-
-.btn2:hover,
-.btn2:focus {
-  border-radius: 24px;
-  box-shadow   : inset 0 -3.25em 0 0 white;
-}
+// .resumePosition {
+//   position: relative;
+//   .toTop{
+//     position: absolute;
+//     bottom: 8px;
+//     left: 12px;
+//     @include flex;
+//     align-items: center;
+//     a{
+//       cursor: pointer;
+//     }
+//     p{
+//       margin: 0 .5rem;
+//     }
+//   }
+// }
 
 .resume {
   width        : 100%;
   display      : flex;
   border-radius: 16px;
   overflow     : hidden;
+  // position     : absolute;
+  // top          : -1160px;
 
   a {
     text-decoration: none;
@@ -197,6 +174,10 @@
   .resumeList {
     @include flex_between;
     padding: 0 .3rem;
+
+    @include md {
+      padding: 0;
+    }
 
     li {
       @include flex_column;

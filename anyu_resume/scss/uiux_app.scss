@@ -3,6 +3,11 @@
 @import "components";
 @import "media";
 
+
+body {
+    position: relative;
+}
+
 .app {
 
     max-width: 1200px;
@@ -13,5 +18,74 @@
         img {
             width: 100%;
         }
+
+
+    }
+}
+
+.linkBtn {
+    padding: .3rem .5rem;
+    display: none;
+
+    @include md {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        cursor         : pointer;
+
+        .bi-hand-index-thumb-fill {
+            margin-right: .5rem;
+        }
+    }
+
+}
+
+
+
+
+.prototype {
+    padding         : .3rem .5rem;
+    background-color: $secondary;
+    position        : fixed;
+    bottom          : 5rem;
+    right           : 0;
+    border-radius   : 8px 0 0 8px;
+
+    a {
+        text-decoration: none;
+        cursor         : pointer;
+    }
+
+    .txt {
+        @include flex;
+        align-items: center;
+    }
+
+    .prototypeIcon {
+        width           : 27px;
+        height          : 27px;
+        border-radius   : 50%;
+        background-color: $white;
+        text-align      : center;
+        margin-right    : 8px;
+
+        .bi-hand-index-thumb-fill {
+            font-size  : 20px;
+            color      : $primary;
+            line-height: 27px;
+            position   : center center;
+        }
+    }
+
+    p {
+        font-size      : 1rem;
+        color          : $earthly;
+        text-decoration: none;
+    }
+
+    @include md {
+        display: none;
     }
 }
