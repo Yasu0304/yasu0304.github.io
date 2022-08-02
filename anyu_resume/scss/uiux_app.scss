@@ -1,0 +1,17 @@
+@import "layout";
+@import "flex";
+@import "components";
+@import "media";
+
+.app {
+
+    max-width: 1200px;
+
+    td {
+        border: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
