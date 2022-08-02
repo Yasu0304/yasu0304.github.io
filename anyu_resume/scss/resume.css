@@ -1,0 +1,153 @@
+.resume {
+  max-width: 1200px;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 1rem auto;
+  height: auto;
+}
+.resume a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #af5768;
+}
+.resume p {
+  color: #af5768;
+}
+@media (max-width: 960px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.resumeLeft,
+.resumeRight {
+  display: flex;
+  flex-direction: column;
+  color: #3b2525;
+  padding: 1rem;
+}
+
+.resumeLeft {
+  width: 40%;
+  background-color: #f9dbd9;
+}
+@media (max-width: 960px) {
+  .resumeLeft {
+    width: 100%;
+  }
+}
+
+.resumeList li {
+  display: flex;
+  padding-bottom: 0.2rem;
+}
+.resumeList .bi {
+  color: #3b2525;
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+}
+.resumeList .resumeIcon img {
+  margin-right: 0.5rem;
+}
+
+.resumeProfilo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.resumeProfilo img {
+  width: 50%;
+  border-radius: 200rem;
+}
+
+.resumeHobby .resumeList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.3rem;
+}
+.resumeHobby .resumeList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resumeHobby .resumeList li .resumeIcon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.resumeConent {
+  display: flex;
+  flex-direction: column;
+}
+
+.resumeRight {
+  width: 60%;
+  background-color: rgba(249, 219, 217, 0.6431372549);
+}
+@media (max-width: 960px) {
+  .resumeRight {
+    width: 100%;
+  }
+}
+
+.resumeWork ul li {
+  position: relative;
+}
+.resumeWork ul .dot::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #3b2525;
+}
+.resumeWork ul .dot::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 4px;
+  width: 2px;
+  height: 98px;
+  background: #3b2525;
+}
+@media (max-width: 960px) {
+  .resumeWork ul .dot::after {
+    height: 120px;
+  }
+}
+.resumeWork ul .dot70::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #3b2525;
+}
+.resumeWork ul .dot70::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 4px;
+  width: 2px;
+  height: 70px;
+  background: #3b2525;
+}
+@media (max-width: 960px) {
+  .resumeWork ul .dot70::after {
+    height: 138px;
+  }
+}
+
+.resumeData,
+.resumeInfo {
+  margin-left: 20px;
+}/*# sourceMappingURL=resume.css.map */
