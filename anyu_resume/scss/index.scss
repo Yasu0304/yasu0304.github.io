@@ -78,32 +78,27 @@
   color           : rgb(85, 85, 85);
 }
 
-/* .item .pic img:hover{
-    transform: translateY(-0.25em);
-} */
-// position: relative;
-// transition: all translateY(1160px) 1s;
+.none {
+  display: none;
+}
 
-// body {
-//   position: relative;
-// }
+.toTop,
+.toClose {
+  width      : 10rem;
+  align-items: center;
+  color      : $earthly;
+  position   : absolute;
+  z-index    : 70;
+  top        : 4.5rem;
 
-// .toTop {
-//   position: absolute;
-//   bottom: 500px;
-//   right    : 100px;
-//   @include flex;
-//   align-items: center;
+  p {
+    margin: 0 .5rem;
+  }
+}
 
-//   a {
-//     cursor: pointer;
-//   }
-
-//   p {
-//     margin: 0 .5rem;
-//   }
-
-// }
+.toClose {
+  left: 190px;
+}
 
 .resume {
   width        : 100%;
@@ -111,9 +106,7 @@
   display      : flex;
   border-radius: 16px;
   overflow     : hidden;
-  position     : relative;
-  // top          : 0px;
-
+  z-index      : 80;
 
   a {
     text-decoration: none;
@@ -129,11 +122,6 @@
     @include flex_column;
   }
 }
-
-// .resume:hover,
-// .resume:active{
-//   top: 1rem;
-// }
 
 .resumeLeft,
 .resumeRight {

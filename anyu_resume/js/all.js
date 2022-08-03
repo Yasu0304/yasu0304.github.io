@@ -11,12 +11,12 @@ $(document).ready(function () {
     //     //執行事件
     //   });
 
-    // $(".toTop a").click(function (event) {
+    // $(".resume").click(function (event) {
     //     event.preventDefault();
     //     //取消a原本的預設動作
-    //     $("html,body").animate(
+    //     $("html, body").animate(
     //         {
-    //             scrollTop: -1160
+    //             scrollTop: 0
     //             //回到網頁的某點
     //         },
     //         1000
@@ -24,4 +24,10 @@ $(document).ready(function () {
     //     );
     // });
 
+    $(".toTop").click(function () {
+        $(".none").slideDown();
+    });
+    $(".toClose").click(function () {
+        $(".none").slideUp();
+    });
 });

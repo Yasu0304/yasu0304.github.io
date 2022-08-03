@@ -72,16 +72,35 @@
   color: rgb(85, 85, 85);
 }
 
-/* .item .pic img:hover{
-    transform: translateY(-0.25em);
-} */
+.none {
+  display: none;
+}
+
+.toTop,
+.toClose {
+  width: 10rem;
+  align-items: center;
+  color: #3b2525;
+  position: absolute;
+  z-index: 70;
+  top: 4.5rem;
+}
+.toTop p,
+.toClose p {
+  margin: 0 0.5rem;
+}
+
+.toClose {
+  left: 190px;
+}
+
 .resume {
   width: 100%;
   max-width: 1200px;
   display: flex;
   border-radius: 16px;
   overflow: hidden;
-  position: relative;
+  z-index: 80;
 }
 .resume a {
   text-decoration: none;
