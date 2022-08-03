@@ -76,18 +76,19 @@
   display: none;
 }
 
-.toTop,
-.toClose {
-  width: 10rem;
-  align-items: center;
-  color: #3b2525;
+.slide {
   position: absolute;
   z-index: 70;
   top: 4.5rem;
+  display: flex;
+  justify-content: space-between;
 }
-.toTop p,
-.toClose p {
-  margin: 0 0.5rem;
+.slide .toTop,
+.slide .toClose {
+  width: 10rem;
+  align-items: center;
+  color: #3b2525;
+  margin-right: 0.5rem;
 }
 
 .toClose {

@@ -82,19 +82,21 @@
   display: none;
 }
 
-.toTop,
-.toClose {
-  width      : 10rem;
-  align-items: center;
-  color      : $earthly;
-  position   : absolute;
-  z-index    : 70;
-  top        : 4.5rem;
+.slide {
+  position: absolute;
+  z-index : 70;
+  top     : 4.5rem;
+  @include flex_between;
 
-  p {
-    margin: 0 .5rem;
+  .toTop,
+  .toClose {
+    width      : 10rem;
+    align-items: center;
+    color      : $earthly;
+    margin-right: .5rem;
   }
 }
+
 
 .toClose {
   left: 190px;
