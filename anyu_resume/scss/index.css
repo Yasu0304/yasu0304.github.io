@@ -84,6 +84,11 @@
 .toClose p {
   color: #ffffff;
 }
+@media (max-width: 960px) {
+  .toClose {
+    margin-top: 4rem;
+  }
+}
 
 .resume {
   width: 100%;

@@ -91,6 +91,9 @@
     p{
       color: $white;
     }
+    @include md{
+      margin-top: 4rem;
+    }
     
   }
 
