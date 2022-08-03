@@ -76,23 +76,13 @@
   display: none;
 }
 
-.slide {
-  position: absolute;
-  z-index: 70;
-  top: 4.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-.slide .toTop,
-.slide .toClose {
+.toClose {
   width: 10rem;
   align-items: center;
-  color: #3b2525;
   margin-right: 0.5rem;
 }
-
-.toClose {
-  left: 190px;
+.toClose p {
+  color: #ffffff;
 }
 
 .resume {
@@ -189,7 +179,7 @@
 
 .resumeRight {
   width: 60%;
-  background-color: #fae5e4;
+  background-color: rgba(249, 219, 217, 0.6431372549);
 }
 @media (max-width: 960px) {
   .resumeRight {

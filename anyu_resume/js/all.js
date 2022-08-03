@@ -24,7 +24,7 @@ $(document).ready(function () {
     //     );
     // });
 
-    $(".toTop").click(function () {
+    $(".open").click(function () {
         $(".none").slideDown();
     });
     $(".toClose").click(function () {

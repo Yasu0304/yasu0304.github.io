@@ -82,25 +82,18 @@
   display: none;
 }
 
-.slide {
-  position: absolute;
-  z-index : 70;
-  top     : 4.5rem;
-  @include flex_between;
 
-  .toTop,
-  .toClose {
+
+  .toClose{
     width      : 10rem;
     align-items: center;
-    color      : $earthly;
     margin-right: .5rem;
+    p{
+      color: $white;
+    }
+    
   }
-}
 
-
-.toClose {
-  left: 190px;
-}
 
 .resume {
   width        : 100%;
@@ -202,7 +195,7 @@
 
 .resumeRight {
   width           : 60%;
-  background-color: #fae5e4;
+  background-color: $secondary_a;
 
   @include md {
     width: 100%;
