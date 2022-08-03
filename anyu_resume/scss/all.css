@@ -6,11 +6,18 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background-color: rgba(249, 219, 217, 0.231372549);
 }
 
 .container {
+  min-height: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 1rem;
@@ -25,6 +32,7 @@ body {
 }
 .header a {
   cursor: pointer;
+  text-decoration: none;
 }
 .header .nav {
   width: 100%;
@@ -40,7 +48,6 @@ body {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  background-color: #f9dbd9;
   margin: 0 auto;
 }
 .header .navWrap {
@@ -232,4 +239,9 @@ li:hover .navLink::after {
 .btn3:focus {
   border-radius: 24px;
   box-shadow: inset 0 -3.25em 0 0 #af5768;
+}
+
+.footer {
+  background-color: #3b2525;
+  height: 200px;
 }/*# sourceMappingURL=all.css.map */

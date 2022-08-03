@@ -1,0 +1,68 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+}
+.item a {
+  cursor: pointer;
+}
+.item .pic {
+  width: 55%;
+  flex-shrink: 0;
+}
+.item .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+@media (max-width: 960px) {
+  .item .pic {
+    width: 100%;
+  }
+}
+.item .content {
+  width: 55%;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  padding: 1rem 24px;
+  transition: 0.25s;
+}
+.item .content a {
+  text-decoration: none;
+}
+@media (max-width: 960px) {
+  .item .content {
+    width: 100%;
+  }
+}
+.item > :first-child {
+  margin-right: -10%;
+}
+@media (max-width: 960px) {
+  .item > :first-child {
+    margin: 0;
+  }
+}
+
+.item:nth-child(1) .content {
+  background-color: rgba(244, 211, 202, 0.8);
+  color: rgb(85, 85, 85);
+}
+
+.item:nth-child(2) .content {
+  background-color: rgba(0, 65, 90, 0.5333333333);
+  color: white;
+}
+
+@media (max-width: 960px) {
+  .item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=rwd.css.map */

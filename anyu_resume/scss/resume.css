@@ -3,8 +3,6 @@
   display: flex;
   border-radius: 16px;
   overflow: hidden;
-  margin: 1rem auto;
-  height: auto;
 }
 .resume a {
   text-decoration: none;

@@ -1,0 +1,74 @@
+@import "layout";
+@import "flex";
+@import "components";
+@import "media";
+
+.item {
+    @include md {
+      @include flex_column;
+      border-radius: 2rem;
+      overflow     : hidden;
+    }
+  
+    display     : flex;
+    align-items : center;
+  
+    a {
+      cursor: pointer;
+    }
+  
+    .pic {
+      width      : 55%;
+      flex-shrink: 0;
+  
+      img {
+        width         : 100%;
+        vertical-align: middle;
+      }
+  
+      @include md {
+        width: 100%;
+      }
+    }
+  
+    .content {
+      width      : 55%;
+      flex-shrink: 0;
+      position   : relative;
+      z-index    : 1;
+      padding    : 1rem 24px;
+      transition : 0.25s;
+  
+      a {
+        text-decoration: none;
+      }
+  
+      @include md {
+        width: 100%;
+      }
+    }
+  
+    > :first-child {
+      margin-right: -10%;
+  
+      @include md {
+        margin: 0;
+      }
+    }
+  }
+
+  .item:nth-child(1) .content {
+    background-color: #f4d3cacc;
+    color           : rgb(85, 85, 85);
+  }
+  
+  .item:nth-child(2) .content {
+    background-color: #00415a88;
+    color           : white;
+  }
+  
+  .item:nth-child(2) {
+    @include md {
+      flex-direction: column-reverse;
+    }
+  }
