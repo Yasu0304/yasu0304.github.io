@@ -4,167 +4,167 @@
 @import "media";
 
 .resume {
-    max-width        : 1200px;
-    display      : flex;
-    border-radius: 16px;
-    overflow     : hidden;
-  
-    a {
-      text-decoration: none;
-      cursor         : pointer;
-      color          : $primary;
-    }
-  
-    p {
-      color: $primary;
-    }
-  
-    @include md {
-      @include flex_column;
-    }
+  max-width    : 1200px;
+  display      : flex;
+  border-radius: 16px;
+  overflow     : hidden;
+
+  a {
+    text-decoration: none;
+    cursor         : pointer;
+    color          : $primary;
   }
-  
-  .resumeLeft,
-  .resumeRight {
+
+  p {
+    color: $primary;
+  }
+
+  @include md {
     @include flex_column;
-    color  : $earthly;
-    padding: 1rem;
   }
-  
-  .resumeLeft {
-    width           : 40%;
-    background-color: $secondary;
-  
-    @include md {
-      width: 100%;
-    }
+}
+
+.resumeLeft,
+.resumeRight {
+  @include flex_column;
+  color  : $earthly;
+  padding: 1rem;
+}
+
+.resumeLeft {
+  width           : 40%;
+  background-color: $secondary;
+
+  @include md {
+    width: 100%;
   }
-  
-  
-  .resumeList {
-    li {
-      @include flex;
-      padding-bottom: .2rem;
-    }
-  
-    .bi {
-      color       : $earthly;
-      margin-right: .5rem;
-      font-size   : 1.3rem;
-    }
-  
-    .resumeIcon {
-      img {
-        margin-right: .5rem;
-      }
-    }
-  
+}
+
+
+.resumeList {
+  li {
+    @include flex;
+    padding-bottom: .2rem;
   }
-  
-  .resumeProfilo {
-    @include flex_center;
-    padding: 1rem 0;
-  
+
+  .bi {
+    color       : $earthly;
+    margin-right: .5rem;
+    font-size   : 1.3rem;
+  }
+
+  .resumeIcon {
     img {
-      width        : 50%;
-      border-radius: 200rem;
+      margin-right: .5rem;
     }
   }
-  
-  .resumeHobby {
-    .resumeList {
-      @include flex_between;
-  
-      li {
-        @include flex_column;
-        align-items: center;
-  
-        .resumeIcon {
-          width        : 6rem;
-          height       : 6rem;
-          border-radius: 100%;
-          @include bg-center-cover;
-          @include md{
-            width: 4rem;
-            height: 4rem;
-          }
+
+}
+
+.resumeProfilo {
+  @include flex_center;
+  padding: 1rem 0;
+
+  img {
+    width        : 50%;
+    border-radius: 200rem;
+  }
+}
+
+.resumeHobby {
+  .resumeList {
+    @include flex_between;
+
+    li {
+      @include flex_column;
+      align-items: center;
+
+      .resumeIcon {
+        width        : 6rem;
+        height       : 6rem;
+        border-radius: 100%;
+        @include bg-center-cover;
+        @include md{
+          width: 4rem;
+          height: 4rem;
         }
       }
     }
   }
-  
-  .resumeConent {
-    @include flex_column;
+}
+
+.resumeConent {
+  @include flex_column;
+}
+
+.resumeRight {
+  width           : 60%;
+  background-color: $secondary_a;
+
+  @include md {
+    width: 100%;
   }
-  
-  .resumeRight {
-    width           : 60%;
-    background-color: $secondary_a;
-  
-    @include md {
-      width: 100%;
+}
+
+.resumeWork {
+  ul {
+    li {
+      position: relative;
     }
-  }
-  
-  .resumeWork {
-    ul {
-      li {
-        position: relative;
-      }
-  
-      .dot::before {
-        content      : '';
-        position     : absolute;
-        top          : 8px;
-        left         : 0px;
-        width        : 6px;
-        height       : 6px;
-        border-radius: 50%;
-        border       : 2px solid $earthly;
-      }
-  
-      .dot::after {
-        content   : '';
-        position  : absolute;
-        top       : 16px;
-        left      : 4px;
-        width     : 2px;
-        height    : 98px;
-        background: $earthly;
-  
-        @include md {
-          height: 120px;
-        }
-      }
-  
-      .dot70::before {
-        content      : '';
-        position     : absolute;
-        top          : 8px;
-        left         : 0px;
-        width        : 6px;
-        height       : 6px;
-        border-radius: 50%;
-        border       : 2px solid $earthly;
-      }
-  
-      .dot70::after {
-        content   : '';
-        position  : absolute;
-        top       : 16px;
-        left      : 4px;
-        width     : 2px;
-        height    : 70px;
-        background: $earthly;
-  
-        @include md {
-          height: 138px;
-        }
+
+    .dot::before {
+      content      : '';
+      position     : absolute;
+      top          : 8px;
+      left         : 0px;
+      width        : 6px;
+      height       : 6px;
+      border-radius: 50%;
+      border       : 2px solid $earthly;
+    }
+
+    .dot::after {
+      content   : '';
+      position  : absolute;
+      top       : 16px;
+      left      : 4px;
+      width     : 2px;
+      height    : 98px;
+      background: $earthly;
+
+      @include md {
+        height: 120px;
       }
     }
+
+    .dot70::before {
+      content      : '';
+      position     : absolute;
+      top          : 8px;
+      left         : 0px;
+      width        : 6px;
+      height       : 6px;
+      border-radius: 50%;
+      border       : 2px solid $earthly;
+    }
+
+    .dot70::after {
+      content   : '';
+      position  : absolute;
+      top       : 16px;
+      left      : 4px;
+      width     : 2px;
+      height    : 70px;
+      background: $earthly;
+
+      @include md {
+        height: 138px;
+      }
+    }
   }
-  
-  .resumeData,
-  .resumeInfo {
-    margin-left: 20px;
-  }
+}
+
+.resumeData,
+.resumeInfo {
+  margin-left: 20px;
+}
