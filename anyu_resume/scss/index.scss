@@ -79,23 +79,30 @@
 }
 
 .none {
-  display: none;
+  @include none;
 }
 
-
-
-  .toClose{
-    width      : 10rem;
-    align-items: center;
-    margin-right: .5rem;
-    p{
-      color: $white;
-    }
-    @include md{
-      margin-top: 4rem;
-    }
-    
+.hide{
+  @include none;
+  @include md{
+    @include block;
   }
+}
+
+.toClose {
+  width       : 10rem;
+  align-items : center;
+  margin-right: .5rem;
+
+  p {
+    color: $white;
+  }
+
+  @include md {
+    margin-top: 4rem;
+  }
+
+}
 
 
 .resume {
@@ -266,4 +273,29 @@
 .resumeData,
 .resumeInfo {
   margin-left: 20px;
+}
+
+.dropDown {
+  position: absolute;
+  top     : -45px;
+  right   : 50%;
+  @include md{
+    @include none;
+  }
+
+  .round {
+    width           : 100px;
+    height          : 100px;
+    border-radius   : 50%;
+    background-color: $primary;
+    @include flex_center;
+
+    p {
+      position : absolute;
+      top      : 55px;
+      z-index  : 1000;
+      color    : $white;
+      font-size: 1.2rem;
+    }
+  }
 }

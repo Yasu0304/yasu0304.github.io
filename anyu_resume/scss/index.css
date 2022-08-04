@@ -76,6 +76,15 @@
   display: none;
 }
 
+.hide {
+  display: none;
+}
+@media (max-width: 960px) {
+  .hide {
+    display: block;
+  }
+}
+
 .toClose {
   width: 10rem;
   align-items: center;
@@ -247,4 +256,30 @@
 .resumeData,
 .resumeInfo {
   margin-left: 20px;
+}
+
+.dropDown {
+  position: absolute;
+  top: -45px;
+  right: 50%;
+}
+@media (max-width: 960px) {
+  .dropDown {
+    display: none;
+  }
+}
+.dropDown .round {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #af5768;
+  display: flex;
+  justify-content: center;
+}
+.dropDown .round p {
+  position: absolute;
+  top: 55px;
+  z-index: 1000;
+  color: #ffffff;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=index.css.map */
