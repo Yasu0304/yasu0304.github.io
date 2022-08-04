@@ -22,12 +22,25 @@ body {
 }
 
 .container {
-    min-height: 100%;
+    min-height   : 100%;
     max-width    : 1200px;
     margin       : 0 auto;
     padding-left : 1rem;
     padding-right: 1rem;
     margin-top   : 5rem;
+}
+
+.top a{
+    text-decoration: none;
+    color: $secondary;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 3rem;
+}
+
+.top a:hover{
+    color: $primary;
 }
 
 .header {
@@ -250,6 +263,36 @@ li:hover .navLink::after {
 }
 
 .footer {
-    background-color: $earthly;
-    height: 200px;
+    background-color: $primary;
+    height          : 200px;
+
+    .container{
+        @include flex_center;
+        align-items: center;
+    }
+
+    h3 {
+        color: $secondary;
+    }
+
+    .resumeList {
+        @include flex_column;
+        align-items: center;
+    }
+
+    .resumeList a {
+        text-decoration: none;
+        color          : $secondary;
+        font-size      : 1rem;
+    }
+
+    .resumeList a:hover,
+    .resumeList a:hover::before {
+        color: $earthly;
+    }
+
+    .resumeList a::before {
+        color       : $secondary;
+        margin-right: 8px;
+    }
 }

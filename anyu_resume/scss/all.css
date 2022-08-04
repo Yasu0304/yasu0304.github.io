@@ -25,6 +25,19 @@ body {
   margin-top: 5rem;
 }
 
+.top a {
+  text-decoration: none;
+  color: #f9dbd9;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 3rem;
+}
+
+.top a:hover {
+  color: #af5768;
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -242,6 +255,32 @@ li:hover .navLink::after {
 }
 
 .footer {
-  background-color: #3b2525;
+  background-color: #af5768;
   height: 200px;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h3 {
+  color: #f9dbd9;
+}
+.footer .resumeList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .resumeList a {
+  text-decoration: none;
+  color: #f9dbd9;
+  font-size: 1rem;
+}
+.footer .resumeList a:hover,
+.footer .resumeList a:hover::before {
+  color: #3b2525;
+}
+.footer .resumeList a::before {
+  color: #f9dbd9;
+  margin-right: 8px;
 }/*# sourceMappingURL=all.css.map */
