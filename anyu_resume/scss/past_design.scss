@@ -37,8 +37,8 @@
         }
 
         img {
-            width: 100%;
-            height: auto;
+            width     : 100%;
+            height    : auto;
             object-fit: cover;
         }
     }
@@ -82,9 +82,10 @@
 
 
 .wrapTitle,
-.toClose{
+.toClose {
     cursor: pointer;
 }
+
 .wrapTitle::after {
     content         : '';
     display         : block;
@@ -114,22 +115,23 @@
     margin-bottom: 3rem;
 }
 
-.blockquote-footer{
-   font-size: .875em; 
-   color: $earthly;
-   font-style: italic;
-   margin-left: 1rem;
+.blockquote-footer {
+    font-size  : .875em;
+    color      : $earthly;
+    font-style : italic;
+    margin-left: 1rem;
 }
 
-.none{
+.none {
     @include none;
 }
 
-.toClose{
+.toClose {
     @include flex;
-    .bi-x-circle{
+
+    .bi-x-circle {
         margin-left: auto;
-        font-size: 2rem;
-        color: $primary;
+        font-size  : 2rem;
+        color      : $primary;
     }
 }
