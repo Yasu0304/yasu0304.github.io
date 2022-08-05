@@ -1,26 +1,47 @@
 $(document).ready(function () {
+
+    $(window).load(function () {
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            asNavFor: '#slider'
+        });
+
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
+        });
+    });
     $('.phoneNav').on('click', function (e) {
         e.preventDefault();
         $('body').toggleClass('show');
     });
 
-    $(".top a").click(function(event) {
+    $(".top a").click(function (event) {
         event.preventDefault();
         $("html,body").animate({
-                scrollTop: 0
-            },
+            scrollTop: 0
+        },
             1000
         );
     });
     function showBtnCondition() {
         if ($(this).scrollTop() > 1000) {
-          $('.top').fadeIn();
-            } else {
-             $('.top').fadeOut();
-           }
-         }
-     $(window).scroll(showBtnCondition);
-     // .top 在頁面最上方時可以改為不顯示，待頁面向下滾動一段距離後再顯示，
+            $('.top').fadeIn();
+        } else {
+            $('.top').fadeOut();
+        }
+    }
+    $(window).scroll(showBtnCondition);
+    // .top 在頁面最上方時可以改為不顯示，待頁面向下滾動一段距離後再顯示，
     // $("body").on("click", "resume", function (event) {
     //     //範圍裡.on("甚麼動作","哪個人")
     //     event.preventDefault();
