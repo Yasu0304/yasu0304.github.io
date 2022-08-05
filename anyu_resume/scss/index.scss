@@ -82,26 +82,34 @@
   @include none;
 }
 
-.hide{
+.hide {
   @include none;
-  @include md{
+
+  @include md {
     @include block;
   }
 }
 
 .toClose {
-  width       : 10rem;
-  align-items : center;
-  margin-right: .5rem;
 
   p {
     color: $white;
   }
+}
 
-  @include md {
-    margin-top: 4rem;
-  }
+.btn3 {
+  padding         : 8px 10px;
+  border-radius   : 24px;
+  background-color: rgba(85, 85, 85, 0.439);
+  border          : none;
+  color           : rgb(85, 85, 85);
+  transition      : 0.25s;
+}
 
+.btn3:hover,
+.btn3:focus {
+  border-radius: 24px;
+  box-shadow   : inset 0 -3.25em 0 0 $primary;
 }
 
 
@@ -194,8 +202,9 @@
         height       : 6rem;
         border-radius: 100%;
         @include bg-center-cover;
-        @include md{
-          width: 4rem;
+
+        @include md {
+          width : 4rem;
           height: 4rem;
         }
       }
@@ -283,7 +292,8 @@
   position: absolute;
   top     : -45px;
   right   : 50%;
-  @include md{
+
+  @include md {
     @include none;
   }
 
