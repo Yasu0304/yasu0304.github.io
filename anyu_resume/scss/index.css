@@ -85,6 +85,9 @@
   }
 }
 
+.toClose {
+  width: 10rem;
+}
 .toClose p {
   color: #ffffff;
 }
