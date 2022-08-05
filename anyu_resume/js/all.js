@@ -5,6 +5,7 @@ $(document).ready(function () {
         $('body').toggleClass('show');
     });
 
+
     $(".top a").click(function (event) {
         event.preventDefault();
         $("html,body").animate({
