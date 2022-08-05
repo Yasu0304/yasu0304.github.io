@@ -276,6 +276,7 @@
   position: absolute;
   top: -45px;
   right: 50%;
+  cursor: pointer;
 }
 @media (max-width: 960px) {
   .dropDown {
