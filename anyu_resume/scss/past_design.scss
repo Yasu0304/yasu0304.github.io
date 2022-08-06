@@ -4,22 +4,20 @@
 @import "media";
 
 .p_container {
-    min-height  : 80%;
-    margin-top  : 5rem;
-    max-width   : 100%;
-    margin-left : -10px;
-    margin-right: -10px;
+  min-height: 80%;
+  margin-top: 5rem;
+  max-width: 100%;
 }
 
 .p_wrap {
-    margin       : 0 auto;
-    max-width    : 1200px;
-    padding-left : 1rem;
-    padding-right: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-    h2 {
-        color: $primary;
-    }
+  h2 {
+    color: $primary;
+  }
 
     .p_row {
         display      : flex;
@@ -47,56 +45,54 @@
 
 
 .card_s {
-    border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-
 .p_text {
-    padding         : 1rem;
-    position        : absolute;
-    top             : 0;
-    left            : 0;
-    right           : 0;
-    bottom          : 0;
-    display         : flex;
-    flex-direction  : column;
-    justify-content : flex-end;
-    background-color: rgba(0, 0, 0, 0.542);
-    opacity         : 0;
-    transition      : opacity .8s;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.542);
+  opacity: 0;
+  transition: opacity 0.8s;
 }
 
 .p_text h2 {
-    color: rgb(255, 242, 104);
+  color: rgb(255, 242, 104);
 }
 
 .p_text h2::after {
-    content         : '';
-    display         : block;
-    width           : 0%;
-    height          : 2px;
-    margin          : 4px 0;
-    background-color: rgb(255, 242, 104);
-    transition      : width .5s .5s;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 4px 0;
+  background-color: rgb(255, 242, 104);
+  transition: width 0.5s 0.5s;
 }
-
 
 .wrapTitle,
 .toClose {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .wrapTitle::after {
-    content         : '';
-    display         : block;
-    background-color: $secondary;
-    width           : 100%;
-    height          : 2px;
-    margin          : .5rem 0;
+  content: "";
+  display: block;
+  background-color: $secondary;
+  width: 100%;
+  height: 2px;
+  margin: 0.5rem 0;
 }
 
 .p_text:hover h2::after {
-    width: 100%;
+  width: 100%;
 }
 
 /**
@@ -108,30 +104,30 @@
   */
 
 .p_text p {
-    color: rgb(231, 224, 192);
+  color: rgb(231, 224, 192);
 }
 
 .mb3 {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .blockquote-footer {
-    font-size  : .875em;
-    color      : $earthly;
-    font-style : italic;
-    margin-left: 1rem;
+  font-size: 0.875em;
+  color: $earthly;
+  font-style: italic;
+  margin-left: 1rem;
 }
 
 .none {
-    @include none;
+  @include none;
 }
 
 .toClose {
-    @include flex;
+  @include flex;
 
-    .bi-x-circle {
-        margin-left: auto;
-        font-size  : 2rem;
-        color      : $primary;
-    }
+  .bi-x-circle {
+    margin-left: auto;
+    font-size: 2rem;
+    color: $primary;
+  }
 }
