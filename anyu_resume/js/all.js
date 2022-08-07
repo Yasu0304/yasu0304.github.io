@@ -31,7 +31,8 @@ $(document).ready(function () {
     });
 
     $("a[href$='mailto:blackcat7134@gmail.com']").addClass("bi bi-envelope-fill");
-    $("a[href$='https://twitter.com/ladesign34']").addClass("bi bi-twitter");
     $("a[href$='https://github.com/Yasu0304/yasu0304.github.io']").addClass("bi bi-github");
+    $("a[href$='https://yasu0304.github.io/anyu_resume/past_design.html']").addClass("bi bi-box2-heart");
+
 
 });
