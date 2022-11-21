@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bannerBg {
+    width: 100%;
+    background-image: url(./Banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 810px;
+}
+
+.width-1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.width-1570 {
+    max-width: 1570px;
+    margin: 0 auto;
+}
+
+.px-162 {
+    padding-left: 162px;
+    padding-right: 162px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.bp-4 {
+    padding-bottom: 4px;
+}
+
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.nav {
+    max-width: 100%;
+    height: 72px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.logo {
+    display: block;
+    width: 120px;
+    height: 48px;
+    background: url(./image\ 1.png) no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.mainNav {
+    font-size: 28px;
+    width: 100%;
+}
+
+.mainNav a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.mainNav a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .8s;
+}
+
+.linkStyle:hover a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 4px;
+    background-color: black;
+}
+
+.linkStyleActive a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 4px;
+    background-color: black;
+}
+
+.bgTitle {
+    display: flex;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 738px;
+}
+
+.box {
+    width: 8px;
+    height: 48px;
+    margin-right: 16px;
+    background-color: #fff;
+    line-height: 738px;
+}
