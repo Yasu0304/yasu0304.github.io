@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div v-for="data in arr" :key="name.id">
+        <div>{{data.name}}</div>
+        <div>{{data.hobby}}</div>
+      </div>
+    </div>
+    <div id="suck">{{obj.arrds}}</div>
+  </body>
+</html>
+
+<script>
+  const app = new Vue({
+    el: "#app",
+    data: {
+      arr: [
+        {
+          name: "哈囉",
+          hobby: "lego",
+          id: self.crypto.randomUUID(),
+        },
+        {
+          name: "早安",
+          hobby: "Sony",
+          id: self.crypto.randomUUID(),
+        },
+      ],
+      obj: {
+        arrds: "大同區塔城街",
+      },
+    },
+  });
+
+  const suck = new Vue({
+    el: "#suck",
+    data: {
+      obj: {
+        arrds: "大同區塔城街",
+      },
+    },
+  });
+</script>
