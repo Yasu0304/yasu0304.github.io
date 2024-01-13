@@ -1,17 +1,8 @@
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 #378f82;
-            box-shadow: 0 0 0 0 #378f82;
-  }
-}
-
 @keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #378f82;
-            box-shadow: 0 0 0 0 #378f82;
+    box-shadow: 0 0 0 0 #378f82;
   }
 }
-
 @media (max-width: 960px) {
   .md-none {
     display: none;
@@ -42,7 +33,6 @@
   padding-left: 9px;
   padding-right: 9px;
 }
-
 @media (max-width: 960px) {
   .px9-md-px4 {
     padding-left: 4px;
@@ -53,7 +43,6 @@
 .px9py5 {
   padding: 8px 9px;
 }
-
 @media (max-width: 960px) {
   .px9py5 {
     padding: 5px 9px;
@@ -165,7 +154,6 @@
   padding-left: 9px;
   padding-right: 9px;
 }
-
 @media (max-width: 960px) {
   .px9-px49 {
     padding-left: 49px;
@@ -187,5 +175,4 @@
 .px16 {
   padding-left: 16px;
   padding-right: 16px;
-}
-/*# sourceMappingURL=spacing.css.map */
+}/*# sourceMappingURL=spacing.css.map */

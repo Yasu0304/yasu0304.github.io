@@ -1,17 +1,8 @@
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 #378f82;
-            box-shadow: 0 0 0 0 #378f82;
-  }
-}
-
 @keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #378f82;
-            box-shadow: 0 0 0 0 #378f82;
+    box-shadow: 0 0 0 0 #378f82;
   }
 }
-
 .bnt-3 {
   width: 102px;
   height: 34px;
@@ -21,11 +12,9 @@
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
 }
-
 @media (max-width: 960px) {
   .bnt-3 {
     width: 74px;
@@ -36,10 +25,8 @@
 
 .bnt-3:hover,
 .btn-3:focus {
-  -webkit-box-shadow: 0 0.5em 0.5em -0.4em #378f82;
-          box-shadow: 0 0.5em 0.5em -0.4em #378f82;
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em #378f82;
+  transform: translateY(-0.25em);
 }
 
 .border-b-maincolor {
@@ -54,7 +41,5 @@
 }
 
 .shadow {
-  -webkit-box-shadow: #4CC2B1 0px 3px 0px 0px;
-          box-shadow: #4CC2B1 0px 3px 0px 0px;
-}
-/*# sourceMappingURL=product.css.map */
+  box-shadow: #4CC2B1 0px 3px 0px 0px;
+}/*# sourceMappingURL=product.css.map */

@@ -1,11 +1,13 @@
 @charset "UTF-8";
 :root {
-  --bs-font-sans-serif: 'Microsoft JhengHei', 微軟正黑體, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Microsoft JhengHei", 微軟正黑體, system-ui,
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .bg-cover {
   background-position: center center;
   background-size: cover;
   display: block;
-}
-/*# sourceMappingURL=custom.css.map */
+}/*# sourceMappingURL=custom.css.map */
