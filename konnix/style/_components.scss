@@ -1,0 +1,64 @@
+@mixin hide-text($hight, $width) {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  height: $hight;
+  width: $width;
+  @content;
+}
+
+@mixin icon($hight, $width) {
+  height: $hight;
+  width: $width;
+  @content;
+}
+
+@mixin link($color, $size) {
+  color: $color;
+  font-size: $size;
+  @content;
+}
+
+@mixin bg-center-cover {
+  background-position: center center;
+  background-size: cover;
+  @content;
+}
+
+@mixin bg-top-contain {
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-center-contain {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin card($size) {
+  padding-top: $size;
+  overflow: hidden;
+  width: 100%;
+  @content;
+}
+
+@mixin bottom($size, $hight, $width) {
+  border-radius: $size;
+  height: $hight;
+  width: $width;
+  @content;
+}
+
+@mixin markpen_y {
+  background: linear-gradient(
+    transparent 40%,
+    rgba(255, 255, 255, 0) 40%,
+    #fff176 90%,
+    transparent 95%
+  );
+  padding: 2px 1px;
+  @content;
+}

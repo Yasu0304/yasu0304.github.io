@@ -1,0 +1,46 @@
+.priBg {
+  background-color: #161519;
+}
+
+.priBgHover {
+  background-color: #161519;
+  transition: 0.9s;
+}
+.priBgHover:hover {
+  background-color: #44D62C;
+}
+
+.navCustomize .nav-item .nav-item, .navCustomize .nav-item .nav-link {
+  font-size: 20px;
+  line-height: 48px;
+}
+.navCustomize .nav-item .nav-link.active {
+  background-color: #161519;
+  color: #44D62C;
+  font-weight: bold;
+}
+
+.swiperHero {
+  width: 100%;
+  height: 800px;
+}
+
+.swiperBg {
+  background-position: center center;
+  background-size: cover;
+}
+
+.swiperProducts {
+  width: 100%;
+}
+
+.swiperProductsDimition {
+  padding-top: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiperProductsBg {
+  background-position: center center;
+  background-size: cover;
+}/*# sourceMappingURL=index.css.map */
